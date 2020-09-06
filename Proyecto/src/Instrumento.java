@@ -11,7 +11,7 @@
  */
 public abstract class Instrumento implements Precio{
     protected String nombre, tipoInst, materialInst, color, marca;
-    protected double precioInst, tamano, peso;
+    protected double precioInst, tamaño, peso;
     
     
     public abstract void producirSonido();
@@ -20,7 +20,7 @@ public abstract class Instrumento implements Precio{
     public String toString() {
         return "Instrumento{" + "nombre=" + nombre + ", tipoInst=" + tipoInst + ", materialInst=" 
                 + materialInst + ", color=" + color + ", marca=" + marca + ", precioInst=" 
-                + precioInst + ", tamano=" + tamano + ", peso=" + peso + '}';
+                + precioInst + ", tamano=" + tamaño + ", peso=" + peso + '}';
     }
     
     
