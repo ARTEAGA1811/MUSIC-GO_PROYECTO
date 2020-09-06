@@ -11,6 +11,7 @@
  */
 public abstract class Cliente implements Identidad  {
     protected String nombreCliente;
+    protected String tipoCliente;
     
     
     //METODOS

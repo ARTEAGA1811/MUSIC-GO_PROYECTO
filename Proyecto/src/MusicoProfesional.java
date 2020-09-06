@@ -14,13 +14,36 @@ import javax.swing.JOptionPane;
 public class MusicoProfesional extends Cliente{
     private String apellido, cedula;
     
+    public MusicoProfesional(String nombre, String apellido, String cedula){
+        this.nombreCliente = nombre;
+        this.apellido = apellido;
+        this.cedula = cedula;
+        this.tipoCliente = "Músico Profesional";
+    }
+    
     public void paseVip(){
+        /*
+        CLAVE 3 DÍGITOS Y DOS LETRAS (135PS, 1NH46, A913M)
+        SUMA DE DÍGITOS SE 8 O 12 (F35J4, NH812, 
+        */
         
+        String msjPrincipal= "HA SIDO ACREEDOR DE UN PASE VIP\n";
+        String instComprado = "this.nombreInstrumento";
+        String precioInst = "this.precioInst";
+        
+        
+        
+        msjPrincipal += "Nombre: "+nombreCliente+"\n"+
+                        "Apellido: "+apellido+"'n"+
+                        "CI: "+cedula+"\n";
+        
+        System.out.print(msjPrincipal);
     }
 
     @Override
     public void compraInstrumento() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+         String Factura = "\t******FACTURA******";        
+        
     }
 
     
