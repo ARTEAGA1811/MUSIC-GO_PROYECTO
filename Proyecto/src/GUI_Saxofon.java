@@ -43,8 +43,9 @@ public class GUI_Saxofon extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnAtrasViento.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasViento.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasViento.setText("Atras");
+        btnAtrasViento.setText("Atrás");
         btnAtrasViento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasVientoActionPerformed(evt);
@@ -64,18 +65,22 @@ public class GUI_Saxofon extends javax.swing.JFrame {
         lblSaxofon4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Saxofon/saxofon4.png"))); // NOI18N
         getContentPane().add(lblSaxofon4, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 70, -1, -1));
 
+        btnComprarSaxofon1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarSaxofon1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarSaxofon1.setText("Comprar");
         getContentPane().add(btnComprarSaxofon1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 110, 30));
 
+        btnComprarSaxofon2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarSaxofon2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarSaxofon2.setText("Comprar");
         getContentPane().add(btnComprarSaxofon2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 110, 30));
 
+        btnComprarSaxofon3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarSaxofon3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarSaxofon3.setText("Comprar");
         getContentPane().add(btnComprarSaxofon3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 310, 110, 30));
 
+        btnComprarSaxofon4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarSaxofon4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarSaxofon4.setText("Comprar");
         getContentPane().add(btnComprarSaxofon4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 310, 110, 30));

@@ -50,8 +50,9 @@ public class GUI_Piano extends javax.swing.JFrame {
         lblPiano3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Pianos/piano3.png"))); // NOI18N
         getContentPane().add(lblPiano3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, -1, -1));
 
+        btnAtrasTeclado.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasTeclado.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasTeclado.setText("Atras");
+        btnAtrasTeclado.setText("Atrás");
         btnAtrasTeclado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasTecladoActionPerformed(evt);
@@ -59,14 +60,17 @@ public class GUI_Piano extends javax.swing.JFrame {
         });
         getContentPane().add(btnAtrasTeclado, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 409, 90, 40));
 
+        btnComprarPiano1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarPiano1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarPiano1.setText("Comprar");
         getContentPane().add(btnComprarPiano1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 110, 30));
 
+        btnComprarPiano2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarPiano2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarPiano2.setText("Comprar");
         getContentPane().add(btnComprarPiano2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 340, 110, 30));
 
+        btnComprarPiano3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarPiano3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarPiano3.setText("Comprar");
         getContentPane().add(btnComprarPiano3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 340, 110, 30));

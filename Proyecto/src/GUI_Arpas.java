@@ -41,8 +41,9 @@ public class GUI_Arpas extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnAtrasCuerdas.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasCuerdas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasCuerdas.setText("Atras");
+        btnAtrasCuerdas.setText("Atrás");
         btnAtrasCuerdas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasCuerdasActionPerformed(evt);
@@ -59,14 +60,17 @@ public class GUI_Arpas extends javax.swing.JFrame {
         lblArpa3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Arpas/arpa2.png"))); // NOI18N
         getContentPane().add(lblArpa3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 40, -1, -1));
 
+        btnComprarArpa1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarArpa1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarArpa1.setText("Comprar");
         getContentPane().add(btnComprarArpa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, 110, 30));
 
+        btnComprarArpa2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarArpa2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarArpa2.setText("Comprar");
         getContentPane().add(btnComprarArpa2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 340, 110, 30));
 
+        btnComprarArpa3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarArpa3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarArpa3.setText("Comprar");
         getContentPane().add(btnComprarArpa3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 340, 110, 30));

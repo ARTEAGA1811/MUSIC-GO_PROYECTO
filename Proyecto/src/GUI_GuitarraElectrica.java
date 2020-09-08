@@ -55,8 +55,9 @@ public class GUI_GuitarraElectrica extends javax.swing.JFrame {
         lblGuitarraE4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/GuitarraElectrica/guitarra-electrica4.png"))); // NOI18N
         getContentPane().add(lblGuitarraE4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 0, -1, -1));
 
+        btnAtrasCuerdas.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasCuerdas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasCuerdas.setText("Atras");
+        btnAtrasCuerdas.setText("Atrás");
         btnAtrasCuerdas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasCuerdasActionPerformed(evt);
@@ -64,18 +65,22 @@ public class GUI_GuitarraElectrica extends javax.swing.JFrame {
         });
         getContentPane().add(btnAtrasCuerdas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, 90, 40));
 
+        btnComprarGE1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGE1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGE1.setText("Comprar");
         getContentPane().add(btnComprarGE1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 110, 30));
 
+        btnComprarGE2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGE2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGE2.setText("Comprar");
         getContentPane().add(btnComprarGE2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 110, 30));
 
+        btnComprarGE3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGE3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGE3.setText("Comprar");
         getContentPane().add(btnComprarGE3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 340, 110, 30));
 
+        btnComprarGE4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGE4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGE4.setText("Comprar");
         getContentPane().add(btnComprarGE4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 340, 110, 30));

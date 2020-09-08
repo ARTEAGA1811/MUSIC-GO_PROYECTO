@@ -39,8 +39,9 @@ public class GUI_Organo extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnAtrasTeclado.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasTeclado.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasTeclado.setText("Atras");
+        btnAtrasTeclado.setText("Atrás");
         btnAtrasTeclado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasTecladoActionPerformed(evt);
@@ -54,10 +55,12 @@ public class GUI_Organo extends javax.swing.JFrame {
         lblOrgano2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Organos/organo2.png"))); // NOI18N
         getContentPane().add(lblOrgano2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 10, -1, 350));
 
+        btnComprarOrgano1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarOrgano1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarOrgano1.setText("Comprar");
         getContentPane().add(btnComprarOrgano1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 110, 30));
 
+        btnComprarOrgano2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarOrgano2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarOrgano2.setText("Comprar");
         getContentPane().add(btnComprarOrgano2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 370, 110, 30));

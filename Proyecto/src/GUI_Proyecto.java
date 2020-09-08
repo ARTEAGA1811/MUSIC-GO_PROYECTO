@@ -55,9 +55,8 @@ public class GUI_Proyecto extends javax.swing.JFrame {
         lblLogoPrincipalCentral.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/guitarra-electrica (3).png"))); // NOI18N
         getContentPane().add(lblLogoPrincipalCentral, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 360, 405));
 
-        cmbCategorias.setBackground(new java.awt.Color(51, 153, 255));
         cmbCategorias.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        cmbCategorias.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "              CATEGORÍAS", "Cuerdas", "Percusión", "Teclados", "Viento", " " }));
+        cmbCategorias.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "              CATEGORÍAS", "Cuerdas", "Percusión", "Teclados", "Viento" }));
         cmbCategorias.setBorder(null);
         cmbCategorias.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         cmbCategorias.addActionListener(new java.awt.event.ActionListener() {

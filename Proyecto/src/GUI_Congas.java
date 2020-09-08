@@ -43,8 +43,9 @@ public class GUI_Congas extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnAtrasPercusion.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasPercusion.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasPercusion.setText("Atras");
+        btnAtrasPercusion.setText("Atrás");
         btnAtrasPercusion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasPercusionActionPerformed(evt);
@@ -64,18 +65,22 @@ public class GUI_Congas extends javax.swing.JFrame {
         lblConga4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Congas/conga4.png"))); // NOI18N
         getContentPane().add(lblConga4, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 50, -1, -1));
 
+        btnComprarConga1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarConga1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarConga1.setText("Comprar");
         getContentPane().add(btnComprarConga1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, 110, 30));
 
+        btnComprarConga2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarConga2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarConga2.setText("Comprar");
         getContentPane().add(btnComprarConga2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, 110, 30));
 
+        btnComprarConga3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarConga3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarConga3.setText("Comprar");
         getContentPane().add(btnComprarConga3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 330, 110, 30));
 
+        btnComprarConga4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarConga4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarConga4.setText("Comprar");
         getContentPane().add(btnComprarConga4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 330, 110, 30));

@@ -50,8 +50,9 @@ public class GUI_Bateria extends javax.swing.JFrame {
         lblBateria3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Bateria/bateria4.png"))); // NOI18N
         getContentPane().add(lblBateria3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 110, -1, -1));
 
+        btnAtrasPercusion.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasPercusion.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasPercusion.setText("Atras");
+        btnAtrasPercusion.setText("Atrás");
         btnAtrasPercusion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasPercusionActionPerformed(evt);
@@ -59,14 +60,17 @@ public class GUI_Bateria extends javax.swing.JFrame {
         });
         getContentPane().add(btnAtrasPercusion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 90, 40));
 
+        btnBateria1.setBackground(new java.awt.Color(255, 255, 255));
         btnBateria1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnBateria1.setText("Comprar");
         getContentPane().add(btnBateria1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 110, 30));
 
+        btnBateria2.setBackground(new java.awt.Color(255, 255, 255));
         btnBateria2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnBateria2.setText("Comprar");
         getContentPane().add(btnBateria2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 110, 30));
 
+        btnBateria3.setBackground(new java.awt.Color(255, 255, 255));
         btnBateria3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnBateria3.setText("Comprar");
         getContentPane().add(btnBateria3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 310, 110, 30));

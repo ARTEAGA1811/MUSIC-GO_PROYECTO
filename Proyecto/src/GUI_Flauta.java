@@ -55,8 +55,9 @@ public class GUI_Flauta extends javax.swing.JFrame {
         lblFlauta4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Flautas/flauta4.png"))); // NOI18N
         getContentPane().add(lblFlauta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 50, 30, -1));
 
+        btnAtrasViento.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasViento.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasViento.setText("Atras");
+        btnAtrasViento.setText("Atrás");
         btnAtrasViento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasVientoActionPerformed(evt);
@@ -64,18 +65,22 @@ public class GUI_Flauta extends javax.swing.JFrame {
         });
         getContentPane().add(btnAtrasViento, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 90, 40));
 
+        btnComprarFlauta1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarFlauta1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarFlauta1.setText("Comprar");
         getContentPane().add(btnComprarFlauta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, 110, 30));
 
+        btnComprarFlauta2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarFlauta2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarFlauta2.setText("Comprar");
         getContentPane().add(btnComprarFlauta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 110, 30));
 
+        btnComprarFlauta3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarFlauta3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarFlauta3.setText("Comprar");
         getContentPane().add(btnComprarFlauta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 340, 110, 30));
 
+        btnComprarFlauta4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarFlauta4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarFlauta4.setText("Comprar");
         getContentPane().add(btnComprarFlauta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 340, 110, 30));

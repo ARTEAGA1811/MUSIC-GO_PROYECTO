@@ -43,8 +43,9 @@ public class GUI_Trompeta extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnAtrasViento.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasViento.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasViento.setText("Atras");
+        btnAtrasViento.setText("Atrás");
         btnAtrasViento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasVientoActionPerformed(evt);
@@ -64,18 +65,22 @@ public class GUI_Trompeta extends javax.swing.JFrame {
         lblTrompeta4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Trompetas/trompeta4.png"))); // NOI18N
         getContentPane().add(lblTrompeta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 120, -1, -1));
 
+        btnComprarTrompeta1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTrompeta1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTrompeta1.setText("Comprar");
         getContentPane().add(btnComprarTrompeta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 110, 30));
 
+        btnComprarTrompeta2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTrompeta2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTrompeta2.setText("Comprar");
         getContentPane().add(btnComprarTrompeta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 110, 30));
 
+        btnComprarTrompeta3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTrompeta3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTrompeta3.setText("Comprar");
         getContentPane().add(btnComprarTrompeta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 330, 110, 30));
 
+        btnComprarTrompeta4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTrompeta4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTrompeta4.setText("Comprar");
         getContentPane().add(btnComprarTrompeta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 330, 110, 30));

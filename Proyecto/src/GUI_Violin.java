@@ -56,8 +56,9 @@ public class GUI_Violin extends javax.swing.JFrame {
         lblViolin4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Violin/violin1.png"))); // NOI18N
         getContentPane().add(lblViolin4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 80, -1, -1));
 
+        btnAtrasCuerdas.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasCuerdas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasCuerdas.setText("Atras");
+        btnAtrasCuerdas.setText("Atrás");
         btnAtrasCuerdas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasCuerdasActionPerformed(evt);
@@ -65,18 +66,22 @@ public class GUI_Violin extends javax.swing.JFrame {
         });
         getContentPane().add(btnAtrasCuerdas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, 90, 40));
 
+        btnComprarViolin1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarViolin1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarViolin1.setText("Comprar");
         getContentPane().add(btnComprarViolin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, 110, 30));
 
+        btnComprarViolin2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarViolin2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarViolin2.setText("Comprar");
         getContentPane().add(btnComprarViolin2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 110, 30));
 
+        btnComprarViolin3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarViolin3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarViolin3.setText("Comprar");
         getContentPane().add(btnComprarViolin3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 330, 110, 30));
 
+        btnComprarViolin4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarViolin4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarViolin4.setText("Comprar");
         getContentPane().add(btnComprarViolin4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 330, 110, 30));

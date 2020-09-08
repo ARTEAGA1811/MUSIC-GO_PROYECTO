@@ -43,8 +43,9 @@ public class GUI_Bongos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnAtrasPercusion.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasPercusion.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasPercusion.setText("Atras");
+        btnAtrasPercusion.setText("Atrás");
         btnAtrasPercusion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasPercusionActionPerformed(evt);
@@ -64,18 +65,22 @@ public class GUI_Bongos extends javax.swing.JFrame {
         lblBongo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Bongos/bongos4.png"))); // NOI18N
         getContentPane().add(lblBongo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, -1, 120));
 
+        btnComprarBongo1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarBongo1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarBongo1.setText("Comprar");
         getContentPane().add(btnComprarBongo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 110, 30));
 
+        btnComprarBongo2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarBongo2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarBongo2.setText("Comprar");
         getContentPane().add(btnComprarBongo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, 110, 30));
 
+        btnComprarBongo3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarBongo3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarBongo3.setText("Comprar");
         getContentPane().add(btnComprarBongo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 260, 110, 30));
 
+        btnComprarBongo4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarBongo4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarBongo4.setText("Comprar");
         getContentPane().add(btnComprarBongo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 260, 110, 30));
