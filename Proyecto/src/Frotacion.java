@@ -65,7 +65,7 @@ public class Frotacion extends Cordofonos {
     }
 
     @Override
-    public double calcularPrecio() {
+    public double calcularPrecio(String nombreInstr) {
         if(tipoInst.equals("Violin")){
             this.precioInst=(precioMaterialV*(peso*tamaño))+(precioColorV*tamaño)+precioMarcaV;
         } 
@@ -73,7 +73,7 @@ public class Frotacion extends Cordofonos {
     }
 
     @Override
-    public double calcularDescuento() {
+    public double calcularDescuento(String nombreInstr) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
