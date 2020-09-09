@@ -17,12 +17,12 @@ public class Raspados extends Ideofonos{
     }
 
     @Override
-    public double calcularPrecio() {
+    public double calcularPrecio(String nombreInstr) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public double calcularDescuento() {
+    public double calcularDescuento(String nombreInstr) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

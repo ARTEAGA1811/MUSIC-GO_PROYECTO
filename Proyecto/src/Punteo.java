@@ -13,6 +13,8 @@ public class Punteo extends Cordofonos {
     double precioMaterial;
     double precioColor;
     double precioMarca;
+    double precioInstDescuento;
+    
     public Punteo(String materialInst, String color, double tamaño, double peso, String marca) {
         this.materialInst = materialInst;
         this.color = color;
@@ -32,7 +34,7 @@ public class Punteo extends Cordofonos {
         if (this.materialInst.equals("Cedro")) {
             this.precioMaterial =20;
         } else {
-            if (this.materialInst.equals("Sapele")) {
+            if (this.materialInst.equals("Sauce")) {
                 this.precioMaterial =15.68;
             }
         }
@@ -41,13 +43,17 @@ public class Punteo extends Cordofonos {
             this.precioColor=0.076;
         }else{
             if(this.color.equals("Cafe")){
-                this.precioColor=0.08;
+                this.precioColor=0.076;
             }else{
                 if(this.color.equals("Natural")){
                     this.precioColor=0.05;
                 }else{
-                    if(this.color.equals("Aceite de linaza ")){
+                    if(this.color.equals("Aceite de linaza")){
                         this.precioColor=0.051;
+                    }else{
+                        if(this.color.equals("Rojo")){
+                            this.precioColor=0.076;
+                        }
                     }
                 }
             }
@@ -58,7 +64,11 @@ public class Punteo extends Cordofonos {
             this.precioMarca=80;
         }else{
             if(this.marca.equals("VINTAGE")){
-                this.precioMarca=30;
+                this.precioMarca=55;
+            }else{
+                if(this.marca.equals("YAMAHA")){
+                    this.precioMarca=30;
+                }
             }             
         }
         //Marcas de arpas
@@ -77,19 +87,23 @@ public class Punteo extends Cordofonos {
     }
 
     @Override
-    public double calcularPrecio() {
-        if(tipoInst.equals("Guitarra Acústica")){
+    public double calcularPrecio(String nombreInstr) {
+        if(nombreInstr.equals("Guitarra Acústica")){
             this.precioInst=(precioMaterial*(peso*tamaño))+(precioColor*tamaño)+precioMarca;
+            this.precioInst=precioInst-(precioInst*precioInstDescuento);
         }        
-        if(tipoInst.equals("Arpa")){
+        if(nombreInstr.equals("Arpa")){
             this.precioInst=(precioMaterial*(peso*tamaño))+(precioColor*tamaño)+precioMarca;   
         }
         return precioInst;
     }
 
     @Override
-    public double calcularDescuento() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double calcularDescuento(String nombreInstr) {
+        if(nombreInstr.equals("Guitarra Acústica")){
+            this.precioInstDescuento=precioInst-(precioInst*0.15);
+        }
+        return precioInstDescuento;
     }
     
 }
