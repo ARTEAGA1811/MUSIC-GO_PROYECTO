@@ -98,21 +98,41 @@ public class GUI_Principiante extends javax.swing.JFrame {
         btnComprarTecladoM.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTecladoM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTecladoM.setText("Comprar");
+        btnComprarTecladoM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarTecladoMActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarTecladoM, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, -1, -1));
 
         btnComprarVoilinM.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarVoilinM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarVoilinM.setText("Comprar");
+        btnComprarVoilinM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarVoilinMActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarVoilinM, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, -1, -1));
 
         btnComprarGuitarraM.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGuitarraM.setText("Comprar");
+        btnComprarGuitarraM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarGuitarraMActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarGuitarraM, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 350, -1, -1));
 
         btnComprarFlautaM.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarFlautaM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarFlautaM.setText("Comprar");
+        btnComprarFlautaM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarFlautaMActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarFlautaM, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 350, -1, -1));
 
         lblInfo2.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
@@ -127,10 +147,38 @@ public class GUI_Principiante extends javax.swing.JFrame {
 
     private void btnMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuPrincipalActionPerformed
         // TODO add your handling code here:
-        GUI_Proyecto  menuPrincipal = new GUI_Proyecto();
+        GUI_MenuPrincipal  menuPrincipal = new GUI_MenuPrincipal();
         menuPrincipal.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnMenuPrincipalActionPerformed
+
+    private void btnComprarTecladoMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTecladoMActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarTecladoMActionPerformed
+
+    private void btnComprarVoilinMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarVoilinMActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarVoilinMActionPerformed
+
+    private void btnComprarGuitarraMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraMActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarGuitarraMActionPerformed
+
+    private void btnComprarFlautaMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlautaMActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarFlautaMActionPerformed
 
     /**
      * @param args the command line arguments

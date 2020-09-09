@@ -68,21 +68,41 @@ public class GUI_Trompeta extends javax.swing.JFrame {
         btnComprarTrompeta1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTrompeta1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTrompeta1.setText("Comprar");
+        btnComprarTrompeta1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarTrompeta1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarTrompeta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 110, 30));
 
         btnComprarTrompeta2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTrompeta2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTrompeta2.setText("Comprar");
+        btnComprarTrompeta2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarTrompeta2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarTrompeta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 110, 30));
 
         btnComprarTrompeta3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTrompeta3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTrompeta3.setText("Comprar");
+        btnComprarTrompeta3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarTrompeta3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarTrompeta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 330, 110, 30));
 
         btnComprarTrompeta4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTrompeta4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTrompeta4.setText("Comprar");
+        btnComprarTrompeta4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarTrompeta4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarTrompeta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 330, 110, 30));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -105,6 +125,34 @@ public class GUI_Trompeta extends javax.swing.JFrame {
         intrumentoViento.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasVientoActionPerformed
+
+    private void btnComprarTrompeta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta1ActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarTrompeta1ActionPerformed
+
+    private void btnComprarTrompeta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta2ActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarTrompeta2ActionPerformed
+
+    private void btnComprarTrompeta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta3ActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarTrompeta3ActionPerformed
+
+    private void btnComprarTrompeta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta4ActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarTrompeta4ActionPerformed
 
     /**
      * @param args the command line arguments

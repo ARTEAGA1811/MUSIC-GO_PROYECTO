@@ -68,21 +68,41 @@ public class GUI_Saxofon extends javax.swing.JFrame {
         btnComprarSaxofon1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarSaxofon1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarSaxofon1.setText("Comprar");
+        btnComprarSaxofon1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarSaxofon1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarSaxofon1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 110, 30));
 
         btnComprarSaxofon2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarSaxofon2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarSaxofon2.setText("Comprar");
+        btnComprarSaxofon2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarSaxofon2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarSaxofon2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 110, 30));
 
         btnComprarSaxofon3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarSaxofon3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarSaxofon3.setText("Comprar");
+        btnComprarSaxofon3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarSaxofon3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarSaxofon3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 310, 110, 30));
 
         btnComprarSaxofon4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarSaxofon4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarSaxofon4.setText("Comprar");
+        btnComprarSaxofon4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarSaxofon4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarSaxofon4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 310, 110, 30));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -105,6 +125,34 @@ public class GUI_Saxofon extends javax.swing.JFrame {
         intrumentoViento.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasVientoActionPerformed
+
+    private void btnComprarSaxofon1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarSaxofon1ActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarSaxofon1ActionPerformed
+
+    private void btnComprarSaxofon2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarSaxofon2ActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarSaxofon2ActionPerformed
+
+    private void btnComprarSaxofon3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarSaxofon3ActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarSaxofon3ActionPerformed
+
+    private void btnComprarSaxofon4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarSaxofon4ActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarSaxofon4ActionPerformed
 
     /**
      * @param args the command line arguments
