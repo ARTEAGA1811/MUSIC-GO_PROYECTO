@@ -5,6 +5,7 @@
  */
 
 
+import java.util.Date;
 import javax.swing.JOptionPane;
 
 /**
@@ -21,29 +22,101 @@ public class MusicoProfesional extends Cliente{
         this.tipoCliente = "Músico Profesional";
     }
     
-    public void paseVip(){
+    public boolean esPaseVip(String codigoVip){
         /*
         CLAVE 3 DÍGITOS Y DOS LETRAS (135PS, 1NH46, A913M)
-        SUMA DE DÍGITOS SE 8 O 12 (F35J4, NH812, 
+        SUMA DE DÍGITOS DE 12
         */
+        boolean esPaseVip = true;
+        int contadorNum=0;
+        int contadorLetras=0;
+        int sumaNum=0;
         
-        String msjPrincipal= "HA SIDO ACREEDOR DE UN PASE VIP\n";
-        String instComprado = "this.nombreInstrumento";
-        String precioInst = "this.precioInst";
-        
-        
-        
-        msjPrincipal += "Nombre: "+nombreCliente+"\n"+
-                        "Apellido: "+apellido+"'n"+
-                        "CI: "+cedula+"\n";
-        
-        System.out.print(msjPrincipal);
+        try{
+            if(codigoVip.length() == 5){
+                char[] arrayCodigovip = codigoVip.toCharArray();
+                System.out.println(arrayCodigovip);
+                
+                for(int i=0; i<codigoVip.length();i++){
+                    if(Character.isLetter(arrayCodigovip[i])){
+                        contadorLetras++;
+                    }
+                    else if (Character.isDigit(arrayCodigovip[i])){
+                        contadorNum++;
+                        sumaNum += Character.getNumericValue(arrayCodigovip[i]);
+                    }
+                }
+                
+                if(contadorLetras == 2 && contadorNum == 3 && sumaNum == 12){
+                    esPaseVip = true;
+                    JOptionPane.showMessageDialog(null, "Su pase Vip ha sido activado");
+                }
+                else{
+                    esPaseVip = false;
+                    JOptionPane.showMessageDialog(null, "Su código no es válido");
+                }
+                
+            }
+            else{
+                esPaseVip = false;
+                JOptionPane.showMessageDialog(null, "El código debe tener 5 caracteres");
+            }
+        }
+        catch(Exception e){
+            esPaseVip = false;
+            JOptionPane.showMessageDialog(null, "El código no es válido!!");
+        }
+        return esPaseVip;
     }
 
     @Override
-    public void compraInstrumento() {
-         String Factura = "\t******FACTURA******";        
+    public String compraInstrumento(String nomTarjeta, 
+                                    String numTarjeta, 
+                                    String fechaCaducidad, 
+                                    String cvv, 
+                                    String direccion,
+                                    String nomInstrumento, 
+                                    int cantidad, 
+                                    double precioInst,
+                                    double descuentoEXTRA) {
         
+        int numFactura = (int) (Math.random() * 5000) + 1;
+        double descuento = (cantidad*precioInst)*0.10 + (cantidad*precioInst)*descuentoEXTRA;
+        double iva = (cantidad*precioInst)*0.12;
+        double subtotal = cantidad*precioInst;
+        double total = subtotal + iva - descuento;
+        
+        //EMITIR FACTURA
+        if( numTarjeta.length()== 16 && fechaCaducidad.matches("[0-9][0-9][/][0-9][0-9]") && cvv.length() == 3){
+        
+            java.util.Date fecha = new Date();
+            String factura = "\t______________________FACTURA_________________________\n"+
+                             "\t____________________MUSIC-GO S.A._____________________\n\n"+
+                    
+                            "\tN° Factura: "+numFactura +"\n"+
+                            "\tNombre Cliente: "+this.nombreCliente +"\n"+
+                            "\tApellido Cliente: "+this.apellido +"\n"+
+                            "\tCédula / RUC: "+this.cedula +"\n"+
+                            "\tDirección: "+direccion +"\n"+
+                            "\tFecha emisión: "+fecha.toString()+"\n\n"+
+                    
+                            "\t____________________________________________________\n"+
+                            "\t                                              \n"+
+                            "\t CANT.        DESCRIPCIÓN     PRECIO UNITARIO \n"+
+                            "\t____________________________________________________\n"+
+                            "\t "+cantidad+"            "+nomInstrumento+"             "+precioInst+"\n"+
+                           "\t____________________________________________________\n\n"+
+                            "\t             SUBTOTAL:      "+subtotal+" \n"+
+                            "\t             DESCUENTO:     "+descuento+" \n"+
+                            "\t             IVA:           "+iva+" \n"+
+                            "\t             TOTAL:         "+total+" \n";
+
+        return factura;  
+        }
+        else{
+            return "No se pudo emitir su compra";
+        }       
+       
     }
 
     

@@ -15,7 +15,15 @@ public abstract class Cliente implements Identidad  {
     
     
     //METODOS
-    public abstract void compraInstrumento();
+    public abstract String compraInstrumento(String nomTarjeta, 
+                                                String numTarjeta, 
+                                                String fechaCaducidad, 
+                                                String cvv, 
+                                                String direccion, 
+                                                String nomInstrumento, 
+                                                int cantidad, 
+                                                double precioInstrumento,
+                                                double descuentoEXTRA);
 
     @Override
     public String toString() {

@@ -5,6 +5,7 @@
  */
 
 
+import java.util.Date;
 import javax.swing.JOptionPane;
 
 /**
@@ -15,8 +16,52 @@ public class PersonaJuridica extends Cliente{
     private String ruc;
 
     @Override
-    public void compraInstrumento() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String compraInstrumento(String nomTarjeta, 
+                                    String numTarjeta, 
+                                    String fechaCaducidad, 
+                                    String cvv, 
+                                    String direccion,
+                                    String nomInstrumento, 
+                                    int cantidad, 
+                                    double precioInst,
+                                    double descuentoEXTRA) {
+        
+        int numFactura = (int) (Math.random() * 5000) + 1;
+        double descuento = (cantidad*precioInst)*descuentoEXTRA;
+        double iva = (cantidad*precioInst)*0.12;
+        double subtotal = cantidad*precioInst;
+        double total = subtotal + iva - descuento;
+        
+        //EMITIR FACTURA
+        if( numTarjeta.length()== 16 && fechaCaducidad.matches("[0-9][0-9][/][0-9][0-9]") && cvv.length() == 3){
+        
+            java.util.Date fecha = new Date();
+            String factura = "\t______________________FACTURA_________________________\n"+
+                             "\t____________________MUSIC-GO S.A._____________________\n\n"+
+                    
+                            "\tN° Factura: "+numFactura +"\n"+
+                            "\tNombre Cliente: "+this.nombreCliente +"\n"+
+                            "\tCédula / RUC: "+this.ruc +"\n"+
+                            "\tDirección: "+direccion +"\n"+
+                            "\tFecha emisión: "+fecha.toString()+"\n\n"+
+                    
+                            "\t____________________________________________________\n"+
+                            "\t                                              \n"+
+                            "\t CANT.        DESCRIPCIÓN     PRECIO UNITARIO \n"+
+                            "\t____________________________________________________\n"+
+                            "\t "+cantidad+"            "+nomInstrumento+"             "+precioInst+"\n"+
+                           "\t____________________________________________________\n\n"+
+                            "\t             SUBTOTAL:      "+subtotal+" \n"+
+                            "\t             DESCUENTO:     "+descuento+" \n"+
+                            "\t             IVA:           "+iva+" \n"+
+                            "\t             TOTAL:         "+total+" \n";
+
+        return factura;  
+        }
+        else{
+            return "No se pudo emitir su compra";
+        }       
+       
     }
 
     
