@@ -68,41 +68,21 @@ public class GUI_Flauta extends javax.swing.JFrame {
         btnComprarFlauta1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarFlauta1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarFlauta1.setText("Comprar");
-        btnComprarFlauta1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarFlauta1ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarFlauta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, 110, 30));
 
         btnComprarFlauta2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarFlauta2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarFlauta2.setText("Comprar");
-        btnComprarFlauta2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarFlauta2ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarFlauta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 110, 30));
 
         btnComprarFlauta3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarFlauta3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarFlauta3.setText("Comprar");
-        btnComprarFlauta3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarFlauta3ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarFlauta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 340, 110, 30));
 
         btnComprarFlauta4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarFlauta4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarFlauta4.setText("Comprar");
-        btnComprarFlauta4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarFlauta4ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarFlauta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 340, 110, 30));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -125,34 +105,6 @@ public class GUI_Flauta extends javax.swing.JFrame {
         intrumentoViento.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasVientoActionPerformed
-
-    private void btnComprarFlauta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlauta1ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarFlauta1ActionPerformed
-
-    private void btnComprarFlauta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlauta2ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarFlauta2ActionPerformed
-
-    private void btnComprarFlauta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlauta3ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarFlauta3ActionPerformed
-
-    private void btnComprarFlauta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlauta4ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarFlauta4ActionPerformed
 
     /**
      * @param args the command line arguments

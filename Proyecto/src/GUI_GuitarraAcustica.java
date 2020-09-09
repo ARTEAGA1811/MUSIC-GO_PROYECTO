@@ -68,41 +68,21 @@ public class GUI_GuitarraAcustica extends javax.swing.JFrame {
         btnComprarGuitarraA1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraA1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGuitarraA1.setText("Comprar");
-        btnComprarGuitarraA1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarGuitarraA1ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarGuitarraA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 110, 30));
 
         btnComprarGuitarraA2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraA2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGuitarraA2.setText("Comprar");
-        btnComprarGuitarraA2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarGuitarraA2ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarGuitarraA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 110, 30));
 
         btnComprarGuitarraA3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraA3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGuitarraA3.setText("Comprar");
-        btnComprarGuitarraA3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarGuitarraA3ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarGuitarraA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 310, 110, 30));
 
         btnComprarGuitarraA4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraA4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGuitarraA4.setText("Comprar");
-        btnComprarGuitarraA4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarGuitarraA4ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarGuitarraA4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 310, 110, 30));
 
         lblInfo.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
@@ -125,34 +105,6 @@ public class GUI_GuitarraAcustica extends javax.swing.JFrame {
         menuCuerdas.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasCuerdasActionPerformed
-
-    private void btnComprarGuitarraA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraA1ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarGuitarraA1ActionPerformed
-
-    private void btnComprarGuitarraA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraA2ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarGuitarraA2ActionPerformed
-
-    private void btnComprarGuitarraA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraA3ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarGuitarraA3ActionPerformed
-
-    private void btnComprarGuitarraA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraA4ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarGuitarraA4ActionPerformed
 
     /**
      * @param args the command line arguments

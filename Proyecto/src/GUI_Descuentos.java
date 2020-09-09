@@ -91,41 +91,21 @@ public class GUI_Descuentos extends javax.swing.JFrame {
         btnComprarFlautaconDesceunto10.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarFlautaconDesceunto10.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarFlautaconDesceunto10.setText("Comprar");
-        btnComprarFlautaconDesceunto10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarFlautaconDesceunto10ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarFlautaconDesceunto10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, -1, -1));
 
         btnComprarGuitarraConDescuento15.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraConDescuento15.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGuitarraConDescuento15.setText("Comprar");
-        btnComprarGuitarraConDescuento15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarGuitarraConDescuento15ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarGuitarraConDescuento15, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, -1, -1));
 
         btnComprarBateriaConDescuento25.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarBateriaConDescuento25.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarBateriaConDescuento25.setText("Comprar");
-        btnComprarBateriaConDescuento25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarBateriaConDescuento25ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarBateriaConDescuento25, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 340, -1, -1));
 
         btnComprarTecladoConDescuento50.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTecladoConDescuento50.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTecladoConDescuento50.setText("Comprar");
-        btnComprarTecladoConDescuento50.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarTecladoConDescuento50ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarTecladoConDescuento50, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 340, -1, -1));
 
         lblInfo.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
@@ -140,38 +120,10 @@ public class GUI_Descuentos extends javax.swing.JFrame {
 
     private void btnMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuPrincipalActionPerformed
         // TODO add your handling code here:
-        GUI_MenuPrincipal  menuPrincipal = new GUI_MenuPrincipal();
+        GUI_Proyecto  menuPrincipal = new GUI_Proyecto();
         menuPrincipal.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnMenuPrincipalActionPerformed
-
-    private void btnComprarFlautaconDesceunto10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlautaconDesceunto10ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarFlautaconDesceunto10ActionPerformed
-
-    private void btnComprarGuitarraConDescuento15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraConDescuento15ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarGuitarraConDescuento15ActionPerformed
-
-    private void btnComprarBateriaConDescuento25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarBateriaConDescuento25ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarBateriaConDescuento25ActionPerformed
-
-    private void btnComprarTecladoConDescuento50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTecladoConDescuento50ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarTecladoConDescuento50ActionPerformed
 
     /**
      * @param args the command line arguments

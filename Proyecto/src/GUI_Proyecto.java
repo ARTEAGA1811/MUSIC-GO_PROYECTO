@@ -8,12 +8,12 @@
  *
  * @author Tim
  */
-public class GUI_MenuPrincipal extends javax.swing.JFrame {
+public class GUI_Proyecto extends javax.swing.JFrame {
 
     /**
      * Creates new form GuiProyecto
      */
-    public GUI_MenuPrincipal() {
+    public GUI_Proyecto() {
         initComponents();
         setLocationRelativeTo(null);
     }
@@ -158,7 +158,7 @@ public class GUI_MenuPrincipal extends javax.swing.JFrame {
         lblFondo.setForeground(new java.awt.Color(255, 255, 255));
         lblFondo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondofondo1_3.png"))); // NOI18N
-        getContentPane().add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 470));
+        getContentPane().add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 860, 470));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -240,18 +240,14 @@ public class GUI_MenuPrincipal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GUI_MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI_Proyecto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GUI_MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI_Proyecto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GUI_MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI_Proyecto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GUI_MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI_Proyecto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -260,7 +256,7 @@ public class GUI_MenuPrincipal extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new GUI_MenuPrincipal().setVisible(true);
+                new GUI_Proyecto().setVisible(true);
             }
         });
     }

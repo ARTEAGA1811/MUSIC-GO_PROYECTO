@@ -63,31 +63,16 @@ public class GUI_Arpas extends javax.swing.JFrame {
         btnComprarArpa1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarArpa1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarArpa1.setText("Comprar");
-        btnComprarArpa1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarArpa1ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarArpa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, 110, 30));
 
         btnComprarArpa2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarArpa2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarArpa2.setText("Comprar");
-        btnComprarArpa2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarArpa2ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarArpa2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 340, 110, 30));
 
         btnComprarArpa3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarArpa3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarArpa3.setText("Comprar");
-        btnComprarArpa3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarArpa3ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarArpa3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 340, 110, 30));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -110,27 +95,6 @@ public class GUI_Arpas extends javax.swing.JFrame {
         menuCuerdas.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasCuerdasActionPerformed
-
-    private void btnComprarArpa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarArpa1ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarArpa1ActionPerformed
-
-    private void btnComprarArpa2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarArpa2ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarArpa2ActionPerformed
-
-    private void btnComprarArpa3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarArpa3ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarArpa3ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -68,41 +68,21 @@ public class GUI_Congas extends javax.swing.JFrame {
         btnComprarConga1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarConga1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarConga1.setText("Comprar");
-        btnComprarConga1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarConga1ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarConga1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, 110, 30));
 
         btnComprarConga2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarConga2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarConga2.setText("Comprar");
-        btnComprarConga2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarConga2ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarConga2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, 110, 30));
 
         btnComprarConga3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarConga3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarConga3.setText("Comprar");
-        btnComprarConga3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarConga3ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarConga3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 330, 110, 30));
 
         btnComprarConga4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarConga4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarConga4.setText("Comprar");
-        btnComprarConga4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarConga4ActionPerformed(evt);
-            }
-        });
         getContentPane().add(btnComprarConga4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 330, 110, 30));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -125,34 +105,6 @@ public class GUI_Congas extends javax.swing.JFrame {
         percusion.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasPercusionActionPerformed
-
-    private void btnComprarConga1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarConga1ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarConga1ActionPerformed
-
-    private void btnComprarConga2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarConga2ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarConga2ActionPerformed
-
-    private void btnComprarConga3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarConga3ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarConga3ActionPerformed
-
-    private void btnComprarConga4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarConga4ActionPerformed
-        // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_btnComprarConga4ActionPerformed
 
     /**
      * @param args the command line arguments
