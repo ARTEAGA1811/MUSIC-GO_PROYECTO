@@ -58,11 +58,21 @@ public class GUI_Organo extends javax.swing.JFrame {
         btnComprarOrgano1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarOrgano1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarOrgano1.setText("Comprar");
+        btnComprarOrgano1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarOrgano1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarOrgano1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 110, 30));
 
         btnComprarOrgano2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarOrgano2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarOrgano2.setText("Comprar");
+        btnComprarOrgano2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarOrgano2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarOrgano2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 370, 110, 30));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -85,6 +95,20 @@ public class GUI_Organo extends javax.swing.JFrame {
         piano.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasTecladoActionPerformed
+
+    private void btnComprarOrgano1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarOrgano1ActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarOrgano1ActionPerformed
+
+    private void btnComprarOrgano2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarOrgano2ActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarOrgano2ActionPerformed
 
     /**
      * @param args the command line arguments

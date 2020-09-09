@@ -89,21 +89,41 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
         btnComprarBongoNuevo.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarBongoNuevo.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarBongoNuevo.setText("Comprar");
+        btnComprarBongoNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarBongoNuevoActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarBongoNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, -1, -1));
 
         btnComprarBateriaNuevo.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarBateriaNuevo.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarBateriaNuevo.setText("Comprar");
+        btnComprarBateriaNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarBateriaNuevoActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarBateriaNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 340, -1, -1));
 
         btnComprarSAxofonNuevo.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarSAxofonNuevo.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarSAxofonNuevo.setText("Comprar");
+        btnComprarSAxofonNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarSAxofonNuevoActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarSAxofonNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 340, -1, -1));
 
         btnComprarGuitarraElecNuevo.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraElecNuevo.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGuitarraElecNuevo.setText("Comprar");
+        btnComprarGuitarraElecNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarGuitarraElecNuevoActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarGuitarraElecNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 340, -1, -1));
 
         lblInfo.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
@@ -119,10 +139,38 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
 
     private void btnMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuPrincipalActionPerformed
         // TODO add your handling code here:
-        GUI_Proyecto  menuPrincipal = new GUI_Proyecto();
+        GUI_MenuPrincipal  menuPrincipal = new GUI_MenuPrincipal();
         menuPrincipal.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnMenuPrincipalActionPerformed
+
+    private void btnComprarBongoNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarBongoNuevoActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarBongoNuevoActionPerformed
+
+    private void btnComprarBateriaNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarBateriaNuevoActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarBateriaNuevoActionPerformed
+
+    private void btnComprarSAxofonNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarSAxofonNuevoActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarSAxofonNuevoActionPerformed
+
+    private void btnComprarGuitarraElecNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraElecNuevoActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarGuitarraElecNuevoActionPerformed
 
     /**
      * @param args the command line arguments

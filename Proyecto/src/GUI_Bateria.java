@@ -63,16 +63,31 @@ public class GUI_Bateria extends javax.swing.JFrame {
         btnBateria1.setBackground(new java.awt.Color(255, 255, 255));
         btnBateria1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnBateria1.setText("Comprar");
+        btnBateria1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBateria1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnBateria1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 110, 30));
 
         btnBateria2.setBackground(new java.awt.Color(255, 255, 255));
         btnBateria2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnBateria2.setText("Comprar");
+        btnBateria2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBateria2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnBateria2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 110, 30));
 
         btnBateria3.setBackground(new java.awt.Color(255, 255, 255));
         btnBateria3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnBateria3.setText("Comprar");
+        btnBateria3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBateria3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnBateria3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 310, 110, 30));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -95,6 +110,27 @@ public class GUI_Bateria extends javax.swing.JFrame {
         percusion.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasPercusionActionPerformed
+
+    private void btnBateria1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBateria1ActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnBateria1ActionPerformed
+
+    private void btnBateria2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBateria2ActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnBateria2ActionPerformed
+
+    private void btnBateria3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBateria3ActionPerformed
+        // TODO add your handling code here:
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnBateria3ActionPerformed
 
     /**
      * @param args the command line arguments
