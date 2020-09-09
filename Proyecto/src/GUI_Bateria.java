@@ -113,22 +113,22 @@ public class GUI_Bateria extends javax.swing.JFrame {
 
     private void btnBateria1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBateria1ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesBateria opcionesCompra = new GUI_OpcionesBateria();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnBateria1ActionPerformed
 
     private void btnBateria2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBateria2ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesBateria opcionesCompra = new GUI_OpcionesBateria();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnBateria2ActionPerformed
 
     private void btnBateria3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBateria3ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesBateria opcionesCompra = new GUI_OpcionesBateria();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnBateria3ActionPerformed
 

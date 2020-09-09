@@ -113,22 +113,22 @@ public class GUI_Arpas extends javax.swing.JFrame {
 
     private void btnComprarArpa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarArpa1ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+       GUI_OpcionesArpa opcionesCompra  = new GUI_OpcionesArpa();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarArpa1ActionPerformed
 
     private void btnComprarArpa2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarArpa2ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesArpa opcionesCompra  = new GUI_OpcionesArpa();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarArpa2ActionPerformed
 
     private void btnComprarArpa3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarArpa3ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesArpa opcionesCompra  = new GUI_OpcionesArpa();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarArpa3ActionPerformed
 

@@ -98,14 +98,14 @@ public class GUI_MenuPrincipal extends javax.swing.JFrame {
         getContentPane().add(btnMarcas, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 110, 40));
 
         bntPrincipiante.setBackground(new java.awt.Color(255, 255, 255));
-        bntPrincipiante.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        bntPrincipiante.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         bntPrincipiante.setText("Click aquí");
         bntPrincipiante.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bntPrincipianteActionPerformed(evt);
             }
         });
-        getContentPane().add(bntPrincipiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 80, 130, 40));
+        getContentPane().add(bntPrincipiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 80, 140, 40));
 
         lblLogoPrincipalMarca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/LogoPrincipalMarca1.png"))); // NOI18N
         getContentPane().add(lblLogoPrincipalMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 200, 50));
@@ -145,7 +145,7 @@ public class GUI_MenuPrincipal extends javax.swing.JFrame {
 
         lblPrincipiante.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblPrincipiante.setText("¿Principiante?");
-        getContentPane().add(lblPrincipiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 50, -1, -1));
+        getContentPane().add(lblPrincipiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 50, 120, -1));
 
         lblRedes.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblRedes.setText("Contáctanos");

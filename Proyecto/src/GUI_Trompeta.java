@@ -128,29 +128,29 @@ public class GUI_Trompeta extends javax.swing.JFrame {
 
     private void btnComprarTrompeta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta1ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesTrompeta OpcionesCompra  = new GUI_OpcionesTrompeta();
+        OpcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarTrompeta1ActionPerformed
 
     private void btnComprarTrompeta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta2ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesTrompeta OpcionesCompra  = new GUI_OpcionesTrompeta();
+        OpcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarTrompeta2ActionPerformed
 
     private void btnComprarTrompeta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta3ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesTrompeta OpcionesCompra  = new GUI_OpcionesTrompeta();
+        OpcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarTrompeta3ActionPerformed
 
     private void btnComprarTrompeta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta4ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesTrompeta OpcionesCompra  = new GUI_OpcionesTrompeta();
+        OpcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarTrompeta4ActionPerformed
 

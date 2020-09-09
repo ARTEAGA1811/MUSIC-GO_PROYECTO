@@ -113,22 +113,22 @@ public class GUI_Piano extends javax.swing.JFrame {
 
     private void btnComprarPiano1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarPiano1ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesPiano opcionesPiano  = new GUI_OpcionesPiano();
+        opcionesPiano.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarPiano1ActionPerformed
 
     private void btnComprarPiano2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarPiano2ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesPiano opcionesPiano  = new GUI_OpcionesPiano();
+        opcionesPiano.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarPiano2ActionPerformed
 
     private void btnComprarPiano3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarPiano3ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesPiano opcionesPiano  = new GUI_OpcionesPiano();
+        opcionesPiano.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarPiano3ActionPerformed
 

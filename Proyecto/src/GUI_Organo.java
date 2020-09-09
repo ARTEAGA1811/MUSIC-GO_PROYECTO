@@ -98,15 +98,15 @@ public class GUI_Organo extends javax.swing.JFrame {
 
     private void btnComprarOrgano1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarOrgano1ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesOrgano Opcionescompra  = new GUI_OpcionesOrgano();
+        Opcionescompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarOrgano1ActionPerformed
 
     private void btnComprarOrgano2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarOrgano2ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesOrgano Opcionescompra  = new GUI_OpcionesOrgano();
+        Opcionescompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarOrgano2ActionPerformed
 

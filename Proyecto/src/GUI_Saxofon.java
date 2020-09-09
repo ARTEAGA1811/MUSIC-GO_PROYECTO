@@ -16,6 +16,7 @@ public class GUI_Saxofon extends javax.swing.JFrame {
     public GUI_Saxofon() {
         initComponents();
         setLocationRelativeTo(null);
+        
     }
 
     /**
@@ -128,29 +129,29 @@ public class GUI_Saxofon extends javax.swing.JFrame {
 
     private void btnComprarSaxofon1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarSaxofon1ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesSaxofon opcionesCompra  = new GUI_OpcionesSaxofon();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarSaxofon1ActionPerformed
 
     private void btnComprarSaxofon2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarSaxofon2ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesSaxofon opcionesCompra  = new GUI_OpcionesSaxofon();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarSaxofon2ActionPerformed
 
     private void btnComprarSaxofon3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarSaxofon3ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesSaxofon opcionesCompra  = new GUI_OpcionesSaxofon();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarSaxofon3ActionPerformed
 
     private void btnComprarSaxofon4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarSaxofon4ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesSaxofon opcionesCompra  = new GUI_OpcionesSaxofon();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarSaxofon4ActionPerformed
 

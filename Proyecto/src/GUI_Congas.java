@@ -128,29 +128,29 @@ public class GUI_Congas extends javax.swing.JFrame {
 
     private void btnComprarConga1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarConga1ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesConga opcionesCompra  = new GUI_OpcionesConga();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarConga1ActionPerformed
 
     private void btnComprarConga2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarConga2ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesConga opcionesCompra  = new GUI_OpcionesConga();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarConga2ActionPerformed
 
     private void btnComprarConga3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarConga3ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesConga opcionesCompra  = new GUI_OpcionesConga();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarConga3ActionPerformed
 
     private void btnComprarConga4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarConga4ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesConga opcionesCompra  = new GUI_OpcionesConga();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarConga4ActionPerformed
 

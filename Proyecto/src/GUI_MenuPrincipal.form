@@ -140,7 +140,7 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="18" style="1"/>
+          <Font name="Times New Roman" size="20" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Click aqu&#xed;"/>
       </Properties>
@@ -149,7 +149,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="680" y="80" width="130" height="40"/>
+          <AbsoluteConstraints x="690" y="80" width="140" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -281,7 +281,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="680" y="50" width="-1" height="-1"/>
+          <AbsoluteConstraints x="700" y="50" width="120" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

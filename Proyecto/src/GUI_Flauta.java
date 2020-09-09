@@ -128,29 +128,29 @@ public class GUI_Flauta extends javax.swing.JFrame {
 
     private void btnComprarFlauta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlauta1ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesFlauta opcionesCompra = new GUI_OpcionesFlauta();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarFlauta1ActionPerformed
 
     private void btnComprarFlauta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlauta2ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesFlauta opcionesCompra = new GUI_OpcionesFlauta();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarFlauta2ActionPerformed
 
     private void btnComprarFlauta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlauta3ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesFlauta opcionesCompra = new GUI_OpcionesFlauta();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarFlauta3ActionPerformed
 
     private void btnComprarFlauta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlauta4ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesFlauta opcionesCompra = new GUI_OpcionesFlauta();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarFlauta4ActionPerformed
 

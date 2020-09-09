@@ -128,29 +128,29 @@ public class GUI_TecladoElectrico extends javax.swing.JFrame {
 
     private void btnTecladoE1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTecladoE1ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesTecladoElectrico OpcionesCompra  = new GUI_OpcionesTecladoElectrico();
+        OpcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnTecladoE1ActionPerformed
 
     private void btnTecladoE2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTecladoE2ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesTecladoElectrico OpcionesCompra  = new GUI_OpcionesTecladoElectrico();
+        OpcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnTecladoE2ActionPerformed
 
     private void btnTecladoE3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTecladoE3ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesTecladoElectrico OpcionesCompra  = new GUI_OpcionesTecladoElectrico();
+        OpcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnTecladoE3ActionPerformed
 
     private void btnTecladoE4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTecladoE4ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesTecladoElectrico OpcionesCompra  = new GUI_OpcionesTecladoElectrico();
+        OpcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnTecladoE4ActionPerformed
 

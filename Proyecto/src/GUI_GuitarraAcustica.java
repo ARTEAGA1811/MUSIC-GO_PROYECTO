@@ -128,29 +128,29 @@ public class GUI_GuitarraAcustica extends javax.swing.JFrame {
 
     private void btnComprarGuitarraA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraA1ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesGuitarraAcustica opcionesCompra  = new GUI_OpcionesGuitarraAcustica();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarGuitarraA1ActionPerformed
 
     private void btnComprarGuitarraA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraA2ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesGuitarraAcustica opcionesCompra  = new GUI_OpcionesGuitarraAcustica();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarGuitarraA2ActionPerformed
 
     private void btnComprarGuitarraA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraA3ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesGuitarraAcustica opcionesCompra  = new GUI_OpcionesGuitarraAcustica();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarGuitarraA3ActionPerformed
 
     private void btnComprarGuitarraA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraA4ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesGuitarraAcustica opcionesCompra  = new GUI_OpcionesGuitarraAcustica();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarGuitarraA4ActionPerformed
 

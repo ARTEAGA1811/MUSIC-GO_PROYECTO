@@ -140,7 +140,7 @@ public class GUI_Principiante extends javax.swing.JFrame {
         getContentPane().add(lblInfo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 400, 400, 40));
 
         lblFondoPrincipiante.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesFondos/Fondo1.png"))); // NOI18N
-        getContentPane().add(lblFondoPrincipiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 470));
+        getContentPane().add(lblFondoPrincipiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 470));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

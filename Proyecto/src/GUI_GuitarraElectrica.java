@@ -128,29 +128,29 @@ public class GUI_GuitarraElectrica extends javax.swing.JFrame {
 
     private void btnComprarGE1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGE1ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesGuitarraElectrica opcionesCompra  = new GUI_OpcionesGuitarraElectrica();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarGE1ActionPerformed
 
     private void btnComprarGE2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGE2ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesGuitarraElectrica opcionesCompra  = new GUI_OpcionesGuitarraElectrica();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarGE2ActionPerformed
 
     private void btnComprarGE3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGE3ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesGuitarraElectrica opcionesCompra  = new GUI_OpcionesGuitarraElectrica();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarGE3ActionPerformed
 
     private void btnComprarGE4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGE4ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesGuitarraElectrica opcionesCompra  = new GUI_OpcionesGuitarraElectrica();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarGE4ActionPerformed
 

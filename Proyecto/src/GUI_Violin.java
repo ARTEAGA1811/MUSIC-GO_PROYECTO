@@ -122,36 +122,36 @@ public class GUI_Violin extends javax.swing.JFrame {
 
     private void btnAtrasCuerdasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasCuerdasActionPerformed
         // TODO add your handling code here:
-        GUI_Cuerdas menucuerdas = new GUI_Cuerdas();
-        menucuerdas.setVisible(true);
+        GUI_Cuerdas menuCuerdas  = new GUI_Cuerdas();
+        menuCuerdas.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasCuerdasActionPerformed
 
     private void btnComprarViolin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolin1ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesViolines opcionesCompra  = new GUI_OpcionesViolines();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarViolin1ActionPerformed
 
     private void btnComprarViolin2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolin2ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+       GUI_OpcionesViolines opcionesCompra  = new GUI_OpcionesViolines();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarViolin2ActionPerformed
 
     private void btnComprarViolin3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolin3ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesViolines opcionesCompra  = new GUI_OpcionesViolines();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarViolin3ActionPerformed
 
     private void btnComprarViolin4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolin4ActionPerformed
         // TODO add your handling code here:
-        GUI_Compra compra  = new GUI_Compra();
-        compra.setVisible(true);
+        GUI_OpcionesViolines opcionesCompra  = new GUI_OpcionesViolines();
+        opcionesCompra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarViolin4ActionPerformed
 
