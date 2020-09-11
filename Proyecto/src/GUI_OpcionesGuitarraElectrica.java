@@ -289,9 +289,11 @@ public class GUI_OpcionesGuitarraElectrica extends javax.swing.JFrame {
 
         jPanelPeso.setBackground(new java.awt.Color(204, 255, 255));
 
+        buttonGroupPeso.add(rbtnPeso115);
         rbtnPeso115.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbtnPeso115.setText("1.15");
 
+        buttonGroupPeso.add(rbtnPeso175);
         rbtnPeso175.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         rbtnPeso175.setText("1.75");
 
