@@ -1,3 +1,6 @@
+
+import java.applet.AudioClip;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -51,9 +54,40 @@ public class Mecanico extends Aerofonos {
         }
     }
     
+    
+    public Mecanico (){}
+    
+    
+    
     @Override
-    public void producirSonido() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public  void producirSonido() { 
+        //Cambio, ahora ingresan parametros
+        
+        String algo = "organo1";
+        //SE VAN A EJECUTAR LOS ORGANOS
+        AudioClip sonido;
+        switch(algo){
+            case "organo1":
+                
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/organos/orUno.wav"));
+                sonido.play();
+            break;
+            
+            case "organo2":
+                
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/organos/orDos.wav"));
+                sonido.play();
+            break;
+            
+            default:
+                System.out.println("no se eligio sonido CORREGIRR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            break;    
+            
+        }
+        
+        
+        
+        
     }
 
     @Override

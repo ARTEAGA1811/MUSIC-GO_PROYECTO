@@ -1,3 +1,6 @@
+
+import java.applet.AudioClip;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -81,9 +84,64 @@ public class Punteo extends Cordofonos {
         }
     }
     
+    //constructor vacio
+    public Punteo(){}
+    
+    
     @Override
     public void producirSonido() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+         //se va a ejecutar el arpa |Guitarra
+         String algo = "arpa1";
+        //SE VAN A EJECUTAR ARPA |Guitarra
+        AudioClip sonido;
+        switch(algo){
+            
+            //ARPA
+            case "arpa1":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/arpas/aUno.wav"));
+                sonido.play();
+            break;
+            
+            case "arpa2":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/arpas/aDos.wav"));
+                sonido.play();
+            break;
+            
+            case "arpa3":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/arpas/aTres.wav"));
+                sonido.play();
+            break;
+            
+            
+            
+            
+            //GUITARRA 
+            case "guitarra1":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/guitarras/gUno.wav"));
+                sonido.play();
+            break;
+            
+            case "guitarra2":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/guitarras/gDos.wav"));
+                sonido.play();
+            break;
+            
+            case "guitarra3":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/guitarras/gTres.wav"));
+                sonido.play();
+            break;
+            
+            case "guitarra4":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/guitarras/gCuatro.wav"));
+                sonido.play();
+            break;
+            
+            
+            default:
+                System.out.println("no se eligio sonido CORREGIRR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            break;    
+        }
+         
     }
 
     @Override

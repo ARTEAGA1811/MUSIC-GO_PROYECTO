@@ -1,3 +1,6 @@
+
+import java.applet.AudioClip;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -59,9 +62,41 @@ public class Frotacion extends Cordofonos {
         }
     }  
     
+    //Constructor vacio
+    public Frotacion(){}
+    
     @Override
     public void producirSonido() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String algo = "violin1";
+        //SE VAN A EJECUTAR EL violin
+        AudioClip sonido;
+        switch(algo){
+
+            case "violin1":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/violines/vUno.wav"));
+                sonido.play();
+            break;
+            
+            case "violin2":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/violines/vDos.wav"));
+                sonido.play();
+            break;
+            
+            case "violin3":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/violines/vTres.wav"));
+                sonido.play();
+            break;
+            
+            case "violin4":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/violines/vCuatro.wav"));
+                sonido.play();
+            break;
+            
+            default:
+                System.out.println("no se eligio sonido CORREGIRR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            break; 
+            
+        }
     }
 
     @Override
