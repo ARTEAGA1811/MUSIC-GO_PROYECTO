@@ -64,11 +64,11 @@ public class Electromecanicos extends Electrofonos{
     
     
     @Override
-    public void producirSonido() {
-        String algo = "guitarraElectrica1";
+    public void producirSonido(String ins) {
+        
         //SE VAN A EJECUTAR LAS guitarras electricas
         AudioClip sonido;
-        switch(algo){
+        switch(ins){
             
             case "guitarraElectrica1":
                 sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/guitarrasElectricas/geUno.wav"));

@@ -55,11 +55,11 @@ public class Electronicos extends Electrofonos {
     public Electronicos(){}
     
     @Override
-    public void producirSonido() {
-        String algo = "pianoElectrico1";
+    public void producirSonido(String ins) {
+        
         //SE VAN A EJECUTAR EL PIANO ELECTRICO
         AudioClip sonido;
-        switch(algo){
+        switch(ins){
 
             case "pianoElectrico1":
                 sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/tecladosElectricos/peUno.wav"));

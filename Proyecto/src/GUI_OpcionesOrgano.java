@@ -355,7 +355,7 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
 
     private void btnSonidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSonidoActionPerformed
         // TODO add your handling code here: ***********************************BOTON DEL SONIDO
-        new Mecanico().producirSonido();
+        new Mecanico().producirSonido(GUI_Organo.ins);
         
     }//GEN-LAST:event_btnSonidoActionPerformed
 

@@ -10,6 +10,8 @@
  */
 public class GUI_Organo extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form Organo
      */
@@ -101,6 +103,7 @@ public class GUI_Organo extends javax.swing.JFrame {
         GUI_OpcionesOrgano Opcionescompra  = new GUI_OpcionesOrgano();
         Opcionescompra.setVisible(true);
         dispose();
+        ins = "organo1";
     }//GEN-LAST:event_btnComprarOrgano1ActionPerformed
 
     private void btnComprarOrgano2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarOrgano2ActionPerformed
@@ -108,6 +111,7 @@ public class GUI_Organo extends javax.swing.JFrame {
         GUI_OpcionesOrgano Opcionescompra  = new GUI_OpcionesOrgano();
         Opcionescompra.setVisible(true);
         dispose();
+        ins = "organo2";
     }//GEN-LAST:event_btnComprarOrgano2ActionPerformed
 
     /**

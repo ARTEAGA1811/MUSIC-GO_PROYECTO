@@ -346,7 +346,7 @@ public class GUI_OpcionesViolines extends javax.swing.JFrame {
     private void btnSonidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSonidoActionPerformed
         // TODO add your handling code here:
         
-        new Frotacion().producirSonido();
+        new Frotacion().producirSonido(GUI_Violin.ins);
     }//GEN-LAST:event_btnSonidoActionPerformed
 
     /**

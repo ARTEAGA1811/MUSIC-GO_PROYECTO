@@ -10,6 +10,8 @@
  */
 public class GUI_GuitarraElectrica extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form GuitarraElectrica
      */
@@ -131,6 +133,7 @@ public class GUI_GuitarraElectrica extends javax.swing.JFrame {
         GUI_OpcionesGuitarraElectrica opcionesCompra  = new GUI_OpcionesGuitarraElectrica();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "guitarraElectrica1";
     }//GEN-LAST:event_btnComprarGE1ActionPerformed
 
     private void btnComprarGE2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGE2ActionPerformed
@@ -138,6 +141,7 @@ public class GUI_GuitarraElectrica extends javax.swing.JFrame {
         GUI_OpcionesGuitarraElectrica opcionesCompra  = new GUI_OpcionesGuitarraElectrica();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "guitarraElectrica2";
     }//GEN-LAST:event_btnComprarGE2ActionPerformed
 
     private void btnComprarGE3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGE3ActionPerformed
@@ -145,6 +149,7 @@ public class GUI_GuitarraElectrica extends javax.swing.JFrame {
         GUI_OpcionesGuitarraElectrica opcionesCompra  = new GUI_OpcionesGuitarraElectrica();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "guitarraElectrica3";
     }//GEN-LAST:event_btnComprarGE3ActionPerformed
 
     private void btnComprarGE4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGE4ActionPerformed
@@ -152,6 +157,7 @@ public class GUI_GuitarraElectrica extends javax.swing.JFrame {
         GUI_OpcionesGuitarraElectrica opcionesCompra  = new GUI_OpcionesGuitarraElectrica();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "guitarraElectrica4";
     }//GEN-LAST:event_btnComprarGE4ActionPerformed
 
     /**

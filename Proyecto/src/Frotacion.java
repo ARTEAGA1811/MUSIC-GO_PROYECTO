@@ -66,11 +66,11 @@ public class Frotacion extends Cordofonos {
     public Frotacion(){}
     
     @Override
-    public void producirSonido() {
-        String algo = "violin1";
+    public void producirSonido(String ins) {
+        
         //SE VAN A EJECUTAR EL violin
         AudioClip sonido;
-        switch(algo){
+        switch(ins){
 
             case "violin1":
                 sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/violines/vUno.wav"));

@@ -16,6 +16,7 @@ public class GUI_OpcionesArpa extends javax.swing.JFrame {
     public GUI_OpcionesArpa() {
         initComponents();
         setLocationRelativeTo(null);
+        
     }
 
     /**
@@ -346,7 +347,7 @@ public class GUI_OpcionesArpa extends javax.swing.JFrame {
     private void btnSonidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSonidoActionPerformed
         // TODO add your handling code here:
         
-        new Punteo().producirSonido();
+        new Punteo().producirSonido(GUI_Arpas.ins);
     }//GEN-LAST:event_btnSonidoActionPerformed
 
     /**

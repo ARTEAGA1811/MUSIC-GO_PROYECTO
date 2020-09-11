@@ -1,3 +1,6 @@
+
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,6 +13,8 @@
  */
 public class GUI_Violin extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form Violin
      */
@@ -132,6 +137,7 @@ public class GUI_Violin extends javax.swing.JFrame {
         GUI_OpcionesViolines opcionesCompra  = new GUI_OpcionesViolines();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "violin1";
     }//GEN-LAST:event_btnComprarViolin1ActionPerformed
 
     private void btnComprarViolin2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolin2ActionPerformed
@@ -139,6 +145,7 @@ public class GUI_Violin extends javax.swing.JFrame {
        GUI_OpcionesViolines opcionesCompra  = new GUI_OpcionesViolines();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "violin2";
     }//GEN-LAST:event_btnComprarViolin2ActionPerformed
 
     private void btnComprarViolin3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolin3ActionPerformed
@@ -146,6 +153,7 @@ public class GUI_Violin extends javax.swing.JFrame {
         GUI_OpcionesViolines opcionesCompra  = new GUI_OpcionesViolines();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "violin3";
     }//GEN-LAST:event_btnComprarViolin3ActionPerformed
 
     private void btnComprarViolin4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolin4ActionPerformed
@@ -153,6 +161,7 @@ public class GUI_Violin extends javax.swing.JFrame {
         GUI_OpcionesViolines opcionesCompra  = new GUI_OpcionesViolines();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "violin4";
     }//GEN-LAST:event_btnComprarViolin4ActionPerformed
 
     /**

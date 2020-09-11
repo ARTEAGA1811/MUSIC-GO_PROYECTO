@@ -10,6 +10,8 @@
  */
 public class GUI_TecladoElectrico extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form TecladoElectrico
      */
@@ -131,6 +133,7 @@ public class GUI_TecladoElectrico extends javax.swing.JFrame {
         GUI_OpcionesTecladoElectrico OpcionesCompra  = new GUI_OpcionesTecladoElectrico();
         OpcionesCompra.setVisible(true);
         dispose();
+        ins = "pianoElectrico1";
     }//GEN-LAST:event_btnTecladoE1ActionPerformed
 
     private void btnTecladoE2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTecladoE2ActionPerformed
@@ -138,6 +141,7 @@ public class GUI_TecladoElectrico extends javax.swing.JFrame {
         GUI_OpcionesTecladoElectrico OpcionesCompra  = new GUI_OpcionesTecladoElectrico();
         OpcionesCompra.setVisible(true);
         dispose();
+        ins = "pianoElectrico2";
     }//GEN-LAST:event_btnTecladoE2ActionPerformed
 
     private void btnTecladoE3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTecladoE3ActionPerformed
@@ -145,6 +149,7 @@ public class GUI_TecladoElectrico extends javax.swing.JFrame {
         GUI_OpcionesTecladoElectrico OpcionesCompra  = new GUI_OpcionesTecladoElectrico();
         OpcionesCompra.setVisible(true);
         dispose();
+        ins = "pianoElectrico3";
     }//GEN-LAST:event_btnTecladoE3ActionPerformed
 
     private void btnTecladoE4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTecladoE4ActionPerformed
@@ -152,6 +157,7 @@ public class GUI_TecladoElectrico extends javax.swing.JFrame {
         GUI_OpcionesTecladoElectrico OpcionesCompra  = new GUI_OpcionesTecladoElectrico();
         OpcionesCompra.setVisible(true);
         dispose();
+        ins = "pianoElectrico4";
     }//GEN-LAST:event_btnTecladoE4ActionPerformed
 
     /**

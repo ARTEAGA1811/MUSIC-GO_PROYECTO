@@ -365,7 +365,7 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
     private void btnSonidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSonidoActionPerformed
         // TODO add your handling code here:
         
-        new PercusionMembranofos().producirSonido();
+        new PercusionMembranofos().producirSonido(GUI_Bongos.ins);
     }//GEN-LAST:event_btnSonidoActionPerformed
 
     /**

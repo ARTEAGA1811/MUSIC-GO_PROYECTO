@@ -83,11 +83,11 @@ public class Directo extends Aerofonos{
     
     
     @Override
-    public void producirSonido() {
-        String algo = "flauta1";
+    public void producirSonido(String ins) {
+        
         //SE VAN A EJECUTAR LAS flautas  |saxofonoes | trompetas
         AudioClip sonido;
-        switch(algo){
+        switch(ins){
             
             //FLAUTAS
             case "flauta1":

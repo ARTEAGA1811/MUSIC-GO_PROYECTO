@@ -348,7 +348,7 @@ public class GUI_OpcionesPiano extends javax.swing.JFrame {
     private void btnSonidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSonidoActionPerformed
         // TODO add your handling code here:
         
-        new Percusion().producirSonido();
+        new Percusion().producirSonido(GUI_Piano.ins);
     }//GEN-LAST:event_btnSonidoActionPerformed
 
     /**

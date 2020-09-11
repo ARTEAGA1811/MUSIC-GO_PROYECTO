@@ -89,12 +89,12 @@ public class Punteo extends Cordofonos {
     
     
     @Override
-    public void producirSonido() {
+    public void producirSonido(String ins) {
          //se va a ejecutar el arpa |Guitarra
-         String algo = "arpa1";
+         
         //SE VAN A EJECUTAR ARPA |Guitarra
         AudioClip sonido;
-        switch(algo){
+        switch(ins){
             
             //ARPA
             case "arpa1":

@@ -124,11 +124,11 @@ public class PercusionMembranofos extends Membranofonos{
         return precioInstDescuento;
     }
     @Override
-    public void producirSonido() {
-        String algo = "bateria1";
+    public void producirSonido(String ins) {
+        
         //SE VAN A EJECUTAR LAS BATERIAS | bONGOS |Congas
         AudioClip sonido;
-        switch(algo){
+        switch(ins){
             
             //baterias
             case "bateria1":

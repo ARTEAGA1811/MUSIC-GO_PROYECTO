@@ -60,11 +60,11 @@ public class Percusion extends Cordofonos {
     
     
     @Override
-    public void producirSonido() {
-        String algo = "piano1";
+    public void producirSonido(String ins) {
+        
         //SE VAN A EJECUTAR el piano
         AudioClip sonido;
-        switch(algo){
+        switch(ins){
             
             case "piano1":
                 sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/pianos/piUno.wav"));

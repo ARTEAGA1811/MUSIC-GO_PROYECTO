@@ -382,7 +382,7 @@ public class GUI_OpcionesGuitarraElectrica extends javax.swing.JFrame {
     private void btnSonidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSonidoActionPerformed
         // TODO add your handling code here:
         
-        new Electromecanicos().producirSonido();
+        new Electromecanicos().producirSonido(GUI_GuitarraElectrica.ins);
     }//GEN-LAST:event_btnSonidoActionPerformed
 
     /**

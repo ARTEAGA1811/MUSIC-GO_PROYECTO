@@ -60,13 +60,13 @@ public class Mecanico extends Aerofonos {
     
     
     @Override
-    public  void producirSonido() { 
+    public  void producirSonido(String ins) { 
         //Cambio, ahora ingresan parametros
         
-        String algo = "organo1";
+        
         //SE VAN A EJECUTAR LOS ORGANOS
         AudioClip sonido;
-        switch(algo){
+        switch(ins){
             case "organo1":
                 
                 sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/organos/orUno.wav"));
