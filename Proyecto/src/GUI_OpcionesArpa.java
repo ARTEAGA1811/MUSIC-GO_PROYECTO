@@ -9,7 +9,8 @@
  * @author Tim
  */
 public class GUI_OpcionesArpa extends javax.swing.JFrame {
-
+    public TiendaInstrumento musicGo=new TiendaInstrumento();
+    String nombreInstrumento="Arpa";
     /**
      * Creates new form GUI_OpcionesArpa
      */
@@ -339,9 +340,65 @@ public class GUI_OpcionesArpa extends javax.swing.JFrame {
 
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
         // TODO add your handling code here:
+        String materialInstrumento="";
+        String marca="";
+        String color="";
+        double peso=0;
+        double tamaño=0;
+        //Material 
+        if(rbtnMatCedro.isSelected()){
+            materialInstrumento=rbtnMatCedro.getText();
+        }
+        else if(rbtnMatSauce.isSelected()){
+            materialInstrumento=rbtnMatSauce.getText();
+            }
+        //Marca 
+        if(rbtnParaguayanHarps.isSelected()){
+            marca=rbtnParaguayanHarps.getText();
+        }
+        else if(rbtnAngeles.isSelected()){
+            marca=rbtnAngeles.getText();
+            }
+        //Color 
+        if(rbtnNegro.isSelected()){
+            color=rbtnNegro.getText();
+        }
+        else if(rbtnCafe.isSelected()){
+            color=rbtnCafe.getText();
+            }
+        else if(rbtnNatural.isSelected()){
+            color=rbtnNatural.getText();
+            }
+        //Tamaño 
+        if(rbtnTam17.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam17.getText());
+        }
+        else if(rbtnTam15.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam15.getText());
+            }
+        else if(rbtnTam13.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam13.getText());
+            }
+        //Peso 
+        if(rbtnPeso600.isSelected()){
+            peso=Double.parseDouble(rbtnPeso600.getText());
+        }
+        else if(rbtnPeso650.isSelected()){
+            peso=Double.parseDouble(rbtnPeso650.getText());
+            }
+        else if(rbtnPeso680.isSelected()){
+            peso=Double.parseDouble(rbtnPeso680.getText());
+            }
+        
+        Instrumento miArpa=new Punteo(materialInstrumento, color, tamaño, peso, marca);
+        miArpa.calcularPrecio(nombreInstrumento);
+        musicGo.setInstrumentos(miArpa);
+        
+        
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);
         dispose();
+
     }//GEN-LAST:event_btnComprarActionPerformed
 
     private void btnSonidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSonidoActionPerformed

@@ -15,6 +15,12 @@ import javax.swing.JOptionPane;
 public class Amateur extends Cliente{
     private String apellido, cedula;
     
+    public Amateur(String nombre, String apellido, String cedula){
+        this.nombreCliente = nombre;
+        this.apellido = apellido;
+        this.cedula = cedula;
+        this.tipoCliente = "Músico Profesional";
+    }
     
     public String manualInstrumento(){
         return "";

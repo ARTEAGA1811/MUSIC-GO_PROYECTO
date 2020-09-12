@@ -12,7 +12,8 @@ import javax.swing.JOptionPane;
  * @author Tim
  */
 public class GUI_Compra extends javax.swing.JFrame {
-
+    
+    
     /**
      * Creates new form GUI_Compra
      */
@@ -41,8 +42,8 @@ public class GUI_Compra extends javax.swing.JFrame {
         lblCodigoVIP = new javax.swing.JLabel();
         txtCodigoVIP = new javax.swing.JTextField();
         jPanelDatosPersonales = new javax.swing.JPanel();
-        txtApellido = new javax.swing.JTextField();
         txtNombre = new javax.swing.JTextField();
+        txtDireccion = new javax.swing.JTextField();
         txtIdentificador = new javax.swing.JTextField();
         lblNombre = new javax.swing.JLabel();
         lblApellido = new javax.swing.JLabel();
@@ -50,7 +51,7 @@ public class GUI_Compra extends javax.swing.JFrame {
         lblCantidad = new javax.swing.JLabel();
         txtCantidad = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        txtDireccion = new javax.swing.JTextField();
+        txtApellido = new javax.swing.JTextField();
         lblDatos = new javax.swing.JLabel();
         lblTipoCliente = new javax.swing.JLabel();
         btnComprar = new javax.swing.JButton();
@@ -184,9 +185,9 @@ public class GUI_Compra extends javax.swing.JFrame {
         jPanelDatosPersonales.setBackground(new java.awt.Color(204, 255, 255));
         jPanelDatosPersonales.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        txtApellido.addActionListener(new java.awt.event.ActionListener() {
+        txtNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtApellidoActionPerformed(evt);
+                txtNombreActionPerformed(evt);
             }
         });
 
@@ -218,8 +219,8 @@ public class GUI_Compra extends javax.swing.JFrame {
                             .addComponent(lblApellido))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtApellido, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtDireccion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtNombre, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtApellido, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanelDatosPersonalesLayout.createSequentialGroup()
                         .addComponent(lblCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -231,7 +232,7 @@ public class GUI_Compra extends javax.swing.JFrame {
                     .addGroup(jPanelDatosPersonalesLayout.createSequentialGroup()
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanelDatosPersonalesLayout.setVerticalGroup(
@@ -240,15 +241,15 @@ public class GUI_Compra extends javax.swing.JFrame {
                 .addGap(12, 12, 12)
                 .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNombre)
-                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblApellido)
-                    .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(8, 8, 8)
                 .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanelDatosPersonalesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanelDatosPersonalesLayout.createSequentialGroup()
@@ -376,9 +377,9 @@ public class GUI_Compra extends javax.swing.JFrame {
         txtCodigoVIP.setEditable(false);
     }//GEN-LAST:event_rbtnAmateurActionPerformed
 
-    private void txtApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoActionPerformed
+    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtApellidoActionPerformed
+    }//GEN-LAST:event_txtNombreActionPerformed
 
     private void txtCodigoVIPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCodigoVIPActionPerformed
         // TODO add your handling code here:
@@ -394,6 +395,53 @@ public class GUI_Compra extends javax.swing.JFrame {
 
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
         // TODO add your handling code here:
+        String nomCliente;
+        String tipoCliente;
+        String nomTarjeta;
+        String numTarjeta;
+        String fechaCaducidad;
+        String cvv;
+        String direccion;
+        String nombreInstrumento="";
+        int cantidad;
+        double precioInstrumento=0;
+        double descuentoExtra=0;
+        
+        
+        
+        
+        //Amateur 
+        if(rbtnAmateur.isSelected()){
+            //Datos cliente
+            nomCliente=txtNombre.getText();
+            String apellido=txtApellido.getText();
+            direccion=txtDireccion.getText();
+            String cedula=txtIdentificador.getText();
+            cantidad=Integer.parseInt(txtCantidad.getText());
+            Amateur miAmateur=new Amateur(nomCliente, apellido, cedula);
+            //Datos pago
+            nomTarjeta=txtNombreTarjeta.getText();
+            numTarjeta=txtNumTarjeta.getText();
+            fechaCaducidad=txtFechaCaducidad.getText();
+            cvv=txtCVC.getText();
+            
+            //Validar cédula
+            if(miAmateur.esIdentidadValida()==true){
+                miAmateur.compraInstrumento(nomTarjeta,
+                                            numTarjeta,
+                                            fechaCaducidad,
+                                            cvv,
+                                            direccion,
+                                            nombreInstrumento,
+                                            cantidad,
+                                            precioInstrumento,
+                                            descuentoExtra);
+            }
+            
+        }
+
+        
+        
         GUI_Factura factura = new GUI_Factura();
         factura.setVisible(true);
         dispose();
