@@ -1,6 +1,5 @@
 
 import java.applet.AudioClip;
-import javax.swing.ImageIcon;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -21,7 +20,6 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         Instrumento.nomInstrumento = "Organo";
-        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**

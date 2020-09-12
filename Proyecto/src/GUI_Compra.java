@@ -1,5 +1,4 @@
 
-import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /*
@@ -21,7 +20,6 @@ public class GUI_Compra extends javax.swing.JFrame {
     public GUI_Compra() {
         initComponents();
         setLocationRelativeTo(null);
-        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**

@@ -1,6 +1,3 @@
-
-import javax.swing.ImageIcon;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -21,7 +18,6 @@ public class GUI_Arpas extends javax.swing.JFrame {
     public GUI_Arpas() {
         initComponents();
         setLocationRelativeTo(null);
-        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**

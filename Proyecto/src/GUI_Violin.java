@@ -1,7 +1,4 @@
 
-import javax.swing.ImageIcon;
-
-
 
 
 /*
@@ -24,7 +21,6 @@ public class GUI_Violin extends javax.swing.JFrame {
     public GUI_Violin() {
         initComponents();
         setLocationRelativeTo(null);
-        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
         
     }
 
