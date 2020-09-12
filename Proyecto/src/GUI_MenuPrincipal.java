@@ -1,6 +1,7 @@
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+import javax.swing.JOptionPane;
 
 
 
@@ -127,6 +128,11 @@ public class GUI_MenuPrincipal extends javax.swing.JFrame {
         getContentPane().add(btnFacebook, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 420, 40, 40));
 
         btnWhatapp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/whatsapp (3).png"))); // NOI18N
+        btnWhatapp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnWhatappActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnWhatapp, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 370, 40, 40));
 
         bntInstagram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/instagram.png"))); // NOI18N
@@ -252,13 +258,26 @@ public class GUI_MenuPrincipal extends javax.swing.JFrame {
             
             if(desktop.isSupported(java.awt.Desktop.Action.BROWSE)){
                 try{
-                    java.net.URI uri = new java.net.URI("https://youtube.com/");
+                    java.net.URI uri = new java.net.URI("https://www.instagram.com/musicgovalc/");
                     desktop.browse(uri);
                 }catch(URISyntaxException | IOException ex ){}
             }
             
         }
     }//GEN-LAST:event_bntInstagramActionPerformed
+
+    private void btnWhatappActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWhatappActionPerformed
+        // TODO add your handling code here:
+        String mensaje;
+        mensaje = "!MÁNDANOS UN MENSAJE AQUÍ!: \n" +
+                   "0990554840\n"+
+                   "0995669849\n"+
+                   "0983132578\n"+
+                   "0995461657";
+                
+        JOptionPane.showMessageDialog(rootPane, mensaje);
+                
+    }//GEN-LAST:event_btnWhatappActionPerformed
 
     /**
      * @param args the command line arguments
