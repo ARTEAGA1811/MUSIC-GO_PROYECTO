@@ -9,6 +9,7 @@
  * @author Tim
  */
 public class GUI_OpcionesBongos extends javax.swing.JFrame {
+    public TiendaInstrumento musicGo=new TiendaInstrumento();
 
     /**
      * Creates new form GUI_OpcionesBongos
@@ -16,6 +17,7 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
     public GUI_OpcionesBongos() {
         initComponents();
         setLocationRelativeTo(null);
+        Instrumento.nomInstrumento = "Bongos";
     }
 
     /**
@@ -172,7 +174,7 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
                 .addComponent(rbtnFreedom)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnLp)
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addContainerGap(9, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 210, 120));
@@ -357,6 +359,72 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
 
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
         // TODO add your handling code here:
+        String materialInstrumento="";
+        String marca="";
+        String color="";
+        double peso=0;
+        double tamaño=0;
+        //Material 
+        if(rbtnMatCaoba.isSelected()){
+            materialInstrumento=rbtnMatCaoba.getText();
+        }
+        else if(rbtnMatSapele.isSelected()){
+            materialInstrumento=rbtnMatSapele.getText();
+            }
+        //Marca 
+        if(rbtnMeinl.isSelected()){
+            marca=rbtnMeinl.getText();
+        }
+        else if(rbtnFreedom.isSelected()){
+            marca=rbtnFreedom.getText();
+            }
+        else if(rbtnLp.isSelected()){
+            marca=rbtnLp.getText();
+            }
+        
+        
+        //Color 
+        if(rbtnNegro.isSelected()){
+            color=rbtnNegro.getText();
+        }
+        else if(rbtnCafe.isSelected()){
+            color=rbtnCafe.getText();
+            }
+        else if(rbtnAzul.isSelected()){
+            color=rbtnAzul.getText();
+            }
+        else if(rbtnRojo.isSelected()){
+            color=rbtnRojo.getText();
+            }
+        
+        
+        //Tamaño 
+        if(rbtnTam01524.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam01524.getText());
+        }
+        else if(rbtnTam01778.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam01778.getText());
+            }
+        else if(rbtnTam02032.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam02032.getText());
+            }
+        
+        
+        //Peso 
+        if(rbtnPeso45.isSelected()){
+            peso=Double.parseDouble(rbtnPeso45.getText());
+        }
+        else if(rbtnPeso65.isSelected()){
+            peso=Double.parseDouble(rbtnPeso65.getText());
+            }
+        else if(rbtnPeso8.isSelected()){
+            peso=Double.parseDouble(rbtnPeso8.getText());
+            }
+        
+        Instrumento miBongo = new PercusionMembranofos(materialInstrumento, color, tamaño, peso, marca);
+        Instrumento.precioInst = miBongo.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miBongo);
+        
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);
         dispose();

@@ -9,7 +9,7 @@
  * @author Tim
  */
 public class GUI_Arpas extends javax.swing.JFrame {
-
+    
     
     static String ins;
     /**
