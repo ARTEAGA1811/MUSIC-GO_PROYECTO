@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -17,7 +20,8 @@ public class GUI_Piano extends javax.swing.JFrame {
      */
     public GUI_Piano() {
         initComponents();
-        setLocationRelativeTo(null);       
+        setLocationRelativeTo(null);  
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
