@@ -143,7 +143,7 @@ public class Punteo extends Cordofonos {
     @Override
     public double calcularPrecio(String nombreInstr) {
         if(nombreInstr.equals("Guitarra Acústica")){
-            this.precioInst=(precioMaterial*(peso*100*tamaño))+(precioColor*tamaño*100)+precioMarca;
+            this.precioInst=(precioMaterial*(peso*10*tamaño))+(precioColor*tamaño*10)+precioMarca;
             this.precioInst=precioInst-(precioInst*precioInstDescuento);
         }        
         if(nombreInstr.equals("Arpa")){
