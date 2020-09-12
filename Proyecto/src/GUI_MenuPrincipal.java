@@ -1,3 +1,9 @@
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -124,6 +130,11 @@ public class GUI_MenuPrincipal extends javax.swing.JFrame {
         getContentPane().add(btnWhatapp, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 370, 40, 40));
 
         bntInstagram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/instagram.png"))); // NOI18N
+        bntInstagram.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntInstagramActionPerformed(evt);
+            }
+        });
         getContentPane().add(bntInstagram, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 320, 40, 40));
 
         lblDescuento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/descuento.png"))); // NOI18N
@@ -165,6 +176,17 @@ public class GUI_MenuPrincipal extends javax.swing.JFrame {
 
     private void btnFacebookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFacebookActionPerformed
         // TODO add your handling code here:
+        if(java.awt.Desktop.isDesktopSupported()){
+            java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
+            
+            if(desktop.isSupported(java.awt.Desktop.Action.BROWSE)){
+                try{
+                    java.net.URI uri = new java.net.URI("https://www.facebook.com/Music-Go-106788524503440");
+                    desktop.browse(uri);
+                }catch(URISyntaxException | IOException ex ){}
+            }
+            
+        }
     }//GEN-LAST:event_btnFacebookActionPerformed
 
     private void btnnuevosProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevosProductosActionPerformed
@@ -222,6 +244,21 @@ public class GUI_MenuPrincipal extends javax.swing.JFrame {
       
         
     }//GEN-LAST:event_cmbCategoriasActionPerformed
+
+    private void bntInstagramActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntInstagramActionPerformed
+        // TODO add your handling code here:
+        if(java.awt.Desktop.isDesktopSupported()){
+            java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
+            
+            if(desktop.isSupported(java.awt.Desktop.Action.BROWSE)){
+                try{
+                    java.net.URI uri = new java.net.URI("https://youtube.com/");
+                    desktop.browse(uri);
+                }catch(URISyntaxException | IOException ex ){}
+            }
+            
+        }
+    }//GEN-LAST:event_bntInstagramActionPerformed
 
     /**
      * @param args the command line arguments
