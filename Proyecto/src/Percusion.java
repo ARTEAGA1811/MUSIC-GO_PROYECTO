@@ -57,13 +57,19 @@ public class Percusion extends Cordofonos {
 
     @Override
     public double calcularPrecio(String nombreInstr) {
-        this.precioInst=(precioMaterialP*(peso*tamaño))+(precioColorP*tamaño)+precioMarcaP;
+        this.precioInst=(precioMaterialP*(peso*100*tamaño))+(precioColorP*tamaño*100)+precioMarcaP;
          return precioInst;
     }
 
     @Override
     public double calcularDescuento(String nombreInstr) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    @Override
+    public String toString() {
+        return "***Piano eléctrico***" +  "\nMarca:" + marca +"\nColor: " + color+"\nTamaño: " + tamaño+ "\nPeso: "+peso+"\nDescuento: "+ precioInst  +"\nPrecio:"
+                +"\nPrecio con Descuento"+ precioInst +  '}';
     }
     
 }

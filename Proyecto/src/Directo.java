@@ -83,11 +83,11 @@ public class Directo extends Aerofonos{
     @Override
     public double calcularPrecio(String nombreInstr) {
         if(nombreInstr.equals("Flauta")){
-            this.precioInst=(precioMaterialD*(peso*tamaño))+(precioColorD*tamaño)+precioMarcaD;
+            this.precioInst=(precioMaterialD*(peso*100*tamaño))+(precioColorD*tamaño*100)+precioMarcaD;
             this.precioInst=precioInst-(precioInst*precioInstDescuento);
         }        
         if(nombreInstr.equals("Trompeta")){
-            this.precioInst=(precioMaterialD*(peso*tamaño))+(precioColorD*tamaño)+precioMarcaD;   
+            this.precioInst=(precioMaterialD*(peso*100*tamaño))+(precioColorD*tamaño*100)+precioMarcaD;   
         }
         if(nombreInstr.equals("Saxofón")){
             this.precioInst=(precioMaterialD*(peso*tamaño))+(precioColorD*tamaño)+precioMarcaD;   
@@ -103,4 +103,9 @@ public class Directo extends Aerofonos{
         return precioInstDescuento;
     }
     
+    @Override
+    public String toString() {
+        return "***Piano eléctrico***" +  "\nMarca:" + marca +"\nColor: " + color+"\nTamaño: " + tamaño+ "\nPeso: "+peso+"\nDescuento: "+ precioInst  +"\nPrecio:"
+                +"\nPrecio con Descuento"+ precioInstDescuento +  '}';
+    }
 }

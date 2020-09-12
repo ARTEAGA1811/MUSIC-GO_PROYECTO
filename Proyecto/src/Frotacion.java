@@ -29,21 +29,15 @@ public class Frotacion extends Cordofonos {
                 this.precioMaterialV =4.7;
             }
         }
-        if(this.color.equals("Negro")){
-            this.precioColorV=0.076;
-        }else{
-            if(this.color.equals("Cafe")){
-                this.precioColorV=0.08;
-            }else{
-                if(this.color.equals("Natural")){
-                    this.precioColorV=0.05;
-                }else{
-                    if(this.color.equals("Aceite de linaza ")){
-                        this.precioColorV=0.051;
-                    }
-                }
+
+        if (this.color.equals("Cafe")) {
+            this.precioColorV = 0.14;
+        } else {
+            if (this.color.equals("Natural")) {
+                this.precioColorV = 0.09;
             }
         }
+
 
         //Marcas de violin
         if(this.marca.equals("SONJ LIN")){

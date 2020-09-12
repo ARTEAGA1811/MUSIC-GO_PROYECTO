@@ -10,20 +10,27 @@
  * @author David Arteaga, Timoteo Camuendo, Anahí Vásquez, Jenny Llano
  */
 public class Electronicos extends Electrofonos {
-    private double precioMaterialP;
     private double precioColorP;
     private double precioMarcaP;
     private double precioInstDescuento;
+    private double precioTamañoP;
     
-    public Electronicos(String material,String color, double tamaño, double peso, String marca) {
+    public Electronicos(String color, double tamaño, double peso, String marca) {
         this.color = color;
         this.tamaño = tamaño;
         this.peso = peso;
         this.marca = marca;
-        this.materialInst=material;
         
-        if(materialInst.equals("Acero")){
-            this.precioMaterialP=1.99;
+        String tamañoString = String.valueOf(this.tamaño);
+        String resultado[] = tamañoString.split("\\s");
+        int numeroTeclas = Integer.parseInt(resultado[0]);
+        
+        if(numeroTeclas==88){
+            this.precioTamañoP=0.8;
+        }else{
+            if(numeroTeclas==33){
+                this.precioTamañoP=0.5;
+            }
         }
         
         if(this.color.equals("Negro")){
@@ -31,6 +38,10 @@ public class Electronicos extends Electrofonos {
         }else{
             if(this.color.equals("Rojo")){
                 this.precioColorP=0.080;
+            }else{
+                if(this.color.equals("Azul")){
+                    this.precioColorP=0.080;
+                }
             }
         }
 
@@ -55,7 +66,7 @@ public class Electronicos extends Electrofonos {
 
     @Override
     public double calcularPrecio(String nombreInstr) {
-         this.precioInst=(precioMaterialP*(peso*tamaño))+(precioColorP*tamaño)+precioMarcaP;
+         this.precioInst=(peso*tamaño*100)+(precioColorP*tamaño*100)+precioMarcaP;
          return precioInst;
     }
 
@@ -64,5 +75,14 @@ public class Electronicos extends Electrofonos {
         this.precioInstDescuento=precioInstDescuento-(precioInstDescuento*0.5);
         return precioInstDescuento;
     }
+
+    @Override
+    public String toString() {
+        return "***Piano eléctrico***" +  "\nMarca:" + marca +"\nColor: " + color+"\nTamaño: " + tamaño+ "\nPeso: "+peso+"\nDescuento: "+ precioInst  +"\nPrecio:"
+                +"\nPrecio con Descuento"+ precioInstDescuento +  '}';
+    }
+    
+    
+    
     
 }

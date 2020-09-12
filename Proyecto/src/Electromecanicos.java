@@ -21,7 +21,7 @@ public class Electromecanicos extends Electrofonos{
         this.peso = peso;
         this.marca = marca;
         
-        //Material guitarra acústica
+        //Material guitarra Electrica
         if (this.materialInst.equals("Caoba")) {
             this.precioMaterialG =1.6;
         } else {
@@ -38,6 +38,10 @@ public class Electromecanicos extends Electrofonos{
             }else{
                 if(this.color.equals("Rojo")){
                     this.precioColorG=0.08;
+                    
+                }else{if(this.color.equals("Azul")){
+                    this.precioColorG=0.08;
+                }
                 }
             }
         }
@@ -64,7 +68,7 @@ public class Electromecanicos extends Electrofonos{
 
     @Override
     public double calcularPrecio(String nombreInstr) {
-        this.precioInst=(precioMaterialG*(peso*tamaño))+(precioColorG*tamaño)+precioMarcaG;   
+        this.precioInst=(precioMaterialG*((peso*100)*tamaño))+(precioColorG*tamaño*100)+precioMarcaG;   
         return precioInst;
     }
 
@@ -73,4 +77,9 @@ public class Electromecanicos extends Electrofonos{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
+    @Override
+    public String toString() {
+        return "***Piano eléctrico***" +  "\nMarca:" + marca +"\nColor: " + color+"\nTamaño: " + tamaño+ "\nPeso: "+peso+"\nDescuento: "+ precioInst  +"\nPrecio:"
+                +"\nPrecio con Descuento"+ precioInst +  '}';
+    }
 }

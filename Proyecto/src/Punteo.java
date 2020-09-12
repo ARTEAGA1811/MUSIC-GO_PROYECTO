@@ -40,20 +40,16 @@ public class Punteo extends Cordofonos {
         }
         
         if(this.color.equals("Negro")){
-            this.precioColor=0.076;
+            this.precioColor=0.12;
         }else{
             if(this.color.equals("Cafe")){
-                this.precioColor=0.076;
+                this.precioColor=0.12;
             }else{
                 if(this.color.equals("Natural")){
-                    this.precioColor=0.05;
+                    this.precioColor=0.09;
                 }else{
-                    if(this.color.equals("Aceite de linaza")){
-                        this.precioColor=0.051;
-                    }else{
-                        if(this.color.equals("Rojo")){
-                            this.precioColor=0.076;
-                        }
+                    if(this.color.equals("Rojo")){
+                        this.precioColor=0.12;
                     }
                 }
             }
@@ -75,7 +71,7 @@ public class Punteo extends Cordofonos {
         if(this.marca.equals("ParaguayanHarps")){
             this.precioMarca=90;
         }else{
-            if(this.marca.equals("Angelsworld")){
+            if(this.marca.equals("AngelsWorld")){
                 this.precioMarca=50;
             }             
         }
@@ -89,7 +85,7 @@ public class Punteo extends Cordofonos {
     @Override
     public double calcularPrecio(String nombreInstr) {
         if(nombreInstr.equals("Guitarra Acústica")){
-            this.precioInst=(precioMaterial*(peso*tamaño))+(precioColor*tamaño)+precioMarca;
+            this.precioInst=(precioMaterial*(peso*100*tamaño))+(precioColor*tamaño*100)+precioMarca;
             this.precioInst=precioInst-(precioInst*precioInstDescuento);
         }        
         if(nombreInstr.equals("Arpa")){
@@ -104,6 +100,12 @@ public class Punteo extends Cordofonos {
             this.precioInstDescuento=precioInst-(precioInst*0.15);
         }
         return precioInstDescuento;
+    }
+    
+    @Override
+    public String toString() {
+        return "***Piano eléctrico***" +  "\nMarca:" + marca +"\nColor: " + color+"\nTamaño: " + tamaño+ "\nPeso: "+peso+"\nDescuento: "+ precioInst  +"\nPrecio:"
+                +"\nPrecio con Descuento"+ precioInstDescuento +  '}';
     }
     
 }

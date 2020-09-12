@@ -22,76 +22,80 @@ public class PercusionMembranofos extends Membranofonos{
         this.marca = marca;
 
         if (this.materialInst.equals("Arce")) {
-            this.precioMaterialM =2;
+            this.precioMaterialM = 2;
         } else {
             if (this.materialInst.equals("Caoba")) {
-                this.precioMaterialM =3.2;
-            }else{
-                if(this.materialInst.equals("Madera")){
-                    this.precioMaterialM=1;
-                }else{
-                    if(this.materialInst.equals("Aluminio")){
-                        this.precioMaterialM=1.8;
+                this.precioMaterialM = 3.2;
+            } else {
+                if (this.materialInst.equals("Madera")) {
+                    this.precioMaterialM = 1;
+                } else {
+                    if (this.materialInst.equals("Aluminio")) {
+                        this.precioMaterialM = 1.8;
+                    } else {
+                        if (this.materialInst.equals("Sapele")) {
+                            this.precioMaterialM = 4.7;
+                        }
                     }
                 }
             }
-        }
-        
-        if(this.color.equals("Negro")){
-            this.precioColorM=0.04;
-        }else{
-            if(this.color.equals("Café")){
-                this.precioColorM=0.04;
-            }else{
-                if(this.marca.equals("Rojo")){
-                    this.precioMarcaM=0.04;
-                }else{
-                if(this.marca.equals("Azul")){
-                    this.precioMarcaM=0.04;
-                }
-            }   
-            }    
-        }
 
-        //Marcas de bateria
-        if(this.marca.equals("YAMAHA")){
-            this.precioMarcaM=60;
-        }else{
-            if(this.marca.equals("PREMIER")){
-                this.precioMarcaM=80;
-            }else{
-                if(this.marca.equals("GRETSCH")){
-                    this.precioMarcaM=90;
+            if (this.color.equals("Negro")) {
+                this.precioColorM = 0.04;
+            } else {
+                if (this.color.equals("Café")) {
+                    this.precioColorM = 0.04;
+                } else {
+                    if (this.marca.equals("Rojo")) {
+                        this.precioMarcaM = 0.04;
+                    } else {
+                        if (this.marca.equals("Azul")) {
+                            this.precioMarcaM = 0.04;
+                        }
+                    }
                 }
-            }             
-        }
-        
-        //Marcas de bongos
-        if(this.marca.equals("MEINL")){
-            this.precioMarcaM=10;
-        }else{
-            if(this.marca.equals("FREEDOM")){
-                this.precioMarcaM=15;
-            }else{
-                if(this.marca.equals("LP")){
-                    this.precioMarcaM=10;
+            }
+
+            //Marcas de bateria
+            if (this.marca.equals("YAMAHA")) {
+                this.precioMarcaM = 60;
+            } else {
+                if (this.marca.equals("PREMIER")) {
+                    this.precioMarcaM = 80;
+                } else {
+                    if (this.marca.equals("GRETSCH")) {
+                        this.precioMarcaM = 90;
+                    }
                 }
-            }                 
-        }
-        
-        //Marcas de congas
-        if(this.marca.equals("STRONG")){
-            this.precioMarcaM=25;
-        }else{
-            if(this.marca.equals("Latin Percussion")){
-                this.precioMarcaM=20;
-            }else{
-                if(this.marca.equals("CAMEMUSIC")){
-                    this.precioMarcaM=30;
+            }
+
+            //Marcas de bongos
+            if (this.marca.equals("MEINL")) {
+                this.precioMarcaM = 10;
+            } else {
+                if (this.marca.equals("FREEDOM")) {
+                    this.precioMarcaM = 15;
+                } else {
+                    if (this.marca.equals("LP")) {
+                        this.precioMarcaM = 10;
+                    }
                 }
-            }                 
+            }
+
+            //Marcas de congas
+            if (this.marca.equals("STRONG")) {
+                this.precioMarcaM = 25;
+            } else {
+                if (this.marca.equals("Latin Percussion")) {
+                    this.precioMarcaM = 20;
+                } else {
+                    if (this.marca.equals("CAMEMUSIC")) {
+                        this.precioMarcaM = 30;
+                    }
+                }
+            }
+
         }
-        
     }
     
     @Override
@@ -104,7 +108,7 @@ public class PercusionMembranofos extends Membranofonos{
             this.precioInst=(precioMaterialM*(peso*tamaño))+(precioColorM*tamaño)+precioMarcaM;   
         }
         if(nombreInstr.equals("Conga")){
-            this.precioInst=(precioMaterialM*(peso*tamaño))+(precioColorM*tamaño)+precioMarcaM;   
+            this.precioInst=(precioMaterialM*(peso*tamaño)*2)+(precioColorM*tamaño)+precioMarcaM;   
         }
         return precioInst;
     }
@@ -119,5 +123,11 @@ public class PercusionMembranofos extends Membranofonos{
     @Override
     public void producirSonido() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    @Override
+    public String toString() {
+        return "***Piano eléctrico***" +  "\nMarca:" + marca +"\nColor: " + color+"\nTamaño: " + tamaño+ "\nPeso: "+peso+"\nDescuento: "+ precioInst  +"\nPrecio:"
+                +"\nPrecio con Descuento"+ precioInst +  '}';
     }
 }
