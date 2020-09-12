@@ -17,7 +17,7 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
     public GUI_OpcionesBongos() {
         initComponents();
         setLocationRelativeTo(null);
-        Instrumento.nomInstrumento = "Bongos";
+        Instrumento.nomInstrumento = "Bongo";
     }
 
     /**
