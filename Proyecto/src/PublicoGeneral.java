@@ -63,12 +63,12 @@ public class PublicoGeneral extends Cliente {
                             "                                                \n"+
                             "     CANT.        DESCRIPCIÓN     PRECIO UNITARIO \n"+
                             "    ____________________________________________________\n"+
-                            "    "+cantidad+"\t"+nomInstrumento+"\t    "+precioInst+"\n"+
+                            "    "+cantidad+"\t  "+nomInstrumento+"\t       "+precioInst+"\n"+
                             "    ____________________________________________________\n\n"+
-                            "               SUBTOTAL:      "+subtotal+" \n"+
-                            "               DESCUENTO:     "+descuento+" \n"+
-                            "               IVA:           "+iva+" \n"+
-                            "               TOTAL:         "+total+" \n";
+                            "               SUBTOTAL:\t   "+subtotal+" \n"+
+                            "               DESCUENTO:\t   "+descuento+" \n"+
+                            "               IVA:\t\t   "+iva+" \n"+
+                            "               TOTAL:\t   "+total+" \n";
 
         return factura;  
      
