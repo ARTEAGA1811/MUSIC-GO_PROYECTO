@@ -139,6 +139,12 @@ public class Punteo extends Cordofonos {
         }
          
     }
+    
+    public void manualInstrumento(String nomInstrumento){
+        if(nomInstrumento.equals("Guitarra Acústica")){
+            
+        }
+    }
 
     @Override
     public double calcularPrecio(String nombreInstr) {

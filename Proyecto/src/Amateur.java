@@ -22,10 +22,6 @@ public class Amateur extends Cliente{
         this.tipoCliente = "Amateur";
     }
     
-    public String manualInstrumento(){
-        return "";
-    }
-
     public boolean esMetodoPagoValido(String nomTarjeta,String numTarjeta,String fechaCaducidad,String cvv){
         boolean esMetodoPagoValido = true;
         if( numTarjeta.length()== 16 && fechaCaducidad.matches("[0-9][0-9][/][0-9][0-9]") && cvv.length() == 3){
