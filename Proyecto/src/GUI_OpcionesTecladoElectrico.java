@@ -175,13 +175,13 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
 
         buttonGroupTamaño.add(rbtnTam32);
         rbtnTam32.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        rbtnTam32.setText("32 Teclas");
+        rbtnTam32.setText("32 ");
         rbtnTam32.setToolTipText("");
         rbtnTam32.setBorderPainted(true);
 
         buttonGroupTamaño.add(rbtnTam88);
         rbtnTam88.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        rbtnTam88.setText("88 Teclas");
+        rbtnTam88.setText("88");
 
         javax.swing.GroupLayout jPanelTamañoLayout = new javax.swing.GroupLayout(jPanelTamaño);
         jPanelTamaño.setLayout(jPanelTamañoLayout);
