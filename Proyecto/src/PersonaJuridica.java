@@ -42,25 +42,25 @@ public class PersonaJuridica extends Cliente{
         if( numTarjeta.length()== 16 && fechaCaducidad.matches("[0-9][0-9][/][0-9][0-9]") && cvv.length() == 3){
         
             java.util.Date fecha = new Date();
-            String factura = "\t______________________FACTURA_________________________\n"+
-                             "\t____________________MUSIC-GO S.A._____________________\n\n"+
+            String factura = "    ______________________FACTURA_________________________\n"+
+                             "    ____________________MUSIC-GO S.A._____________________\n\n"+
                     
-                            "\tN° Factura: "+numFactura +"\n"+
-                            "\tNombre Cliente: "+this.nombreCliente +"\n"+
-                            "\tCédula / RUC: "+this.ruc +"\n"+
-                            "\tDirección: "+direccion +"\n"+
-                            "\tFecha emisión: "+fecha.toString()+"\n\n"+
+                            "     N° Factura: "+numFactura +"\n"+
+                            "     Nombre Cliente: "+this.nombreCliente +"\n"+
+                            "     Cédula / RUC: "+this.ruc +"\n"+
+                            "     Dirección: "+direccion +"\n"+
+                            "     Fecha emisión: "+fecha.toString()+"\n\n"+
                     
-                            "\t____________________________________________________\n"+
-                            "\t                                              \n"+
-                            "\t CANT.        DESCRIPCIÓN     PRECIO UNITARIO \n"+
-                            "\t____________________________________________________\n"+
-                            "\t "+cantidad+"            "+nomInstrumento+"             "+precioInst+"\n"+
-                           "\t____________________________________________________\n\n"+
-                            "\t             SUBTOTAL:      "+subtotal+" \n"+
-                            "\t             DESCUENTO:     "+descuento+" \n"+
-                            "\t             IVA:           "+iva+" \n"+
-                            "\t             TOTAL:         "+total+" \n";
+                            "     ____________________________________________________\n"+
+                            "                                              \n"+
+                            "     CANT.        DESCRIPCIÓN     PRECIO UNITARIO \n"+
+                            "     ____________________________________________________\n"+
+                            "       "+cantidad+"\t"+nomInstrumento+"\t    "+precioInst+"\n"+
+                            "     ____________________________________________________\n\n"+
+                            "               SUBTOTAL:      "+subtotal+" \n"+
+                            "               DESCUENTO:     "+descuento+" \n"+
+                            "               IVA:           "+iva+" \n"+
+                            "               TOTAL:         "+total+" \n";
 
         return factura;  
         }

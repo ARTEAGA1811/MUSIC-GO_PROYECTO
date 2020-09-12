@@ -79,8 +79,8 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
         lblBongoRL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Bongos/bongos2.png"))); // NOI18N
         getContentPane().add(lblBongoRL, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
 
-        lblSaxofonRL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Saxofon/saxofon1.png"))); // NOI18N
-        getContentPane().add(lblSaxofonRL, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, -1, -1));
+        lblSaxofonRL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Violin/violin1.png"))); // NOI18N
+        getContentPane().add(lblSaxofonRL, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 80, -1, -1));
 
         lblGuitarraElecRL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/GuitarraElectrica/guitarraElectrica2.png"))); // NOI18N
         lblGuitarraElecRL.setVerticalAlignment(javax.swing.SwingConstants.TOP);
