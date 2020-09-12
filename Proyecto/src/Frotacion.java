@@ -106,4 +106,9 @@ public class Frotacion extends Cordofonos {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
+    @Override
+    public String toString() {
+        return "***" + nomInstrumento + "***" +  "\nMarca:" + marca +"\nColor: " + color+"\nTamaño: " + tamaño+ "\nPeso: "+peso+"\nDescuento: "+ precioInst  +"\nPrecio:"
+                +"\nPrecio con Descuento"+ precioInst ;
+    }
 }

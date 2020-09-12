@@ -185,7 +185,7 @@ public class Directo extends Aerofonos{
     
     @Override
     public String toString() {
-        return "***Piano eléctrico***" +  "\nMarca:" + marca +"\nColor: " + color+"\nTamaño: " + tamaño+ "\nPeso: "+peso+"\nDescuento: "+ precioInst  +"\nPrecio:"
-                +"\nPrecio con Descuento"+ precioInstDescuento +  '}';
+        return "***" + nomInstrumento + "***" +  "\nMarca:" + marca +"\nColor: " + color+"\nTamaño: " + tamaño+ "\nPeso: "+peso+"\nDescuento: "+ precioInst  +"\nPrecio:"
+                +"\nPrecio con Descuento"+ precioInstDescuento;
     }
 }
