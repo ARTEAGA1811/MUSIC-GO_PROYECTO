@@ -1,5 +1,12 @@
 
 import java.applet.AudioClip;
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -95,11 +102,11 @@ public class Frotacion extends Cordofonos {
 
     public void manualInstrumento(String nomInstrumento){
         if(nomInstrumento.equals("Violin")){
-            
+
         }
         
-    }
-    
+    }    
+   
     @Override
     public double calcularPrecio(String nombreInstr) {
         if(nombreInstr.equals("Violin")){

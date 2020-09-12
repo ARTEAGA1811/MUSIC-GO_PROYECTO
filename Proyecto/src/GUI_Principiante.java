@@ -1,3 +1,8 @@
+
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -169,11 +174,11 @@ public class GUI_Principiante extends javax.swing.JFrame {
     private void btnComprarViolinMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolinMActionPerformed
         // TODO add your handling code here:
         Instrumento.nomInstrumento = "Violin";
-        Instrumento miViolinM = new Directo("Caoba", "Natural", 0.6, 0.43, "GOLDEN");
+        Frotacion miViolinM = new Frotacion("Caoba", "Natural", 0.6, 0.43, "GOLDEN");
         Instrumento.precioInst = miViolinM.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miViolinM);
         Instrumento.descripcionInstr = miViolinM.toString();
-        
+                        
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
         dispose();
