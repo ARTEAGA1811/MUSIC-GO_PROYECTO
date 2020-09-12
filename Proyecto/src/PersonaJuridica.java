@@ -82,8 +82,12 @@ public class PersonaJuridica extends Cliente{
         
         this.ruc = this.ruc.replace("-",""); //En caso que la RUC se haya ingresado con guiones.
         
-        try{ //Para verificar que el RUC solo contenga numeros.
-            int validarNumeros = Integer.parseInt(this.ruc);
+       try{ //Para verificar que el RUC solo contenga numeros.
+            //int validarNumeros = Integer.parseInt(ruc);
+            char[] arrayRuc = ruc.toCharArray();
+            for(char bucle: arrayRuc){
+                int num = Integer.parseInt(Character.toString(bucle));
+            }
         }catch(NumberFormatException e){
             esRucValido = false;
             JOptionPane.showMessageDialog(null, "El RUC no es válido.");    
@@ -108,7 +112,7 @@ public class PersonaJuridica extends Cliente{
 
                     //El tercer digito debe obligatoriamente ser 9.
                     int tercer = Character.getNumericValue(ruc.charAt(2));
-                    if(tercer != 6){
+                    if(tercer != 9){
                         esRucValido = false;
                         JOptionPane.showMessageDialog(null, "El RUC no es válido."); 
                     }else{

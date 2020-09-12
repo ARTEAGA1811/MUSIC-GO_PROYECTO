@@ -10,12 +10,14 @@
  */
 public class GUI_OpcionesSaxofon extends javax.swing.JFrame {
 
+    public TiendaInstrumento musicGo=new TiendaInstrumento();
     /**
      * Creates new form GUI_OpcionesSaxofon
      */
     public GUI_OpcionesSaxofon() {
         initComponents();
         setLocationRelativeTo(null);
+        Instrumento.nomInstrumento = "Saxofon";
     }
 
     /**
@@ -288,6 +290,56 @@ public class GUI_OpcionesSaxofon extends javax.swing.JFrame {
 
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
         // TODO add your handling code here:
+        
+        String materialInstrumento="";
+        String marca="";
+        String color="";
+        double peso=0;
+        double tamaño=0;
+        
+        //Material 
+        if(rbtnMatPlata.isSelected()){
+            materialInstrumento=rbtnMatPlata.getText();
+        }
+        else if(rbtnMatPlatino.isSelected()){
+            materialInstrumento=rbtnMatPlatino.getText();
+            }
+        else if(rbtnMatBronce.isSelected()){
+            materialInstrumento = rbtnMatBronce.getText();
+        }
+        //Marca 
+        if(rbtnOdissey.isSelected()){
+            marca = rbtnOdissey.getText();
+        }
+        else if(rbtnYamaha.isSelected()){
+            marca=rbtnYamaha.getText();
+            }
+        
+        //************PREGUNTAR
+        //Color 
+        color = "Negro";
+        
+        //Tamaño 
+        if(rbtnTam05.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam05.getText());
+        }
+        else if(rbtnTam08.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam08.getText());
+            }
+      
+        //Peso 
+        if(rbtnPeso129.isSelected()){
+            peso=Double.parseDouble(rbtnPeso129.getText());
+        }
+        else if(rbtnPeso115.isSelected()){
+            peso=Double.parseDouble(rbtnPeso115.getText());
+            }
+        
+        Instrumento miSaxofon=new Directo(materialInstrumento, color, tamaño, peso, marca);
+        Instrumento.precioInst = miSaxofon.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miSaxofon);
+        
+        
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);
         dispose();

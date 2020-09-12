@@ -10,12 +10,14 @@
  */
 public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
 
+    public TiendaInstrumento musicGo=new TiendaInstrumento();
     /**
      * Creates new form GUI_OpcionesTecladoElectrico
      */
     public GUI_OpcionesTecladoElectrico() {
         initComponents();
         setLocationRelativeTo(null);
+        Instrumento.nomInstrumento = "Teclado Eléctrico";
     }
 
     /**
@@ -288,6 +290,56 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
 
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
         // TODO add your handling code here:
+        
+        String marca="";
+        String color="";
+        double peso=0;
+        double tamaño=0;
+        
+         //Marca 
+        if(rbtnRoland.isSelected()){
+            marca=rbtnRoland.getText();
+        }
+        else if(rbtnCasio.isSelected()){
+            marca=rbtnCasio.getText();
+            }
+        else if(rbtnYamaha.isSelected()){
+            marca = rbtnYamaha.getText();
+        }
+            
+        //Color 
+        if(rbtnAzul.isSelected()){
+            color=rbtnAzul.getText();
+        }
+        else if(rbtnCafe.isSelected()){
+            color=rbtnCafe.getText();
+            }
+        else if(rbtnNegro1.isSelected()){
+            color=rbtnNegro1.getText();
+            }
+        
+        //Tamaño 
+        if(rbtnTam11.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam11.getText());
+        }
+        else if(rbtnTam139.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam11.getText());
+            }
+        
+        //Peso 
+        if(rbtnPeso0998.isSelected()){
+            peso=Double.parseDouble(rbtnPeso0998.getText());
+        }
+        else if(rbtnPeso8.isSelected()){
+            peso=Double.parseDouble(rbtnPeso8.getText());
+            }
+       
+        
+        Instrumento miTecladoElectrico = new Electronicos(color, tamaño, peso, marca);
+        Instrumento.precioInst = miTecladoElectrico.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miTecladoElectrico);
+        
+        
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);
         dispose();
