@@ -84,15 +84,12 @@ public class Mecanico extends Aerofonos {
             break;    
             
         }
-        
-        
-        
-        
+   
     }
 
     @Override
     public double calcularPrecio(String nombreInstr) {
-        this.precioInst=(precioMaterialO*(peso*tamaño))+(precioColorO*tamaño)+precioMarcaO;
+        this.precioInst=(precioMaterialO*((peso/100)*tamaño))+(precioColorO*tamaño)+precioMarcaO;
         return precioInst;
     }
 

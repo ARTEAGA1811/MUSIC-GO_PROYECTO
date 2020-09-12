@@ -103,7 +103,7 @@ public class Electromecanicos extends Electrofonos{
 
     @Override
     public double calcularPrecio(String nombreInstr) {
-        this.precioInst=(precioMaterialG*((peso*100)*tamaño))+(precioColorG*tamaño*100)+precioMarcaG;   
+        this.precioInst=(precioMaterialG*peso*100)+(precioColorG*tamaño*100)+precioMarcaG;   
         return precioInst;
     }
 
