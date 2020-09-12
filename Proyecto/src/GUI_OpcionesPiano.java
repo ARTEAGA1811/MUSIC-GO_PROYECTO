@@ -9,6 +9,8 @@
  * @author Tim
  */
 public class GUI_OpcionesPiano extends javax.swing.JFrame {
+    
+    public TiendaInstrumento musicGo=new TiendaInstrumento();
 
     /**
      * Creates new form GUI_OpcionesPiano
@@ -16,6 +18,7 @@ public class GUI_OpcionesPiano extends javax.swing.JFrame {
     public GUI_OpcionesPiano() {
         initComponents();
         setLocationRelativeTo(null);
+        Instrumento.nomInstrumento = "Piano";
     }
 
     /**
@@ -340,9 +343,69 @@ public class GUI_OpcionesPiano extends javax.swing.JFrame {
 
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
         // TODO add your handling code here:
+        
+        String materialInstrumento="";
+        String marca="";
+        String color="";
+        double peso=0;
+        double tamaño=0;
+        
+        //Material 
+        if(rbtnMatAbeto.isSelected()){
+        materialInstrumento = rbtnMatAbeto.getText();
+        }else if(rbtnMatRoble.isSelected()){
+            materialInstrumento = rbtnMatRoble.getText();
+        }
+        
+        //Marca 
+        if(rbtnbechstein.isSelected()){
+            marca = rbtnbechstein.getText();
+        }else if(rbtnSchimmel.isSelected()){
+            marca = rbtnSchimmel.getText();
+        }else if(rbtnYamaha.isSelected()){
+            marca = rbtnYamaha.getText();
+        }
+        
+        //Color 
+        if(rbtnNegro.isSelected()){
+            color=rbtnNegro.getText();
+        }
+        else if(rbtnCafe.isSelected()){
+            color=rbtnCafe.getText();
+        }
+        
+        //Tamaño 
+        if(rbtnTam139.isSelected()){
+            tamaño = Double.parseDouble(rbtnTam139.getText());
+        }else if(rbtnTam11.isSelected()){
+            tamaño = Double.parseDouble(rbtnTam11.getText());
+        }else if(rbtnTam098.isSelected()){
+            tamaño = Double.parseDouble(rbtnTam098.getText());
+        }
+        
+        //Peso 
+        if(rbtnPeso270.isSelected()){
+            peso=Double.parseDouble(rbtnPeso270.getText());
+        }
+        else if(rbtnPeso250.isSelected()){
+            peso=Double.parseDouble(rbtnPeso250.getText());
+            }
+        else if(rbtnPeso210.isSelected()){
+            peso=Double.parseDouble(rbtnPeso210.getText());
+            }
+        
+        Instrumento miPiano = new Percusion(materialInstrumento, color, tamaño, peso, marca);
+        Instrumento.precioInst = miPiano.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miPiano);
+        
+
+        
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);
         dispose();
+        
+      
+        
     }//GEN-LAST:event_btnComprarActionPerformed
 
     private void btnSonidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSonidoActionPerformed

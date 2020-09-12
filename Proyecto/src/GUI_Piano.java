@@ -17,7 +17,7 @@ public class GUI_Piano extends javax.swing.JFrame {
      */
     public GUI_Piano() {
         initComponents();
-        setLocationRelativeTo(null);
+        setLocationRelativeTo(null);       
     }
 
     /**
