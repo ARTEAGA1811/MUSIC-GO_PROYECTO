@@ -15,7 +15,6 @@ import java.util.ArrayList;
 public class TiendaInstrumento {
     private ArrayList <Instrumento> instrumentos = new ArrayList <Instrumento>();
     private ArrayList <Cliente> clientes = new ArrayList <Cliente>();
-    public TiendaInstrumento musicGo=new TiendaInstrumento();
     
     public ArrayList<Instrumento> getInstrumentos() {
         return instrumentos;
@@ -31,14 +30,6 @@ public class TiendaInstrumento {
 
     public void setClientes(Cliente miCliente) {
         clientes.add(miCliente);
-    }
-
-    public TiendaInstrumento getMusicGo() {
-        return musicGo;
-    }
-
-    public void setMusicGo(TiendaInstrumento musicGo) {
-        this.musicGo = musicGo;
     }
     
     

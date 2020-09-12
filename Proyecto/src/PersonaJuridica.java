@@ -14,6 +14,12 @@ import javax.swing.JOptionPane;
  */
 public class PersonaJuridica extends Cliente{
     private String ruc;
+    
+    public PersonaJuridica(String nombre, String ruc){
+        this.nombreCliente = nombre;
+        this.ruc = ruc;
+        this.tipoCliente = "Persona Juridica";
+    }
 
     @Override
     public String compraInstrumento(String nomTarjeta, 
@@ -71,10 +77,10 @@ public class PersonaJuridica extends Cliente{
     public boolean esIdentidadValida() {
         //Primero toca inicializar el RUC
         boolean esRucValido = true;
+        //RUC VÁLIDO : 1090072923001
         
         
-        
-        this.ruc = this.ruc.replace("-",""); //En caso que la cedula se haya ingresado con guiones.
+        this.ruc = this.ruc.replace("-",""); //En caso que la RUC se haya ingresado con guiones.
         
         try{ //Para verificar que el RUC solo contenga numeros.
             int validarNumeros = Integer.parseInt(this.ruc);
@@ -84,7 +90,7 @@ public class PersonaJuridica extends Cliente{
             
         }
         
-        //Aqui ya es verificado que la cedula contenga solo numeros.
+        //Aqui ya es verificado que la RUC contenga solo numeros.
         if(esRucValido){
             if(this.ruc.length() != 13){ //Verificar tamanio
                 esRucValido = false;

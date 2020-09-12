@@ -17,7 +17,7 @@ public class Punteo extends Cordofonos {
     double precioColor;
     double precioMarca;
     double precioInstDescuento;
-    
+        
     public Punteo(String materialInst, String color, double tamaño, double peso, String marca) {
         this.materialInst = materialInst;
         this.color = color;
@@ -147,7 +147,7 @@ public class Punteo extends Cordofonos {
             this.precioInst=precioInst-(precioInst*precioInstDescuento);
         }        
         if(nombreInstr.equals("Arpa")){
-            this.precioInst=(precioMaterial*(peso*tamaño))+(precioColor*tamaño)+precioMarca;   
+            this.precioInst=(precioMaterial*((peso/10)*tamaño))+(precioColor*tamaño)+precioMarca;   
         }
         return precioInst;
     }

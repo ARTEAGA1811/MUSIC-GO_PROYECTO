@@ -14,6 +14,13 @@ import javax.swing.JOptionPane;
  */
 public class PublicoGeneral extends Cliente {
     private String apellido, cedula;
+    
+    public PublicoGeneral(String nombre, String apellido, String cedula){
+        this.nombreCliente = nombre;
+        this.apellido = apellido;
+        this.cedula = cedula;
+        this.tipoCliente = "Publico General";
+    }
 
     @Override
     public String compraInstrumento(String nomTarjeta, 

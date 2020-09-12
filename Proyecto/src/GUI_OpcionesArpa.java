@@ -10,13 +10,16 @@
  */
 public class GUI_OpcionesArpa extends javax.swing.JFrame {
     public TiendaInstrumento musicGo=new TiendaInstrumento();
-    String nombreInstrumento="Arpa";
+    
+
+    
     /**
      * Creates new form GUI_OpcionesArpa
      */
     public GUI_OpcionesArpa() {
         initComponents();
         setLocationRelativeTo(null);
+        Instrumento.nomInstrumento = "Arpa";
         
     }
 
@@ -391,7 +394,7 @@ public class GUI_OpcionesArpa extends javax.swing.JFrame {
             }
         
         Instrumento miArpa=new Punteo(materialInstrumento, color, tamaño, peso, marca);
-        miArpa.calcularPrecio(nombreInstrumento);
+        Instrumento.precioInst = miArpa.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miArpa);
         
         

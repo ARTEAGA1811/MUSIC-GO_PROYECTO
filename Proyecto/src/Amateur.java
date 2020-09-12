@@ -19,7 +19,7 @@ public class Amateur extends Cliente{
         this.nombreCliente = nombre;
         this.apellido = apellido;
         this.cedula = cedula;
-        this.tipoCliente = "Músico Profesional";
+        this.tipoCliente = "Amateur";
     }
     
     public String manualInstrumento(){

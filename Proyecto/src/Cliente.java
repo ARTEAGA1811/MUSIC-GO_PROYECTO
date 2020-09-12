@@ -13,7 +13,6 @@ public abstract class Cliente implements Identidad  {
     protected String nombreCliente;
     protected String tipoCliente;
     
-    
     //METODOS
     public abstract String compraInstrumento(String nomTarjeta, 
                                                 String numTarjeta, 
@@ -29,7 +28,7 @@ public abstract class Cliente implements Identidad  {
     public String toString() {
         return "Cliente{" + "nombreCliente=" + nombreCliente + '}';
     }
-    
+
     
     
 }

@@ -10,12 +10,14 @@
  */
 public class GUI_Factura extends javax.swing.JFrame {
 
+    
     /**
      * Creates new form GUI_Factura
      */
     public GUI_Factura() {
         initComponents();
         setLocationRelativeTo(null);
+        txaResumenFactura.setText(GUI_Compra.factura);
     }
 
     /**
@@ -50,7 +52,7 @@ public class GUI_Factura extends javax.swing.JFrame {
         txaResumenFactura.setRows(5);
         jScrollPane1.setViewportView(txaResumenFactura);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 270, 340));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 620, 340));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N

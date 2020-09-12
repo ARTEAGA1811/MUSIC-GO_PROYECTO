@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class GUI_Compra extends javax.swing.JFrame {
     
-    
+    static String factura;
     /**
      * Creates new form GUI_Compra
      */
@@ -395,56 +395,175 @@ public class GUI_Compra extends javax.swing.JFrame {
 
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
         // TODO add your handling code here:
+        String apellido;
         String nomCliente;
+        String cedula;
         String tipoCliente;
         String nomTarjeta;
         String numTarjeta;
         String fechaCaducidad;
         String cvv;
         String direccion;
-        String nombreInstrumento="";
+        String nombreInstrumento = Instrumento.nomInstrumento;
         int cantidad;
-        double precioInstrumento=0;
-        double descuentoExtra=0;
+        double precioInstrumento = Instrumento.precioInst;
+        double descuentoExtra = Instrumento.descuentoEXTRA;
         
         
         
         
-        //Amateur 
+        //Amateur ----------------------------------------------------------------------------------------------------------------------------
         if(rbtnAmateur.isSelected()){
-            //Datos cliente
-            nomCliente=txtNombre.getText();
-            String apellido=txtApellido.getText();
-            direccion=txtDireccion.getText();
-            String cedula=txtIdentificador.getText();
-            cantidad=Integer.parseInt(txtCantidad.getText());
-            Amateur miAmateur=new Amateur(nomCliente, apellido, cedula);
-            //Datos pago
-            nomTarjeta=txtNombreTarjeta.getText();
-            numTarjeta=txtNumTarjeta.getText();
-            fechaCaducidad=txtFechaCaducidad.getText();
-            cvv=txtCVC.getText();
+                    //Datos cliente
+                    nomCliente=txtNombre.getText();
+                    apellido=txtApellido.getText();
+                    direccion=txtDireccion.getText();
+                    cedula=txtIdentificador.getText();
+                    cantidad=Integer.parseInt(txtCantidad.getText());
+                    Amateur miAmateur=new Amateur(nomCliente, apellido, cedula);
+                    //Datos pago
+                    nomTarjeta=txtNombreTarjeta.getText();
+                    numTarjeta=txtNumTarjeta.getText();
+                    fechaCaducidad=txtFechaCaducidad.getText();
+                    cvv=txtCVC.getText();
+
+                    //Validar cédula
+                    if(miAmateur.esIdentidadValida()){
+                        factura = miAmateur.compraInstrumento(nomTarjeta,
+                                                    numTarjeta,
+                                                    fechaCaducidad,
+                                                    cvv,
+                                                    direccion,
+                                                    nombreInstrumento,
+                                                    cantidad,
+                                                    precioInstrumento,
+                                                    descuentoExtra);
+                    GUI_Factura factura = new GUI_Factura();
+                    factura.setVisible(true);
+                    dispose();
+                    }
+                    else{
+                        GUI_Factura factura = new GUI_Factura();
+                        factura.setVisible(false);
+                    }
+        }
+        
+        
+            //Musico Profesional ---------------------------------------------------------------------------------------------------------------
+        else if(rbtnMusicoProfesional.isSelected()){
+                    //Datos cliente
+                    nomCliente=txtNombre.getText();
+                    apellido=txtApellido.getText();
+                    direccion=txtDireccion.getText();
+                    String codigoVIP = txtCodigoVIP.getText();
+                    cedula=txtIdentificador.getText();
+                    cantidad=Integer.parseInt(txtCantidad.getText());
+                    MusicoProfesional miMusicoProfesional=new MusicoProfesional(nomCliente, apellido, cedula);
+                    //Datos pago
+                    nomTarjeta=txtNombreTarjeta.getText();
+                    numTarjeta=txtNumTarjeta.getText();
+                    fechaCaducidad=txtFechaCaducidad.getText();
+                    cvv=txtCVC.getText();
+
+                    //Validar cédula
+                    if(miMusicoProfesional.esIdentidadValida() && miMusicoProfesional.esPaseVip(codigoVIP)){
+                        factura = miMusicoProfesional.compraInstrumento(nomTarjeta,
+                                                    numTarjeta,
+                                                    fechaCaducidad,
+                                                    cvv,
+                                                    direccion,
+                                                    nombreInstrumento,
+                                                    cantidad,
+                                                    precioInstrumento,
+                                                    descuentoExtra);
+                    GUI_Factura factura = new GUI_Factura();
+                    factura.setVisible(true);
+                    dispose();
+                    }
+                    else{
+                        GUI_Factura factura = new GUI_Factura();
+                        factura.setVisible(false);
+                    }
             
-            //Validar cédula
-            if(miAmateur.esIdentidadValida()==true){
-                miAmateur.compraInstrumento(nomTarjeta,
-                                            numTarjeta,
-                                            fechaCaducidad,
-                                            cvv,
-                                            direccion,
-                                            nombreInstrumento,
-                                            cantidad,
-                                            precioInstrumento,
-                                            descuentoExtra);
-            }
+        }
+        
+        
+            //Persona Jurídica ----------------------------------------------------------------------------------------------------------------
+        else if(rbtnPersonaJuridica.isSelected()){
+                    //Datos cliente
+                    nomCliente=txtNombre.getText();
+                    direccion=txtDireccion.getText();
+                    String ruc =txtIdentificador.getText();
+                    cantidad=Integer.parseInt(txtCantidad.getText());
+                    PersonaJuridica miPersonaJuridica=new PersonaJuridica(nomCliente,ruc);
+                    //Datos pago
+                    nomTarjeta=txtNombreTarjeta.getText();
+                    numTarjeta=txtNumTarjeta.getText();
+                    fechaCaducidad=txtFechaCaducidad.getText();
+                    cvv=txtCVC.getText();
+
+                    //Validar cédula
+                    if(miPersonaJuridica.esIdentidadValida()){
+                        factura = miPersonaJuridica.compraInstrumento(nomTarjeta,
+                                                    numTarjeta,
+                                                    fechaCaducidad,
+                                                    cvv,
+                                                    direccion,
+                                                    nombreInstrumento,
+                                                    cantidad,
+                                                    precioInstrumento,
+                                                    descuentoExtra);
+                    GUI_Factura factura = new GUI_Factura();
+                    factura.setVisible(true);
+                    dispose();
+                    }
+                    else{
+                        GUI_Factura factura = new GUI_Factura();
+                        factura.setVisible(false);
+                    }
+            
+        }
+        
+        
+            //Publico General ----------------------------------------------------------------------------------------------------------------------------------
+        else if(rbtnPublicoGeneral.isSelected()){
+                    //Datos cliente
+                    nomCliente=txtNombre.getText();
+                    apellido=txtApellido.getText();
+                    direccion=txtDireccion.getText();
+                    cedula=txtIdentificador.getText();
+                    cantidad=Integer.parseInt(txtCantidad.getText());
+                    PublicoGeneral miPublicoGeneral=new PublicoGeneral(nomCliente, apellido, cedula);
+                    //Datos pago
+                    nomTarjeta=txtNombreTarjeta.getText();
+                    numTarjeta=txtNumTarjeta.getText();
+                    fechaCaducidad=txtFechaCaducidad.getText();
+                    cvv=txtCVC.getText();
+
+                    //Validar cédula
+                    if(miPublicoGeneral.esIdentidadValida()){
+                        factura = miPublicoGeneral.compraInstrumento(nomTarjeta,
+                                                    numTarjeta,
+                                                    fechaCaducidad,
+                                                    cvv,
+                                                    direccion,
+                                                    nombreInstrumento,
+                                                    cantidad,
+                                                    precioInstrumento,
+                                                    descuentoExtra);
+                    GUI_Factura factura = new GUI_Factura();
+                    factura.setVisible(true);
+                    dispose();
+                    }
+                    else{
+                        GUI_Factura factura = new GUI_Factura();
+                        factura.setVisible(false);
+                    }
             
         }
 
+ 
         
-        
-        GUI_Factura factura = new GUI_Factura();
-        factura.setVisible(true);
-        dispose();
     }//GEN-LAST:event_btnComprarActionPerformed
 
     private void rbtnPersonaJuridicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnPersonaJuridicaActionPerformed
