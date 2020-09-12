@@ -95,7 +95,7 @@ public class Frotacion extends Cordofonos {
 
     @Override
     public double calcularPrecio(String nombreInstr) {
-        if(tipoInst.equals("Violin")){
+        if(nombreInstr.equals("Violin")){
             this.precioInst=(precioMaterialV*(peso*tamaño))+(precioColorV*tamaño)+precioMarcaV;
         } 
         return precioInst; 

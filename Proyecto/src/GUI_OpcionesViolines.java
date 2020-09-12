@@ -9,13 +9,14 @@
  * @author Tim
  */
 public class GUI_OpcionesViolines extends javax.swing.JFrame {
-
+    public TiendaInstrumento musicGo=new TiendaInstrumento();
     /**
      * Creates new form GUI_OpcionesViolines
      */
     public GUI_OpcionesViolines() {
         initComponents();
         setLocationRelativeTo(null);
+        Instrumento.nomInstrumento = "Violin";
     }
 
     /**
@@ -338,6 +339,60 @@ public class GUI_OpcionesViolines extends javax.swing.JFrame {
 
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
         // TODO add your handling code here:
+        String materialInstrumento="";
+        String marca="";
+        String color="";
+        double peso=0;
+        double tamaño=0;
+        //Material 
+        if(rbtnMatCaoba.isSelected()){
+            materialInstrumento=rbtnMatCaoba.getText();
+        }
+        else if(rbtnMatSapele.isSelected()){
+            materialInstrumento=rbtnMatSapele.getText();
+            }
+        //Marca 
+        if(rbtnGolden.isSelected()){
+            marca=rbtnGolden.getText();
+        }
+        else if(rbtnYoseng.isSelected()){
+            marca=rbtnYoseng.getText();
+            }
+        else if(rbtnSonjLin.isSelected()){
+            marca=rbtnSonjLin.getText();
+            }
+        //Color 
+        if(rbtnCafe.isSelected()){
+            color=rbtnCafe.getText();
+        }
+        else if(rbtnNatural.isSelected()){
+            color=rbtnNatural.getText();
+            }
+        //Tamaño 
+        if(rbtnTam052.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam052.getText());
+        }
+        else if(rbtnTam057.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam057.getText());
+            }
+        else if(rbtnTam06.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam06.getText());
+            }
+        //Peso 
+        if(rbtnPeso040.isSelected()){
+            peso=Double.parseDouble(rbtnPeso040.getText());
+        }
+        else if(rbtnPeso043.isSelected()){
+            peso=Double.parseDouble(rbtnPeso043.getText());
+            }
+        else if(rbtnPeso047.isSelected()){
+            peso=Double.parseDouble(rbtnPeso047.getText());
+            }
+        
+        Instrumento miViolin=new Frotacion(materialInstrumento, color, tamaño, peso, marca);
+        Instrumento.precioInst = miViolin.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miViolin);
+        
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);
         dispose();

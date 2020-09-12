@@ -9,13 +9,15 @@
  * @author Tim
  */
 public class GUI_OpcionesTrompeta extends javax.swing.JFrame {
-
+    public TiendaInstrumento musicGo=new TiendaInstrumento();
+    
     /**
      * Creates new form GUI_OpcionesTrompeta
      */
     public GUI_OpcionesTrompeta() {
         initComponents();
         setLocationRelativeTo(null);
+        Instrumento.nomInstrumento = "Trompeta";
     }
 
     /**
@@ -277,9 +279,53 @@ public class GUI_OpcionesTrompeta extends javax.swing.JFrame {
 
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
         // TODO add your handling code here:
+        String materialInstrumento="";
+        String marca="";
+        String color="";
+        double peso=0;
+        double tamaño=0;
+        //Material 
+        if(rbtnMatBronce.isSelected()){
+            materialInstrumento=rbtnMatBronce.getText();
+        }
+        else if(rbtnMatPlata.isSelected()){
+            materialInstrumento=rbtnMatPlata.getText();
+            }
+        else if(rbtnMatPlatino.isSelected()){
+            materialInstrumento=rbtnMatPlatino.getText();
+            }
+        //Marca 
+        if(rbtnOdissey.isSelected()){
+            marca=rbtnOdissey.getText();
+        }
+        else if(rbtnYamaha.isSelected()){
+            marca=rbtnYamaha.getText();
+            }
+        //Tamaño 
+        if(rbtnTam05.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam05.getText());
+        }
+        else if(rbtnTam08.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam08.getText());
+            }
+        //Peso 
+        if(rbtnPeso115.isSelected()){
+            peso=Double.parseDouble(rbtnPeso115.getText());
+        }
+        else if(rbtnPeso129.isSelected()){
+            peso=Double.parseDouble(rbtnPeso129.getText());
+            }
+        
+        Instrumento miTrompeta=new Directo(materialInstrumento, color, tamaño, peso, marca);
+        Instrumento.precioInst = miTrompeta.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miTrompeta);
+        
+        
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);
         dispose();
+        
+    
     }//GEN-LAST:event_btnComprarActionPerformed
 
     private void btnAtrasCuerdasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasCuerdasActionPerformed
