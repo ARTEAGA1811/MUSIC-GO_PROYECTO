@@ -10,6 +10,8 @@
  */
 public class GUI_Piano extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form Piano
      */
@@ -116,6 +118,7 @@ public class GUI_Piano extends javax.swing.JFrame {
         GUI_OpcionesPiano opcionesPiano  = new GUI_OpcionesPiano();
         opcionesPiano.setVisible(true);
         dispose();
+        ins = "piano1";
     }//GEN-LAST:event_btnComprarPiano1ActionPerformed
 
     private void btnComprarPiano2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarPiano2ActionPerformed
@@ -123,6 +126,7 @@ public class GUI_Piano extends javax.swing.JFrame {
         GUI_OpcionesPiano opcionesPiano  = new GUI_OpcionesPiano();
         opcionesPiano.setVisible(true);
         dispose();
+        ins = "piano2";
     }//GEN-LAST:event_btnComprarPiano2ActionPerformed
 
     private void btnComprarPiano3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarPiano3ActionPerformed
@@ -130,6 +134,7 @@ public class GUI_Piano extends javax.swing.JFrame {
         GUI_OpcionesPiano opcionesPiano  = new GUI_OpcionesPiano();
         opcionesPiano.setVisible(true);
         dispose();
+        ins = "piano3";
     }//GEN-LAST:event_btnComprarPiano3ActionPerformed
 
     /**

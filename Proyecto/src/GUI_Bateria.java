@@ -10,6 +10,8 @@
  */
 public class GUI_Bateria extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form Bateria
      */
@@ -104,6 +106,8 @@ public class GUI_Bateria extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+  
+    
     private void btnAtrasPercusionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasPercusionActionPerformed
         // TODO add your handling code here:
         GUI_Percusion percusion = new GUI_Percusion();
@@ -116,6 +120,8 @@ public class GUI_Bateria extends javax.swing.JFrame {
         GUI_OpcionesBateria opcionesCompra = new GUI_OpcionesBateria();
         opcionesCompra.setVisible(true);
         dispose();
+        
+        ins = "bateria1";
     }//GEN-LAST:event_btnBateria1ActionPerformed
 
     private void btnBateria2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBateria2ActionPerformed
@@ -123,6 +129,7 @@ public class GUI_Bateria extends javax.swing.JFrame {
         GUI_OpcionesBateria opcionesCompra = new GUI_OpcionesBateria();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "bateria2";
     }//GEN-LAST:event_btnBateria2ActionPerformed
 
     private void btnBateria3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBateria3ActionPerformed
@@ -130,6 +137,7 @@ public class GUI_Bateria extends javax.swing.JFrame {
         GUI_OpcionesBateria opcionesCompra = new GUI_OpcionesBateria();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "bateria3";
     }//GEN-LAST:event_btnBateria3ActionPerformed
 
     /**

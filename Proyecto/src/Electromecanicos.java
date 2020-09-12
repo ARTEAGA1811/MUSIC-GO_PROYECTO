@@ -1,3 +1,6 @@
+
+import java.applet.AudioClip;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -60,10 +63,42 @@ public class Electromecanicos extends Electrofonos{
         }
     }
     
+    //Contructor vacio
+    public Electromecanicos(){}
+    
     
     @Override
-    public void producirSonido() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void producirSonido(String ins) {
+        
+        //SE VAN A EJECUTAR LAS guitarras electricas
+        AudioClip sonido;
+        switch(ins){
+            
+            case "guitarraElectrica1":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/guitarrasElectricas/geUno.wav"));
+                sonido.play();
+            break;
+            
+            case "guitarraElectrica2":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/guitarrasElectricas/geDos.wav"));
+                sonido.play();
+            break;
+            
+            case "guitarraElectrica3":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/guitarrasElectricas/geTres.wav"));
+                sonido.play();
+            break;
+            
+            case "guitarraElectrica4":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/guitarrasElectricas/geCuatro.wav"));
+                sonido.play();
+            break;
+            
+            default:
+                System.out.println("no se eligio sonido CORREGIRR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            break; 
+        }
+        
     }
 
     @Override

@@ -1,3 +1,6 @@
+
+import java.applet.AudioClip;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -166,7 +169,6 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
         lblMarca.setText("MARCA");
         getContentPane().add(lblMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 270, -1, 30));
 
-        btnAtrasCuerdas.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasCuerdas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnAtrasCuerdas.setText("Atrás");
         btnAtrasCuerdas.addActionListener(new java.awt.event.ActionListener() {
@@ -272,6 +274,11 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
         btnSonido.setBackground(new java.awt.Color(255, 204, 204));
         btnSonido.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnSonido.setText("SONIDO");
+        btnSonido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSonidoActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnSonido, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 340, -1, 30));
 
         btnComprar.setBackground(new java.awt.Color(153, 255, 204));
@@ -345,6 +352,12 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
         compra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarActionPerformed
+
+    private void btnSonidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSonidoActionPerformed
+        // TODO add your handling code here: ***********************************BOTON DEL SONIDO
+        new Mecanico().producirSonido(GUI_Organo.ins);
+        
+    }//GEN-LAST:event_btnSonidoActionPerformed
 
     /**
      * @param args the command line arguments

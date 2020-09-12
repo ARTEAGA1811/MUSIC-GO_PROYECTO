@@ -10,6 +10,8 @@
  */
 public class GUI_Flauta extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form Flauta
      */
@@ -131,6 +133,7 @@ public class GUI_Flauta extends javax.swing.JFrame {
         GUI_OpcionesFlauta opcionesCompra = new GUI_OpcionesFlauta();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "flauta1";
     }//GEN-LAST:event_btnComprarFlauta1ActionPerformed
 
     private void btnComprarFlauta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlauta2ActionPerformed
@@ -138,6 +141,7 @@ public class GUI_Flauta extends javax.swing.JFrame {
         GUI_OpcionesFlauta opcionesCompra = new GUI_OpcionesFlauta();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "flauta2";
     }//GEN-LAST:event_btnComprarFlauta2ActionPerformed
 
     private void btnComprarFlauta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlauta3ActionPerformed
@@ -145,6 +149,7 @@ public class GUI_Flauta extends javax.swing.JFrame {
         GUI_OpcionesFlauta opcionesCompra = new GUI_OpcionesFlauta();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "flauta3";
     }//GEN-LAST:event_btnComprarFlauta3ActionPerformed
 
     private void btnComprarFlauta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlauta4ActionPerformed
@@ -152,6 +157,7 @@ public class GUI_Flauta extends javax.swing.JFrame {
         GUI_OpcionesFlauta opcionesCompra = new GUI_OpcionesFlauta();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "flauta4";
     }//GEN-LAST:event_btnComprarFlauta4ActionPerformed
 
     /**

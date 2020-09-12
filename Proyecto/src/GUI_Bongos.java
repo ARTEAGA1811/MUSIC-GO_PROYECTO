@@ -10,6 +10,7 @@
  */
 public class GUI_Bongos extends javax.swing.JFrame {
 
+    static String ins;
     /**
      * Creates new form Bongos
      */
@@ -131,6 +132,7 @@ public class GUI_Bongos extends javax.swing.JFrame {
         GUI_OpcionesBongos opcionesCompra  = new GUI_OpcionesBongos();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "bongo1";
     }//GEN-LAST:event_btnComprarBongo1ActionPerformed
 
     private void btnComprarBongo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarBongo2ActionPerformed
@@ -138,6 +140,7 @@ public class GUI_Bongos extends javax.swing.JFrame {
         GUI_OpcionesBongos opcionesCompra  = new GUI_OpcionesBongos();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "bongo2";
     }//GEN-LAST:event_btnComprarBongo2ActionPerformed
 
     private void btnComprarBongo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarBongo3ActionPerformed
@@ -145,6 +148,7 @@ public class GUI_Bongos extends javax.swing.JFrame {
         GUI_OpcionesBongos opcionesCompra  = new GUI_OpcionesBongos();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "bongo3";
     }//GEN-LAST:event_btnComprarBongo3ActionPerformed
 
     private void btnComprarBongo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarBongo4ActionPerformed
@@ -152,6 +156,7 @@ public class GUI_Bongos extends javax.swing.JFrame {
         GUI_OpcionesBongos opcionesCompra  = new GUI_OpcionesBongos();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "bongo4";
     }//GEN-LAST:event_btnComprarBongo4ActionPerformed
 
     /**

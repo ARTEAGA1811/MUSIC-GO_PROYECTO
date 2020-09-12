@@ -1,3 +1,6 @@
+
+import java.applet.AudioClip;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -98,6 +101,10 @@ public class PercusionMembranofos extends Membranofonos{
         }
     }
     
+    //Constructor vacio
+    public PercusionMembranofos(){}
+    
+    
     @Override
     public double calcularPrecio(String nombreInstr) {
         if(nombreInstr.equals("Bateria")){
@@ -121,8 +128,77 @@ public class PercusionMembranofos extends Membranofonos{
         return precioInstDescuento;
     }
     @Override
-    public void producirSonido() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void producirSonido(String ins) {
+        
+        //SE VAN A EJECUTAR LAS BATERIAS | bONGOS |Congas
+        AudioClip sonido;
+        switch(ins){
+            
+            //baterias
+            case "bateria1":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/baterias/bUno.wav"));
+                sonido.play();
+            break;
+            
+            case "bateria2":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/baterias/bDos.wav"));
+                sonido.play();
+            break;
+            
+            case "bateria3":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/baterias/bTres.wav"));
+                sonido.play();
+            break;
+            
+            //bongos
+            case "bongo1":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/bongos/bonUno.wav"));
+                sonido.play();
+            break;
+            
+            case "bongo2":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/bongos/bonDos.wav"));
+                sonido.play();
+            break;
+            
+            case "bongo3":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/bongos/bonTres.wav"));
+                sonido.play();
+            break;
+            
+            case "bongo4":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/bongos/bonCuatro.wav"));
+                sonido.play();
+            break;
+            
+            
+            //Congas
+            case "conga1":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/congas/cUno.wav"));
+                sonido.play();
+            break;
+            
+            case "conga2":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/congas/cDos.wav"));
+                sonido.play();
+            break;
+            
+            case "conga3":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/congas/cTres.wav"));
+                sonido.play();
+            break;
+            
+            case "conga4":
+                sonido = java.applet.Applet.newAudioClip(getClass().getResource("/sonidos/congas/cCuatro.wav"));
+                sonido.play();
+            break;
+            
+            
+            
+            default:
+                System.out.println("no se eligio sonido CORREGIRR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            break;    
+        }
     }
     
     @Override

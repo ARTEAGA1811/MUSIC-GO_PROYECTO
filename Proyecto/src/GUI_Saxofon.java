@@ -10,6 +10,8 @@
  */
 public class GUI_Saxofon extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form Saxofon
      */
@@ -132,6 +134,7 @@ public class GUI_Saxofon extends javax.swing.JFrame {
         GUI_OpcionesSaxofon opcionesCompra  = new GUI_OpcionesSaxofon();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "saxofon1";
     }//GEN-LAST:event_btnComprarSaxofon1ActionPerformed
 
     private void btnComprarSaxofon2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarSaxofon2ActionPerformed
@@ -139,6 +142,7 @@ public class GUI_Saxofon extends javax.swing.JFrame {
         GUI_OpcionesSaxofon opcionesCompra  = new GUI_OpcionesSaxofon();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "saxofon2";
     }//GEN-LAST:event_btnComprarSaxofon2ActionPerformed
 
     private void btnComprarSaxofon3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarSaxofon3ActionPerformed
@@ -146,6 +150,7 @@ public class GUI_Saxofon extends javax.swing.JFrame {
         GUI_OpcionesSaxofon opcionesCompra  = new GUI_OpcionesSaxofon();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "saxofon3";
     }//GEN-LAST:event_btnComprarSaxofon3ActionPerformed
 
     private void btnComprarSaxofon4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarSaxofon4ActionPerformed
@@ -153,6 +158,7 @@ public class GUI_Saxofon extends javax.swing.JFrame {
         GUI_OpcionesSaxofon opcionesCompra  = new GUI_OpcionesSaxofon();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "saxofon4";
     }//GEN-LAST:event_btnComprarSaxofon4ActionPerformed
 
     /**

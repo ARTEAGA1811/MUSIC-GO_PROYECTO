@@ -14,7 +14,7 @@ public abstract class Instrumento implements Precio{
     protected double precioInst, tamaño, peso;
     
     
-    public abstract void producirSonido();
+    public abstract void producirSonido(String ins);
 
     @Override
     public String toString() {

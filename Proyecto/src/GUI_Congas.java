@@ -10,6 +10,7 @@
  */
 public class GUI_Congas extends javax.swing.JFrame {
 
+    static String ins;
     /**
      * Creates new form Congas
      */
@@ -124,6 +125,7 @@ public class GUI_Congas extends javax.swing.JFrame {
         GUI_Percusion percusion = new GUI_Percusion();
         percusion.setVisible(true);
         dispose();
+        
     }//GEN-LAST:event_btnAtrasPercusionActionPerformed
 
     private void btnComprarConga1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarConga1ActionPerformed
@@ -131,6 +133,7 @@ public class GUI_Congas extends javax.swing.JFrame {
         GUI_OpcionesConga opcionesCompra  = new GUI_OpcionesConga();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "conga1";
     }//GEN-LAST:event_btnComprarConga1ActionPerformed
 
     private void btnComprarConga2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarConga2ActionPerformed
@@ -138,6 +141,7 @@ public class GUI_Congas extends javax.swing.JFrame {
         GUI_OpcionesConga opcionesCompra  = new GUI_OpcionesConga();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "conga2";
     }//GEN-LAST:event_btnComprarConga2ActionPerformed
 
     private void btnComprarConga3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarConga3ActionPerformed
@@ -145,6 +149,7 @@ public class GUI_Congas extends javax.swing.JFrame {
         GUI_OpcionesConga opcionesCompra  = new GUI_OpcionesConga();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "conga3";
     }//GEN-LAST:event_btnComprarConga3ActionPerformed
 
     private void btnComprarConga4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarConga4ActionPerformed
@@ -152,6 +157,7 @@ public class GUI_Congas extends javax.swing.JFrame {
         GUI_OpcionesConga opcionesCompra  = new GUI_OpcionesConga();
         opcionesCompra.setVisible(true);
         dispose();
+        ins = "conga4";
     }//GEN-LAST:event_btnComprarConga4ActionPerformed
 
     /**

@@ -177,7 +177,6 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
 
         getContentPane().add(jPanelMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 210, 120));
 
-        btnAtrasCuerdas.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasCuerdas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnAtrasCuerdas.setText("Atrás");
         btnAtrasCuerdas.addActionListener(new java.awt.event.ActionListener() {
@@ -318,6 +317,11 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
         btnSonido.setBackground(new java.awt.Color(255, 204, 204));
         btnSonido.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnSonido.setText("SONIDO");
+        btnSonido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSonidoActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnSonido, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, -1, 30));
 
         btnComprar.setBackground(new java.awt.Color(153, 255, 204));
@@ -357,6 +361,12 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
         compra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarActionPerformed
+
+    private void btnSonidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSonidoActionPerformed
+        // TODO add your handling code here:
+        
+        new PercusionMembranofos().producirSonido(GUI_Bongos.ins);
+    }//GEN-LAST:event_btnSonidoActionPerformed
 
     /**
      * @param args the command line arguments

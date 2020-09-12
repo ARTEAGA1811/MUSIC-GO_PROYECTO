@@ -12,7 +12,7 @@
 public class Raspados extends Ideofonos{
 
     @Override
-    public void producirSonido() {
+    public void producirSonido(String ins) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

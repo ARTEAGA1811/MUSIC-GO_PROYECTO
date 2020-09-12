@@ -114,7 +114,6 @@ public class GUI_OpcionesFlauta extends javax.swing.JFrame {
 
         getContentPane().add(jPanelColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 210, 160));
 
-        btnAtrasCuerdas.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasCuerdas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnAtrasCuerdas.setText("Atrás");
         btnAtrasCuerdas.addActionListener(new java.awt.event.ActionListener() {
@@ -203,7 +202,7 @@ public class GUI_OpcionesFlauta extends javax.swing.JFrame {
                 .addComponent(rbtnMatPlata)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(rbtnMatPlatino)
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelMaterial, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 310, 190, 90));
@@ -268,6 +267,11 @@ public class GUI_OpcionesFlauta extends javax.swing.JFrame {
         btnSonido.setBackground(new java.awt.Color(255, 204, 204));
         btnSonido.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnSonido.setText("SONIDO");
+        btnSonido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSonidoActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnSonido, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 330, -1, 30));
 
         btnComprar.setBackground(new java.awt.Color(153, 255, 204));
@@ -347,6 +351,12 @@ public class GUI_OpcionesFlauta extends javax.swing.JFrame {
     private void rbtnOdisseyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnOdisseyActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rbtnOdisseyActionPerformed
+
+    private void btnSonidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSonidoActionPerformed
+        // TODO add your handling code here:
+        
+        new Directo().producirSonido(GUI_Flauta.ins);
+    }//GEN-LAST:event_btnSonidoActionPerformed
 
     /**
      * @param args the command line arguments

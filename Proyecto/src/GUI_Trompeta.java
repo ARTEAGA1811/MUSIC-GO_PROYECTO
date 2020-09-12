@@ -10,6 +10,8 @@
  */
 public class GUI_Trompeta extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form Trompeta
      */
@@ -131,6 +133,7 @@ public class GUI_Trompeta extends javax.swing.JFrame {
         GUI_OpcionesTrompeta OpcionesCompra  = new GUI_OpcionesTrompeta();
         OpcionesCompra.setVisible(true);
         dispose();
+        ins = "trompeta1";
     }//GEN-LAST:event_btnComprarTrompeta1ActionPerformed
 
     private void btnComprarTrompeta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta2ActionPerformed
@@ -138,6 +141,7 @@ public class GUI_Trompeta extends javax.swing.JFrame {
         GUI_OpcionesTrompeta OpcionesCompra  = new GUI_OpcionesTrompeta();
         OpcionesCompra.setVisible(true);
         dispose();
+        ins = "trompeta2";
     }//GEN-LAST:event_btnComprarTrompeta2ActionPerformed
 
     private void btnComprarTrompeta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta3ActionPerformed
@@ -145,6 +149,7 @@ public class GUI_Trompeta extends javax.swing.JFrame {
         GUI_OpcionesTrompeta OpcionesCompra  = new GUI_OpcionesTrompeta();
         OpcionesCompra.setVisible(true);
         dispose();
+        ins = "trompeta3";
     }//GEN-LAST:event_btnComprarTrompeta3ActionPerformed
 
     private void btnComprarTrompeta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta4ActionPerformed
@@ -152,6 +157,7 @@ public class GUI_Trompeta extends javax.swing.JFrame {
         GUI_OpcionesTrompeta OpcionesCompra  = new GUI_OpcionesTrompeta();
         OpcionesCompra.setVisible(true);
         dispose();
+        ins = "trompeta4";
     }//GEN-LAST:event_btnComprarTrompeta4ActionPerformed
 
     /**
