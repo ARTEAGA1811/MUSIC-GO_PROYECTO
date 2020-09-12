@@ -374,7 +374,24 @@ public class GUI_Compra extends javax.swing.JFrame {
 
     private void rbtnAmateurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnAmateurActionPerformed
         // TODO add your handling code here:
+        txtCodigoVIP.setText("");
         txtCodigoVIP.setEditable(false);
+        
+        //pago
+        txtNombreTarjeta.setEditable(true);
+        txtNumTarjeta.setEditable(true);
+        txtFechaCaducidad.setEditable(true);
+        txtCVC.setEditable(true);
+        
+        //dato
+        txtNombre.setEditable(true);
+        txtApellido.setEditable(true);
+        txtDireccion.setEditable(true);
+        txtIdentificador.setEditable(true);
+        txtCantidad.setEditable(true);
+        
+        
+        
     }//GEN-LAST:event_rbtnAmateurActionPerformed
 
     private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
@@ -568,19 +585,61 @@ public class GUI_Compra extends javax.swing.JFrame {
 
     private void rbtnPersonaJuridicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnPersonaJuridicaActionPerformed
         // TODO add your handling code here:
-        txtApellido.setEditable(false);
+        txtCodigoVIP.setText("");
+        txtApellido.setText("");
         txtCodigoVIP.setEditable(false);
+        
+        //pago
+        txtNombreTarjeta.setEditable(true);
+        txtNumTarjeta.setEditable(true);
+        txtFechaCaducidad.setEditable(true);
+        txtCVC.setEditable(true);
+        
+        //dato
+        txtNombre.setEditable(true);
+        txtApellido.setEditable(false);
+        txtDireccion.setEditable(true);
+        txtIdentificador.setEditable(true);
+        txtCantidad.setEditable(true);
+        
     }//GEN-LAST:event_rbtnPersonaJuridicaActionPerformed
 
     private void rbtnPublicoGeneralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnPublicoGeneralActionPerformed
         // TODO add your handling code here:
+        txtCodigoVIP.setText("");
         txtCodigoVIP.setEditable(false);
+        
+        //pago
+        txtNombreTarjeta.setEditable(true);
+        txtNumTarjeta.setEditable(true);
+        txtFechaCaducidad.setEditable(true);
+        txtCVC.setEditable(true);
+        
+        //dato
+        txtNombre.setEditable(true);
+        txtApellido.setEditable(true);
+        txtDireccion.setEditable(true);
+        txtIdentificador.setEditable(true);
+        txtCantidad.setEditable(true);
     }//GEN-LAST:event_rbtnPublicoGeneralActionPerformed
 
     private void rbtnMusicoProfesionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnMusicoProfesionalActionPerformed
         // TODO add your handling code here:
         txtCodigoVIP.setEditable(true);
         JOptionPane.showMessageDialog(null,"               ¡INGRESE SU PASE VIP! ","VIP",JOptionPane.PLAIN_MESSAGE);
+               
+        //pago
+        txtNombreTarjeta.setEditable(true);
+        txtNumTarjeta.setEditable(true);
+        txtFechaCaducidad.setEditable(true);
+        txtCVC.setEditable(true);
+        
+        //dato
+        txtNombre.setEditable(true);
+        txtApellido.setEditable(true);
+        txtDireccion.setEditable(true);
+        txtIdentificador.setEditable(true);
+        txtCantidad.setEditable(true);
     }//GEN-LAST:event_rbtnMusicoProfesionalActionPerformed
 
     /**

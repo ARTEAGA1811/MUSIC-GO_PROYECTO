@@ -48,8 +48,8 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
         btnAtrasCuerdas = new javax.swing.JButton();
         lblLogoPrincipalMarca = new javax.swing.JLabel();
         jPanelTamaño = new javax.swing.JPanel();
-        rbtnTam139 = new javax.swing.JRadioButton();
-        rbtnTam11 = new javax.swing.JRadioButton();
+        rbtnTam32 = new javax.swing.JRadioButton();
+        rbtnTam88 = new javax.swing.JRadioButton();
         lblPeso = new javax.swing.JLabel();
         lblTeclado = new javax.swing.JLabel();
         jPanelPeso = new javax.swing.JPanel();
@@ -173,15 +173,15 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
 
         jPanelTamaño.setBackground(new java.awt.Color(255, 255, 204));
 
-        buttonGroupTamaño.add(rbtnTam139);
-        rbtnTam139.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        rbtnTam139.setText("32 Teclas");
-        rbtnTam139.setToolTipText("");
-        rbtnTam139.setBorderPainted(true);
+        buttonGroupTamaño.add(rbtnTam32);
+        rbtnTam32.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnTam32.setText("32 Teclas");
+        rbtnTam32.setToolTipText("");
+        rbtnTam32.setBorderPainted(true);
 
-        buttonGroupTamaño.add(rbtnTam11);
-        rbtnTam11.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        rbtnTam11.setText("88 Teclas");
+        buttonGroupTamaño.add(rbtnTam88);
+        rbtnTam88.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnTam88.setText("88 Teclas");
 
         javax.swing.GroupLayout jPanelTamañoLayout = new javax.swing.GroupLayout(jPanelTamaño);
         jPanelTamaño.setLayout(jPanelTamañoLayout);
@@ -190,17 +190,17 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
             .addGroup(jPanelTamañoLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(jPanelTamañoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(rbtnTam11, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rbtnTam139, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(rbtnTam88, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rbtnTam32, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(76, Short.MAX_VALUE))
         );
         jPanelTamañoLayout.setVerticalGroup(
             jPanelTamañoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelTamañoLayout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addComponent(rbtnTam139)
+                .addComponent(rbtnTam32)
                 .addGap(18, 18, 18)
-                .addComponent(rbtnTam11)
+                .addComponent(rbtnTam88)
                 .addContainerGap(46, Short.MAX_VALUE))
         );
 
@@ -319,11 +319,11 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
             }
         
         //Tamaño 
-        if(rbtnTam11.isSelected()){
-            tamaño=Double.parseDouble(rbtnTam11.getText());
+        if(rbtnTam88.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam88.getText());
         }
-        else if(rbtnTam139.isSelected()){
-            tamaño=Double.parseDouble(rbtnTam11.getText());
+        else if(rbtnTam32.isSelected()){
+            tamaño=Double.parseDouble(rbtnTam88.getText());
             }
         
         //Peso 
@@ -415,8 +415,8 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
     private javax.swing.JRadioButton rbtnPeso0998;
     private javax.swing.JRadioButton rbtnPeso8;
     private javax.swing.JRadioButton rbtnRoland;
-    private javax.swing.JRadioButton rbtnTam11;
-    private javax.swing.JRadioButton rbtnTam139;
+    private javax.swing.JRadioButton rbtnTam32;
+    private javax.swing.JRadioButton rbtnTam88;
     private javax.swing.JRadioButton rbtnYamaha;
     // End of variables declaration//GEN-END:variables
 }
