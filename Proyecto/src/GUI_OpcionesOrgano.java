@@ -407,6 +407,7 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
         Instrumento miOrgano = new Mecanico(materialInstrumento, color, tamaño, peso, marca);
         Instrumento.precioInst = miOrgano.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miOrgano);
+        Instrumento.descripcionInstr = miOrgano.toString();
         
         
         GUI_Compra compra = new GUI_Compra();

@@ -56,6 +56,7 @@ public class PersonaJuridica extends Cliente{
                             "     Cédula / RUC: "+this.ruc +"\n"+
                             "     Dirección: "+direccion +"\n"+
                             "     Fecha emisión: "+fecha.toString()+"\n\n"+
+                            "     DESCRIPCIÓN DE SU INSTRUMENTO\n"+Instrumento.descripcionInstr+
                     
                             "     _____________________________________________________\n"+
                             "                                              \n"+

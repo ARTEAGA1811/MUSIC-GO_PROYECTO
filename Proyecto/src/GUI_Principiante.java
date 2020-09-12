@@ -40,7 +40,7 @@ public class GUI_Principiante extends javax.swing.JFrame {
         lblFlautaConManual = new javax.swing.JLabel();
         lblViolinConManual = new javax.swing.JLabel();
         btnComprarTecladoM = new javax.swing.JButton();
-        btnComprarVoilinM = new javax.swing.JButton();
+        btnComprarViolinM = new javax.swing.JButton();
         btnComprarGuitarraM = new javax.swing.JButton();
         btnComprarFlautaM = new javax.swing.JButton();
         lblInfo2 = new javax.swing.JLabel();
@@ -105,15 +105,15 @@ public class GUI_Principiante extends javax.swing.JFrame {
         });
         getContentPane().add(btnComprarTecladoM, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, -1, -1));
 
-        btnComprarVoilinM.setBackground(new java.awt.Color(255, 255, 255));
-        btnComprarVoilinM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnComprarVoilinM.setText("Comprar");
-        btnComprarVoilinM.addActionListener(new java.awt.event.ActionListener() {
+        btnComprarViolinM.setBackground(new java.awt.Color(255, 255, 255));
+        btnComprarViolinM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnComprarViolinM.setText("Comprar");
+        btnComprarViolinM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarVoilinMActionPerformed(evt);
+                btnComprarViolinMActionPerformed(evt);
             }
         });
-        getContentPane().add(btnComprarVoilinM, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, -1, -1));
+        getContentPane().add(btnComprarViolinM, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, -1, -1));
 
         btnComprarGuitarraM.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -159,12 +159,12 @@ public class GUI_Principiante extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnComprarTecladoMActionPerformed
 
-    private void btnComprarVoilinMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarVoilinMActionPerformed
+    private void btnComprarViolinMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolinMActionPerformed
         // TODO add your handling code here:
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
         dispose();
-    }//GEN-LAST:event_btnComprarVoilinMActionPerformed
+    }//GEN-LAST:event_btnComprarViolinMActionPerformed
 
     private void btnComprarGuitarraMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraMActionPerformed
         // TODO add your handling code here:
@@ -220,7 +220,7 @@ public class GUI_Principiante extends javax.swing.JFrame {
     private javax.swing.JButton btnComprarFlautaM;
     private javax.swing.JButton btnComprarGuitarraM;
     private javax.swing.JButton btnComprarTecladoM;
-    private javax.swing.JButton btnComprarVoilinM;
+    private javax.swing.JButton btnComprarViolinM;
     private javax.swing.JButton btnMenuPrincipal;
     private javax.swing.JLabel lblFlautaConManual;
     private javax.swing.JLabel lblFondoPrincipiante;

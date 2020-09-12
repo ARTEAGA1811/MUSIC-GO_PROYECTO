@@ -424,6 +424,7 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
         Instrumento miBongo = new PercusionMembranofos(materialInstrumento, color, tamaño, peso, marca);
         Instrumento.precioInst = miBongo.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miBongo);
+        Instrumento.descripcionInstr = miBongo.toString();
         
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);

@@ -404,6 +404,7 @@ public TiendaInstrumento musicGo=new TiendaInstrumento();
         Instrumento miConga = new PercusionMembranofos(materialInstrumento, color, tamaño, peso, marca);
         Instrumento.precioInst = miConga.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miConga);
+        Instrumento.descripcionInstr = miConga.toString();
         
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);

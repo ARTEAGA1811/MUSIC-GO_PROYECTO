@@ -152,6 +152,7 @@ public class GUI_Descuentos extends javax.swing.JFrame {
         Instrumento.precioInst = miFlautaconDescuento10.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miFlautaconDescuento10);
         Instrumento.descuentoEXTRA = 0.10;
+        Instrumento.descripcionInstr = miFlautaconDescuento10.toString();
         
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
@@ -165,6 +166,7 @@ public class GUI_Descuentos extends javax.swing.JFrame {
         Instrumento.precioInst = miGuitarraconDescuento15.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miGuitarraconDescuento15);
         Instrumento.descuentoEXTRA = 0.15;
+        Instrumento.descripcionInstr = miGuitarraconDescuento15.toString();
         
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
@@ -178,6 +180,7 @@ public class GUI_Descuentos extends javax.swing.JFrame {
         Instrumento.precioInst = miBateriaconDescuento25.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miBateriaconDescuento25);
         Instrumento.descuentoEXTRA = 0.25;
+        Instrumento.descripcionInstr = miBateriaconDescuento25.toString();
         
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
@@ -191,6 +194,7 @@ public class GUI_Descuentos extends javax.swing.JFrame {
         Instrumento.precioInst = miTecladoconDescuento50.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miTecladoconDescuento50);
         Instrumento.descuentoEXTRA = 0.5;
+        Instrumento.descripcionInstr = miTecladoconDescuento50.toString();
         
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);

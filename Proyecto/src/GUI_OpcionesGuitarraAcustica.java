@@ -440,6 +440,7 @@ public class GUI_OpcionesGuitarraAcustica extends javax.swing.JFrame {
         Instrumento miGuitarra = new Punteo(materialInstrumento, color, tamaño, peso, marca);
         Instrumento.precioInst = miGuitarra.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miGuitarra);
+        Instrumento.descripcionInstr = miGuitarra.toString();
         
         
         GUI_Compra compra = new GUI_Compra();

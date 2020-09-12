@@ -392,6 +392,7 @@ public class GUI_OpcionesViolines extends javax.swing.JFrame {
         Instrumento miViolin=new Frotacion(materialInstrumento, color, tamaño, peso, marca);
         Instrumento.precioInst = miViolin.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miViolin);
+        Instrumento.descripcionInstr = miViolin.toString();
         
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);

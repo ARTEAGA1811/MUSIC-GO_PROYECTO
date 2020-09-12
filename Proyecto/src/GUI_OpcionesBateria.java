@@ -394,6 +394,7 @@ public class GUI_OpcionesBateria extends javax.swing.JFrame {
         Instrumento miBateria=new PercusionMembranofos(materialInstrumento, color, tamaño, peso, marca);
         Instrumento.precioInst = miBateria.calcularPrecio(Instrumento.nomInstrumento);        
         musicGo.setInstrumentos(miBateria);
+        Instrumento.descripcionInstr = miBateria.toString();
         
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);

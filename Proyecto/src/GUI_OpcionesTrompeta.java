@@ -319,7 +319,7 @@ public class GUI_OpcionesTrompeta extends javax.swing.JFrame {
         Instrumento miTrompeta=new Directo(materialInstrumento, color, tamaño, peso, marca);
         Instrumento.precioInst = miTrompeta.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miTrompeta);
-        
+        Instrumento.descripcionInstr = miTrompeta.toString();
         
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);

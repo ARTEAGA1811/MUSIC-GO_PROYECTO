@@ -337,7 +337,7 @@ public class GUI_OpcionesSaxofon extends javax.swing.JFrame {
         Instrumento miSaxofon=new Directo(materialInstrumento, color, tamaño, peso, marca);
         Instrumento.precioInst = miSaxofon.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miSaxofon);
-        
+        Instrumento.descripcionInstr = miSaxofon.toString();
         
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);

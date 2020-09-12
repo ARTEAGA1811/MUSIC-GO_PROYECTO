@@ -16,6 +16,7 @@ public abstract class Instrumento implements Precio{
     public static String nomInstrumento;
     public static double precioInst;
     public static double descuentoEXTRA;
+    public static String descripcionInstr;
     
     public abstract void producirSonido(String ins);
 

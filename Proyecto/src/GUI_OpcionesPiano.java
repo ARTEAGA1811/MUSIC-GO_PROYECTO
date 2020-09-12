@@ -397,7 +397,7 @@ public class GUI_OpcionesPiano extends javax.swing.JFrame {
         Instrumento miPiano = new Percusion(materialInstrumento, color, tamaño, peso, marca);
         Instrumento.precioInst = miPiano.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miPiano);
-        
+        Instrumento.descripcionInstr = miPiano.toString();
 
         
         GUI_Compra compra = new GUI_Compra();

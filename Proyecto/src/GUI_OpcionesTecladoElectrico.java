@@ -338,7 +338,7 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
         Instrumento miTecladoElectrico = new Electronicos(color, tamaño, peso, marca);
         Instrumento.precioInst = miTecladoElectrico.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miTecladoElectrico);
-        
+        Instrumento.descripcionInstr = miTecladoElectrico.toString();
         
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);

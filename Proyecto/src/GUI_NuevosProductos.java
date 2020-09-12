@@ -150,6 +150,7 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
         Instrumento miBongoNuevo = new PercusionMembranofos("Caoba", "Negro", 0.2032, 6.5, "MEINL");
         Instrumento.precioInst = miBongoNuevo.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miBongoNuevo);
+        Instrumento.descripcionInstr = miBongoNuevo.toString();
         
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
@@ -162,6 +163,7 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
         Instrumento miBateriaNuevo = new PercusionMembranofos("Caoba", "Cafe", 9, 60, "PREMIER");
         Instrumento.precioInst = miBateriaNuevo.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miBateriaNuevo);
+        Instrumento.descripcionInstr = miBateriaNuevo.toString();
         
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
@@ -174,6 +176,7 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
         Instrumento miViolinNuevo = new Directo("Caoba", "Natural", 0.6, 0.43, "GOLDEN");
         Instrumento.precioInst = miViolinNuevo.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miViolinNuevo);
+        Instrumento.descripcionInstr = miViolinNuevo.toString();
         
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
@@ -186,6 +189,7 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
         Instrumento miGuitarraElectricaNuevo = new Directo("Arce Duro", "Blanco", 1.5, 1.15, "VINTAGE");
         Instrumento.precioInst = miGuitarraElectricaNuevo.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miGuitarraElectricaNuevo);
+        Instrumento.descripcionInstr = miGuitarraElectricaNuevo.toString();
         
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);

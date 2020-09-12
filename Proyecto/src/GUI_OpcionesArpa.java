@@ -396,7 +396,7 @@ public class GUI_OpcionesArpa extends javax.swing.JFrame {
         Instrumento miArpa=new Punteo(materialInstrumento, color, tamaño, peso, marca);
         Instrumento.precioInst = miArpa.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miArpa);
-        
+        Instrumento.descripcionInstr = miArpa.toString();
         
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);

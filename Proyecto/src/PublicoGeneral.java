@@ -58,6 +58,7 @@ public class PublicoGeneral extends Cliente {
                             "     Cédula / RUC: "+this.cedula +"\n"+
                             "     Dirección: "+direccion +"\n"+
                             "     Fecha emisión: "+fecha.toString()+"\n\n"+
+                            "     DESCRIPCIÓN DE SU INSTRUMENTO\n"+Instrumento.descripcionInstr+
                     
                             "     ____________________________________________________\n"+
                             "                                                \n"+

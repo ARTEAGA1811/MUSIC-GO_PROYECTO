@@ -441,6 +441,7 @@ public class GUI_OpcionesGuitarraElectrica extends javax.swing.JFrame {
         Instrumento miGuitarraElectrica = new Electromecanicos(materialInstrumento, color, tamaño, peso, marca);
         Instrumento.precioInst = miGuitarraElectrica.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miGuitarraElectrica);
+        Instrumento.descripcionInstr = miGuitarraElectrica.toString();
         
         
         GUI_Compra compra = new GUI_Compra();

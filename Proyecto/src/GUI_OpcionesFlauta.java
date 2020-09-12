@@ -404,6 +404,7 @@ public class GUI_OpcionesFlauta extends javax.swing.JFrame {
         Instrumento miFlauta =new Directo(materialInstrumento, color, tamaño, peso, marca);
         Instrumento.precioInst = miFlauta.calcularPrecio(Instrumento.nomInstrumento);        
         musicGo.setInstrumentos(miFlauta);
+        Instrumento.descripcionInstr = miFlauta.toString();
         
         GUI_Compra compra = new GUI_Compra();
         compra.setVisible(true);
