@@ -93,6 +93,13 @@ public class Frotacion extends Cordofonos {
         }
     }
 
+    public void manualInstrumento(String nomInstrumento){
+        if(nomInstrumento.equals("Violin")){
+            
+        }
+        
+    }
+    
     @Override
     public double calcularPrecio(String nombreInstr) {
         if(nombreInstr.equals("Violin")){

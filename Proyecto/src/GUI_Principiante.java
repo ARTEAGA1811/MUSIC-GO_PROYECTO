@@ -195,7 +195,7 @@ public class GUI_Principiante extends javax.swing.JFrame {
 
     private void btnComprarFlautaMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlautaMActionPerformed
         // TODO add your handling code here:
-        Instrumento.nomInstrumento = "Guitarra Acústica";
+        Instrumento.nomInstrumento = "Flauta";
         Instrumento miFlautaM = new Directo("Ébano", "Cafe", 0.6, 0.80, "YAMAHA");
         Instrumento.precioInst = miFlautaM.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miFlautaM);

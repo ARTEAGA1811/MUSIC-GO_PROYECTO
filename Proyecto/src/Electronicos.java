@@ -94,6 +94,12 @@ public class Electronicos extends Electrofonos {
             break; 
         }
     }
+    
+    public void manualInstrumento(String nomInstrumento){
+        if(nomInstrumento.equals("Teclado")){
+            
+        }
+    }
 
     @Override
     public double calcularPrecio(String nombreInstr) {

@@ -159,6 +159,12 @@ public class Directo extends Aerofonos{
             break;   
         }
     }
+    
+    public void manualInstrumento(String nomInstrumento){
+        if(nomInstrumento.equals("Flauta")){
+            
+        }
+    }
 
     @Override
     public double calcularPrecio(String nombreInstr) {
