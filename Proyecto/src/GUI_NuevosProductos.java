@@ -9,7 +9,7 @@
  * @author Tim
  */
 public class GUI_NuevosProductos extends javax.swing.JFrame {
-
+    public TiendaInstrumento musicGo=new TiendaInstrumento();
     /**
      * Creates new form NuevosProductos
      */
@@ -39,7 +39,7 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
         lblGuitarraElecRL = new javax.swing.JLabel();
         btnComprarBongoNuevo = new javax.swing.JButton();
         btnComprarBateriaNuevo = new javax.swing.JButton();
-        btnComprarSAxofonNuevo = new javax.swing.JButton();
+        btnComprarViolinNuevo = new javax.swing.JButton();
         btnComprarGuitarraElecNuevo = new javax.swing.JButton();
         lblInfo = new javax.swing.JLabel();
         lblFondo = new javax.swing.JLabel();
@@ -106,15 +106,15 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
         });
         getContentPane().add(btnComprarBateriaNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 340, -1, -1));
 
-        btnComprarSAxofonNuevo.setBackground(new java.awt.Color(255, 255, 255));
-        btnComprarSAxofonNuevo.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnComprarSAxofonNuevo.setText("Comprar");
-        btnComprarSAxofonNuevo.addActionListener(new java.awt.event.ActionListener() {
+        btnComprarViolinNuevo.setBackground(new java.awt.Color(255, 255, 255));
+        btnComprarViolinNuevo.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnComprarViolinNuevo.setText("Comprar");
+        btnComprarViolinNuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnComprarSAxofonNuevoActionPerformed(evt);
+                btnComprarViolinNuevoActionPerformed(evt);
             }
         });
-        getContentPane().add(btnComprarSAxofonNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 340, -1, -1));
+        getContentPane().add(btnComprarViolinNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 340, -1, -1));
 
         btnComprarGuitarraElecNuevo.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraElecNuevo.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -146,6 +146,11 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
 
     private void btnComprarBongoNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarBongoNuevoActionPerformed
         // TODO add your handling code here:
+        Instrumento.nomInstrumento = "Bongo";
+        Instrumento miBongoNuevo = new PercusionMembranofos("Caoba", "Negro", 0.2032, 6.5, "MEINL");
+        Instrumento.precioInst = miBongoNuevo.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miBongoNuevo);
+        
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
         dispose();
@@ -153,20 +158,35 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
 
     private void btnComprarBateriaNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarBateriaNuevoActionPerformed
         // TODO add your handling code here:
+        Instrumento.nomInstrumento = "Bateria";
+        Instrumento miBateriaNuevo = new PercusionMembranofos("Caoba", "Cafe", 9, 60, "PREMIER");
+        Instrumento.precioInst = miBateriaNuevo.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miBateriaNuevo);
+        
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnComprarBateriaNuevoActionPerformed
 
-    private void btnComprarSAxofonNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarSAxofonNuevoActionPerformed
+    private void btnComprarViolinNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolinNuevoActionPerformed
         // TODO add your handling code here:
+        Instrumento.nomInstrumento = "Violin";
+        Instrumento miViolinNuevo = new Directo("Caoba", "Natural", 0.6, 0.43, "GOLDEN");
+        Instrumento.precioInst = miViolinNuevo.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miViolinNuevo);
+        
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
         dispose();
-    }//GEN-LAST:event_btnComprarSAxofonNuevoActionPerformed
+    }//GEN-LAST:event_btnComprarViolinNuevoActionPerformed
 
     private void btnComprarGuitarraElecNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraElecNuevoActionPerformed
         // TODO add your handling code here:
+        Instrumento.nomInstrumento = "Guitarra Electrica";
+        Instrumento miGuitarraElectricaNuevo = new Directo("Arce Duro", "Blanco", 1.5, 1.15, "VINTAGE");
+        Instrumento.precioInst = miGuitarraElectricaNuevo.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miGuitarraElectricaNuevo);
+        
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
         dispose();
@@ -212,7 +232,7 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
     private javax.swing.JButton btnComprarBateriaNuevo;
     private javax.swing.JButton btnComprarBongoNuevo;
     private javax.swing.JButton btnComprarGuitarraElecNuevo;
-    private javax.swing.JButton btnComprarSAxofonNuevo;
+    private javax.swing.JButton btnComprarViolinNuevo;
     private javax.swing.JButton btnMenuPrincipal;
     private javax.swing.JLabel lblBateriaRL;
     private javax.swing.JLabel lblBongoRL;

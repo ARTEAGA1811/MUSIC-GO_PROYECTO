@@ -315,7 +315,6 @@ public class GUI_OpcionesSaxofon extends javax.swing.JFrame {
             marca=rbtnYamaha.getText();
             }
         
-        //************PREGUNTAR
         //Color 
         color = "Negro";
         

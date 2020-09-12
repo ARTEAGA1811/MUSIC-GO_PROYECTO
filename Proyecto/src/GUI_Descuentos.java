@@ -9,7 +9,7 @@
  * @author Tim
  */
 public class GUI_Descuentos extends javax.swing.JFrame {
-
+    public TiendaInstrumento musicGo=new TiendaInstrumento();
     /**
      * Creates new form Descuentos
      */
@@ -147,6 +147,12 @@ public class GUI_Descuentos extends javax.swing.JFrame {
 
     private void btnComprarFlautaconDesceunto10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlautaconDesceunto10ActionPerformed
         // TODO add your handling code here:
+        Instrumento.nomInstrumento = "Flauta";
+        Instrumento miFlautaconDescuento10 = new Directo("Plata", "Negro", 0.6, 0.11, "YAMAHA");
+        Instrumento.precioInst = miFlautaconDescuento10.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miFlautaconDescuento10);
+        Instrumento.descuentoEXTRA = 0.10;
+        
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
         dispose();
@@ -154,6 +160,12 @@ public class GUI_Descuentos extends javax.swing.JFrame {
 
     private void btnComprarGuitarraConDescuento15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraConDescuento15ActionPerformed
         // TODO add your handling code here:
+        Instrumento.nomInstrumento = "Guitarra Acústica";
+        Instrumento miGuitarraconDescuento15 = new Punteo("Caoba", "Rojo", 1.4, 1.75, "VINTAGE");
+        Instrumento.precioInst = miGuitarraconDescuento15.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miGuitarraconDescuento15);
+        Instrumento.descuentoEXTRA = 0.15;
+        
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
         dispose();
@@ -161,6 +173,12 @@ public class GUI_Descuentos extends javax.swing.JFrame {
 
     private void btnComprarBateriaConDescuento25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarBateriaConDescuento25ActionPerformed
         // TODO add your handling code here:
+        Instrumento.nomInstrumento = "Bateria";
+        Instrumento miBateriaconDescuento25 = new PercusionMembranofos("Sapele", "Azul", 4, 45, "PREMIER");
+        Instrumento.precioInst = miBateriaconDescuento25.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miBateriaconDescuento25);
+        Instrumento.descuentoEXTRA = 0.25;
+        
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
         dispose();
@@ -168,6 +186,12 @@ public class GUI_Descuentos extends javax.swing.JFrame {
 
     private void btnComprarTecladoConDescuento50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTecladoConDescuento50ActionPerformed
         // TODO add your handling code here:
+        Instrumento.nomInstrumento = "Teclado Eléctrico";
+        Instrumento miTecladoconDescuento50 = new Electronicos("Negro",32, 8, "CASIO");
+        Instrumento.precioInst = miTecladoconDescuento50.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miTecladoconDescuento50);
+        Instrumento.descuentoEXTRA = 0.5;
+        
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
         dispose();
