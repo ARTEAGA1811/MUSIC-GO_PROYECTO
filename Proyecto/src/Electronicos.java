@@ -22,16 +22,13 @@ public class Electronicos extends Electrofonos {
         this.color = color;
         this.tamaño = tamaño;
         this.peso = peso;
-        this.marca = marca;
-        
-        String tamañoString = String.valueOf(this.tamaño);
-        String resultado[] = tamañoString.split("\\s");
-        int numeroTeclas = Integer.parseInt(resultado[0]);
+        this.marca = marca;        
+        int numeroTeclas=0;
         
         if(numeroTeclas==88){
             this.precioTamañoP=0.8;
         }else{
-            if(numeroTeclas==33){
+            if(numeroTeclas==32){
                 this.precioTamañoP=0.5;
             }
         }
