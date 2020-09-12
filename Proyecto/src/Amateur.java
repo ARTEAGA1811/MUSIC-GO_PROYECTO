@@ -63,16 +63,16 @@ public class Amateur extends Cliente{
                             "    Dirección: "+direccion +"\n"+
                             "    Fecha emisión: "+fecha.toString()+"\n\n"+
                     
-                            "   ____________________________________________________\n"+
+                            "   ______________________________________________________\n"+
                             "                                              \n"+
                             "   CANT.        DESCRIPCIÓN     PRECIO UNITARIO \n"+
-                            "   ____________________________________________________\n"+
+                            "   ______________________________________________________\n"+
                             "     "+cantidad+"\t"+nomInstrumento+"\t    "+precioInst+"\n"+
-                            "   ____________________________________________________\n\n"+
-                            "             SUBTOTAL:      "+subtotal+" \n"+
-                            "             DESCUENTO:     "+descuento+" \n"+
-                            "             IVA:           "+iva+" \n"+
-                            "             TOTAL:         "+total+" \n";
+                            "   ______________________________________________________\n\n"+
+                            "             SUBTOTAL:\t   "+subtotal+" \n"+
+                            "             DESCUENTO:\t   "+descuento+" \n"+
+                            "             IVA:\t\t   "+iva+" \n"+
+                            "             TOTAL:\t   "+total+" \n";
 
         return factura;  
              

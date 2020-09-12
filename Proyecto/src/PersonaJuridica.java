@@ -57,16 +57,16 @@ public class PersonaJuridica extends Cliente{
                             "     Dirección: "+direccion +"\n"+
                             "     Fecha emisión: "+fecha.toString()+"\n\n"+
                     
-                            "     ____________________________________________________\n"+
+                            "     _____________________________________________________\n"+
                             "                                              \n"+
                             "     CANT.        DESCRIPCIÓN     PRECIO UNITARIO \n"+
-                            "     ____________________________________________________\n"+
-                            "       "+cantidad+"\t"+nomInstrumento+"\t    "+precioInst+"\n"+
-                            "     ____________________________________________________\n\n"+
-                            "               SUBTOTAL:      "+subtotal+" \n"+
-                            "               DESCUENTO:     "+descuento+" \n"+
-                            "               IVA:           "+iva+" \n"+
-                            "               TOTAL:         "+total+" \n";
+                            "     _____________________________________________________\n"+
+                            "       "+cantidad+"\t  "+nomInstrumento+"\t       "+precioInst+"\n"+
+                            "     _____________________________________________________\n\n"+
+                            "               SUBTOTAL:\t   "+subtotal+" \n"+
+                            "               DESCUENTO:\t   "+descuento+" \n"+
+                            "               IVA:\t\t   "+iva+" \n"+
+                            "               TOTAL:\t   "+total+" \n";
 
         return factura;  
      
