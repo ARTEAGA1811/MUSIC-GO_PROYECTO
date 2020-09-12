@@ -101,6 +101,7 @@ public class GUI_OpcionesBateria extends javax.swing.JFrame {
         rbtnNegro.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroupColor.add(rbtnNegro);
         rbtnNegro.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnNegro.setSelected(true);
         rbtnNegro.setText("Negro");
 
         javax.swing.GroupLayout jPanelColorLayout = new javax.swing.GroupLayout(jPanelColor);
@@ -141,6 +142,7 @@ public class GUI_OpcionesBateria extends javax.swing.JFrame {
 
         buttonGroupMarca.add(rbtnYamaha);
         rbtnYamaha.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnYamaha.setSelected(true);
         rbtnYamaha.setText("YAMAHA");
 
         buttonGroupMarca.add(rbtnPremier);
@@ -149,7 +151,6 @@ public class GUI_OpcionesBateria extends javax.swing.JFrame {
 
         buttonGroupMarca.add(rbtnGretsch);
         rbtnGretsch.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        rbtnGretsch.setSelected(true);
         rbtnGretsch.setText("GRETSCH");
 
         javax.swing.GroupLayout jPanelMarcaLayout = new javax.swing.GroupLayout(jPanelMarca);
@@ -173,7 +174,7 @@ public class GUI_OpcionesBateria extends javax.swing.JFrame {
                 .addComponent(rbtnPremier)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnGretsch)
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 210, 120));
@@ -195,6 +196,7 @@ public class GUI_OpcionesBateria extends javax.swing.JFrame {
 
         buttonGroupMaterial.add(rbtnMatCaoba);
         rbtnMatCaoba.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnMatCaoba.setSelected(true);
         rbtnMatCaoba.setText("Caoba");
 
         buttonGroupMaterial.add(rbtnMatSapele);
@@ -232,6 +234,7 @@ public class GUI_OpcionesBateria extends javax.swing.JFrame {
 
         buttonGroupTamaño.add(rbtnTam3x3);
         rbtnTam3x3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnTam3x3.setSelected(true);
         rbtnTam3x3.setText("3 x 3");
 
         buttonGroupTamaño.add(rbtnTam2x2);
@@ -269,6 +272,7 @@ public class GUI_OpcionesBateria extends javax.swing.JFrame {
 
         buttonGroupPeso.add(rbtnPeso60);
         rbtnPeso60.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnPeso60.setSelected(true);
         rbtnPeso60.setText("60");
 
         buttonGroupPeso.add(rbtnPeso45);

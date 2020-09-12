@@ -99,6 +99,7 @@ public class GUI_OpcionesArpa extends javax.swing.JFrame {
         rbtnNegro.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroupColor.add(rbtnNegro);
         rbtnNegro.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnNegro.setSelected(true);
         rbtnNegro.setText("Negro");
 
         javax.swing.GroupLayout jPanelColorLayout = new javax.swing.GroupLayout(jPanelColor);
@@ -123,7 +124,7 @@ public class GUI_OpcionesArpa extends javax.swing.JFrame {
                 .addComponent(rbtnCafe)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnNatural)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 210, 160));
@@ -136,6 +137,7 @@ public class GUI_OpcionesArpa extends javax.swing.JFrame {
 
         buttonGroupMarca.add(rbtnParaguayanHarps);
         rbtnParaguayanHarps.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnParaguayanHarps.setSelected(true);
         rbtnParaguayanHarps.setText("PARAGUAYANHARPS");
 
         buttonGroupMarca.add(rbtnAngeles);
@@ -173,6 +175,7 @@ public class GUI_OpcionesArpa extends javax.swing.JFrame {
 
         buttonGroupTamaño.add(rbtnTam17);
         rbtnTam17.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnTam17.setSelected(true);
         rbtnTam17.setText("1.7");
 
         buttonGroupTamaño.add(rbtnTam15);
@@ -204,7 +207,7 @@ public class GUI_OpcionesArpa extends javax.swing.JFrame {
                 .addComponent(rbtnTam15)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnTam13)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelTamaño, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 190, 150));
@@ -217,6 +220,7 @@ public class GUI_OpcionesArpa extends javax.swing.JFrame {
 
         buttonGroupMaterial.add(rbtnMatCedro);
         rbtnMatCedro.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnMatCedro.setSelected(true);
         rbtnMatCedro.setText("Cedro");
 
         buttonGroupMaterial.add(rbtnMatSauce);
@@ -254,6 +258,7 @@ public class GUI_OpcionesArpa extends javax.swing.JFrame {
 
         buttonGroupPeso.add(rbtnPeso680);
         rbtnPeso680.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnPeso680.setSelected(true);
         rbtnPeso680.setText("680");
 
         buttonGroupPeso.add(rbtnPeso650);
@@ -285,7 +290,7 @@ public class GUI_OpcionesArpa extends javax.swing.JFrame {
                 .addComponent(rbtnPeso650)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnPeso600)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelPeso, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 100, 170, 150));

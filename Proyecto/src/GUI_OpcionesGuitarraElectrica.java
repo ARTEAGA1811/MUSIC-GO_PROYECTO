@@ -104,6 +104,7 @@ public class GUI_OpcionesGuitarraElectrica extends javax.swing.JFrame {
         rbtnNegro.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroupColor.add(rbtnNegro);
         rbtnNegro.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnNegro.setSelected(true);
         rbtnNegro.setText("Negro");
 
         javax.swing.GroupLayout jPanelColorLayout = new javax.swing.GroupLayout(jPanelColor);
@@ -140,6 +141,7 @@ public class GUI_OpcionesGuitarraElectrica extends javax.swing.JFrame {
 
         buttonGroupMarca.add(rbtnSchacter);
         rbtnSchacter.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnSchacter.setSelected(true);
         rbtnSchacter.setText("SCHACTER");
 
         buttonGroupMarca.add(rbtnVintage);
@@ -198,6 +200,7 @@ public class GUI_OpcionesGuitarraElectrica extends javax.swing.JFrame {
 
         buttonGroupTamaño.add(rbtnTam015);
         rbtnTam015.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnTam015.setSelected(true);
         rbtnTam015.setText("1.5");
 
         buttonGroupTamaño.add(rbtnTam0125);
@@ -245,6 +248,7 @@ public class GUI_OpcionesGuitarraElectrica extends javax.swing.JFrame {
 
         buttonGroupMaterial.add(rbtnMatCaoba);
         rbtnMatCaoba.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnMatCaoba.setSelected(true);
         rbtnMatCaoba.setText("Caoba");
 
         buttonGroupMaterial.add(rbtnMatArceDuro);
@@ -292,6 +296,7 @@ public class GUI_OpcionesGuitarraElectrica extends javax.swing.JFrame {
 
         buttonGroupPeso.add(rbtnPeso115);
         rbtnPeso115.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnPeso115.setSelected(true);
         rbtnPeso115.setText("1.15");
 
         buttonGroupPeso.add(rbtnPeso175);

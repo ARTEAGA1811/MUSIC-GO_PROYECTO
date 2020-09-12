@@ -103,6 +103,7 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
         rbtnNegro.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroupColor.add(rbtnNegro);
         rbtnNegro.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnNegro.setSelected(true);
         rbtnNegro.setText("Negro");
 
         javax.swing.GroupLayout jPanelColorLayout = new javax.swing.GroupLayout(jPanelColor);
@@ -143,6 +144,7 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
 
         buttonGroupMarca.add(rbtnMeinl);
         rbtnMeinl.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnMeinl.setSelected(true);
         rbtnMeinl.setText("MEINL");
 
         buttonGroupMarca.add(rbtnFreedom);
@@ -174,7 +176,7 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
                 .addComponent(rbtnFreedom)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnLp)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 210, 120));
@@ -196,6 +198,7 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
 
         buttonGroupTamaño.add(rbtnTam02032);
         rbtnTam02032.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnTam02032.setSelected(true);
         rbtnTam02032.setText("0.2032");
 
         buttonGroupTamaño.add(rbtnTam01778);
@@ -221,7 +224,7 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
         jPanelTamañoLayout.setVerticalGroup(
             jPanelTamañoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelTamañoLayout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(rbtnTam02032)
                 .addGap(13, 13, 13)
                 .addComponent(rbtnTam01778)
@@ -240,6 +243,7 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
 
         buttonGroupMaterial.add(rbtnMatCaoba);
         rbtnMatCaoba.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnMatCaoba.setSelected(true);
         rbtnMatCaoba.setText("Caoba");
 
         buttonGroupMaterial.add(rbtnMatSapele);
@@ -277,6 +281,7 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
 
         buttonGroupPeso.add(rbtnPeso65);
         rbtnPeso65.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnPeso65.setSelected(true);
         rbtnPeso65.setText("6.5");
 
         buttonGroupPeso.add(rbtnPeso45);
@@ -308,7 +313,7 @@ public class GUI_OpcionesBongos extends javax.swing.JFrame {
                 .addComponent(rbtnPeso45)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnPeso8)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelPeso, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 100, 170, 150));

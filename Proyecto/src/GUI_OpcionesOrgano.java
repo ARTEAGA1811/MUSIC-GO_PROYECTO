@@ -93,6 +93,7 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
         rbtnAzul.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroupColor.add(rbtnAzul);
         rbtnAzul.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnAzul.setSelected(true);
         rbtnAzul.setText("Azul");
 
         rbtnNegro1.setBackground(new java.awt.Color(255, 255, 255));
@@ -117,7 +118,7 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
             .addGroup(jPanelColorLayout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(rbtnAzul)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(rbtnNegro1)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnCafe)
@@ -130,6 +131,7 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
 
         buttonGroupMarca.add(rbtnRoland);
         rbtnRoland.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnRoland.setSelected(true);
         rbtnRoland.setText("ROLAND");
 
         buttonGroupMarca.add(rbtnCasio);
@@ -187,6 +189,7 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
 
         buttonGroupTamaño.add(rbtnTam195);
         rbtnTam195.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnTam195.setSelected(true);
         rbtnTam195.setText("19.5");
         rbtnTam195.setToolTipText("");
         rbtnTam195.setBorderPainted(true);
@@ -220,7 +223,7 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
                 .addComponent(rbtnTam15)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnTam11)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelTamaño, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 190, 150));
@@ -233,6 +236,7 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
 
         buttonGroupPeso.add(rbtnPeso8000);
         rbtnPeso8000.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnPeso8000.setSelected(true);
         rbtnPeso8000.setText("8000");
 
         buttonGroupPeso.add(rbtnPeso7231);
@@ -264,7 +268,7 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
                 .addComponent(rbtnPeso7231)
                 .addGap(15, 15, 15)
                 .addComponent(rbtnPeso6321)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelPeso, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 100, 170, 150));
@@ -296,6 +300,7 @@ public class GUI_OpcionesOrgano extends javax.swing.JFrame {
 
         buttonGroupMaterial.add(rbtnMatNogal);
         rbtnMatNogal.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnMatNogal.setSelected(true);
         rbtnMatNogal.setText("Nogal");
 
         buttonGroupMaterial.add(rbtnMatArce);

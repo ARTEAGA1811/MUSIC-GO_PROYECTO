@@ -91,6 +91,7 @@ public class GUI_OpcionesFlauta extends javax.swing.JFrame {
         rbtnNegro.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroupColor.add(rbtnNegro);
         rbtnNegro.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnNegro.setSelected(true);
         rbtnNegro.setText("Negro");
 
         javax.swing.GroupLayout jPanelColorLayout = new javax.swing.GroupLayout(jPanelColor);
@@ -129,6 +130,7 @@ public class GUI_OpcionesFlauta extends javax.swing.JFrame {
 
         buttonGroupTamaño.add(rbtnTam080);
         rbtnTam080.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnTam080.setSelected(true);
         rbtnTam080.setText("0.80");
 
         buttonGroupTamaño.add(rbtnTam060);
@@ -160,7 +162,7 @@ public class GUI_OpcionesFlauta extends javax.swing.JFrame {
                 .addComponent(rbtnTam060)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnTam03)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelTamaño, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 190, 150));
@@ -173,6 +175,7 @@ public class GUI_OpcionesFlauta extends javax.swing.JFrame {
 
         buttonGroupMaterial.add(rbtnMatEbano);
         rbtnMatEbano.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnMatEbano.setSelected(true);
         rbtnMatEbano.setText("Ébano ");
 
         buttonGroupMaterial.add(rbtnMatPlata);
@@ -227,6 +230,7 @@ public class GUI_OpcionesFlauta extends javax.swing.JFrame {
 
         buttonGroupPeso.add(rbtnPeso0127);
         rbtnPeso0127.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnPeso0127.setSelected(true);
         rbtnPeso0127.setText("0.127");
 
         buttonGroupPeso.add(rbtnPeso011);
@@ -258,7 +262,7 @@ public class GUI_OpcionesFlauta extends javax.swing.JFrame {
                 .addComponent(rbtnPeso011)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnPeso080)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelPeso, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 100, 170, 150));
@@ -294,6 +298,7 @@ public class GUI_OpcionesFlauta extends javax.swing.JFrame {
 
         buttonGroupMarca.add(rbtnOdissey);
         rbtnOdissey.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        rbtnOdissey.setSelected(true);
         rbtnOdissey.setText("ODISSEY ");
         rbtnOdissey.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -319,7 +324,7 @@ public class GUI_OpcionesFlauta extends javax.swing.JFrame {
         jPanelMarcaLayout.setVerticalGroup(
             jPanelMarcaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelMarcaLayout.createSequentialGroup()
-                .addContainerGap(18, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(rbtnOdissey)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnYamaha)
