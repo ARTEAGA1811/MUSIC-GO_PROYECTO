@@ -22,12 +22,19 @@ public class PublicoGeneral extends Cliente {
         this.tipoCliente = "Publico General";
     }
 
+    public boolean esMetodoPagoValido(String nomTarjeta,String numTarjeta,String fechaCaducidad,String cvv){
+        boolean esMetodoPagoValido = true;
+        if( numTarjeta.length()== 16 && fechaCaducidad.matches("[0-9][0-9][/][0-9][0-9]") && cvv.length() == 3){
+            return esMetodoPagoValido= true;
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Método de pago inválido!!\n No se ha podido emitir su factura!!");
+            return esMetodoPagoValido= false;
+        }
+    }
+    
     @Override
-    public String compraInstrumento(String nomTarjeta, 
-                                    String numTarjeta, 
-                                    String fechaCaducidad, 
-                                    String cvv, 
-                                    String direccion,
+    public String compraInstrumento(String direccion,
                                     String nomInstrumento, 
                                     int cantidad, 
                                     double precioInst,
@@ -40,7 +47,6 @@ public class PublicoGeneral extends Cliente {
         double total = subtotal + iva - descuento;
         
         //EMITIR FACTURA
-        if( numTarjeta.length()== 16 && fechaCaducidad.matches("[0-9][0-9][/][0-9][0-9]") && cvv.length() == 3){
         
             java.util.Date fecha = new Date();
             String factura = "    ______________________FACTURA_________________________\n"+
@@ -65,10 +71,7 @@ public class PublicoGeneral extends Cliente {
                             "               TOTAL:         "+total+" \n";
 
         return factura;  
-        }
-        else{
-            return "No se pudo emitir su compra";
-        }       
+     
        
     }
 

@@ -445,11 +445,8 @@ public class GUI_Compra extends javax.swing.JFrame {
                     cvv=txtCVC.getText();
 
                     //Validar cédula
-                    if(miAmateur.esIdentidadValida()){
-                        factura = miAmateur.compraInstrumento(nomTarjeta,
-                                                    numTarjeta,
-                                                    fechaCaducidad,
-                                                    cvv,
+                    if(miAmateur.esIdentidadValida()&& miAmateur.esMetodoPagoValido(nomTarjeta, numTarjeta, fechaCaducidad, cvv)){
+                        factura = miAmateur.compraInstrumento(
                                                     direccion,
                                                     nombreInstrumento,
                                                     cantidad,
@@ -483,11 +480,10 @@ public class GUI_Compra extends javax.swing.JFrame {
                     cvv=txtCVC.getText();
 
                     //Validar cédula
-                    if(miMusicoProfesional.esIdentidadValida() && miMusicoProfesional.esPaseVip(codigoVIP)){
-                        factura = miMusicoProfesional.compraInstrumento(nomTarjeta,
-                                                    numTarjeta,
-                                                    fechaCaducidad,
-                                                    cvv,
+                    if(miMusicoProfesional.esIdentidadValida() && 
+                            miMusicoProfesional.esPaseVip(codigoVIP)&& 
+                            miMusicoProfesional.esMetodoPagoValido(nomTarjeta, numTarjeta, fechaCaducidad, cvv)){
+                        factura = miMusicoProfesional.compraInstrumento(
                                                     direccion,
                                                     nombreInstrumento,
                                                     cantidad,
@@ -520,11 +516,8 @@ public class GUI_Compra extends javax.swing.JFrame {
                     cvv=txtCVC.getText();
 
                     //Validar cédula
-                    if(miPersonaJuridica.esIdentidadValida()){
-                        factura = miPersonaJuridica.compraInstrumento(nomTarjeta,
-                                                    numTarjeta,
-                                                    fechaCaducidad,
-                                                    cvv,
+                    if(miPersonaJuridica.esIdentidadValida()&& miPersonaJuridica.esMetodoPagoValido(nomTarjeta, numTarjeta, fechaCaducidad, cvv)){
+                        factura = miPersonaJuridica.compraInstrumento(
                                                     direccion,
                                                     nombreInstrumento,
                                                     cantidad,
@@ -558,11 +551,8 @@ public class GUI_Compra extends javax.swing.JFrame {
                     cvv=txtCVC.getText();
 
                     //Validar cédula
-                    if(miPublicoGeneral.esIdentidadValida()){
-                        factura = miPublicoGeneral.compraInstrumento(nomTarjeta,
-                                                    numTarjeta,
-                                                    fechaCaducidad,
-                                                    cvv,
+                    if(miPublicoGeneral.esIdentidadValida()&& miPublicoGeneral.esMetodoPagoValido(nomTarjeta, numTarjeta, fechaCaducidad, cvv)){
+                        factura = miPublicoGeneral.compraInstrumento(
                                                     direccion,
                                                     nombreInstrumento,
                                                     cantidad,

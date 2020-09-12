@@ -14,11 +14,7 @@ public abstract class Cliente implements Identidad  {
     protected String tipoCliente;
     
     //METODOS
-    public abstract String compraInstrumento(String nomTarjeta, 
-                                                String numTarjeta, 
-                                                String fechaCaducidad, 
-                                                String cvv, 
-                                                String direccion, 
+    public abstract String compraInstrumento(String direccion, 
                                                 String nomInstrumento, 
                                                 int cantidad, 
                                                 double precioInstrumento,

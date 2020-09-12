@@ -22,6 +22,17 @@ public class MusicoProfesional extends Cliente{
         this.tipoCliente = "Músico Profesional";
     }
     
+    public boolean esMetodoPagoValido(String nomTarjeta,String numTarjeta,String fechaCaducidad,String cvv){
+        boolean esMetodoPagoValido = true;
+        if( numTarjeta.length()== 16 && fechaCaducidad.matches("[0-9][0-9][/][0-9][0-9]") && cvv.length() == 3){
+            return esMetodoPagoValido= true;
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Método de pago inválido!!\n No se ha podido emitir su factura!!");
+            return esMetodoPagoValido= false;
+        }
+    }
+    
     public boolean esPaseVip(String codigoVip){
         /*
         CLAVE 3 DÍGITOS Y DOS LETRAS (135PS, 1NH46, A913M)
@@ -70,11 +81,7 @@ public class MusicoProfesional extends Cliente{
     }
 
     @Override
-    public String compraInstrumento(String nomTarjeta, 
-                                    String numTarjeta, 
-                                    String fechaCaducidad, 
-                                    String cvv, 
-                                    String direccion,
+    public String compraInstrumento(String direccion,
                                     String nomInstrumento, 
                                     int cantidad, 
                                     double precioInst,
@@ -87,7 +94,6 @@ public class MusicoProfesional extends Cliente{
         double total = subtotal + iva - descuento;
         
         //EMITIR FACTURA
-        if( numTarjeta.length()== 16 && fechaCaducidad.matches("[0-9][0-9][/][0-9][0-9]") && cvv.length() == 3){
         
             java.util.Date fecha = new Date();
             String factura = "    ______________________FACTURA_________________________\n"+
@@ -112,10 +118,7 @@ public class MusicoProfesional extends Cliente{
                             "               TOTAL:         "+total+" \n";
 
         return factura;  
-        }
-        else{
-            return "No se pudo emitir su compra";
-        }       
+  
        
     }
 
