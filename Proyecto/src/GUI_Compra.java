@@ -568,7 +568,7 @@ public class GUI_Compra extends javax.swing.JFrame {
 
     private void rbtnPersonaJuridicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnPersonaJuridicaActionPerformed
         // TODO add your handling code here:
-        
+        txtApellido.setEditable(false);
         txtCodigoVIP.setEditable(false);
     }//GEN-LAST:event_rbtnPersonaJuridicaActionPerformed
 
