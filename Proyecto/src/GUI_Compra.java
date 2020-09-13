@@ -22,6 +22,7 @@ public class GUI_Compra extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
+        txtCodigoVIP.setEditable(false);
     }
 
     /**
@@ -83,6 +84,7 @@ public class GUI_Compra extends javax.swing.JFrame {
         rbtnAmateur.setBackground(new java.awt.Color(204, 255, 255));
         buttonGroupClientes.add(rbtnAmateur);
         rbtnAmateur.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        rbtnAmateur.setSelected(true);
         rbtnAmateur.setText("Amateur");
         rbtnAmateur.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -429,10 +431,11 @@ public class GUI_Compra extends javax.swing.JFrame {
         double descuentoExtra = Instrumento.descuentoEXTRA;
         
         
-        
+       
         
         //Amateur ----------------------------------------------------------------------------------------------------------------------------
         if(rbtnAmateur.isSelected()){
+            try{
                     //Datos cliente
                     nomCliente=txtNombre.getText();
                     apellido=txtApellido.getText();
@@ -445,7 +448,7 @@ public class GUI_Compra extends javax.swing.JFrame {
                     numTarjeta=txtNumTarjeta.getText();
                     fechaCaducidad=txtFechaCaducidad.getText();
                     cvv=txtCVC.getText();
-
+                    
                     //Validar cédula
                     if(miAmateur.esIdentidadValida()&& miAmateur.esMetodoPagoValido(nomTarjeta, numTarjeta, fechaCaducidad, cvv)){
                         factura = miAmateur.compraInstrumento(
@@ -457,16 +460,22 @@ public class GUI_Compra extends javax.swing.JFrame {
                     GUI_Factura factura = new GUI_Factura();
                     factura.setVisible(true);
                     dispose();
+                
                     }
                     else{
                         GUI_Factura factura = new GUI_Factura();
                         factura.setVisible(false);
                     }
+            }
+            catch(Exception e){
+                JOptionPane.showMessageDialog(null, "Digite correctamente sus datos!");
+            }
         }
         
         
             //Musico Profesional ---------------------------------------------------------------------------------------------------------------
         else if(rbtnMusicoProfesional.isSelected()){
+            try{
                     //Datos cliente
                     nomCliente=txtNombre.getText();
                     apellido=txtApellido.getText();
@@ -499,12 +508,17 @@ public class GUI_Compra extends javax.swing.JFrame {
                         GUI_Factura factura = new GUI_Factura();
                         factura.setVisible(false);
                     }
+            }
+            catch(Exception e){
+                JOptionPane.showMessageDialog(null, "Digite correctamente sus datos!");
+            }
             
         }
         
         
             //Persona Jurídica ----------------------------------------------------------------------------------------------------------------
         else if(rbtnPersonaJuridica.isSelected()){
+            try{
                     //Datos cliente
                     nomCliente=txtNombre.getText();
                     direccion=txtDireccion.getText();
@@ -533,12 +547,17 @@ public class GUI_Compra extends javax.swing.JFrame {
                         GUI_Factura factura = new GUI_Factura();
                         factura.setVisible(false);
                     }
+            }
+            catch(Exception e){
+                JOptionPane.showMessageDialog(null, "Digite correctamente sus datos!");
+            }
             
         }
         
         
             //Publico General ----------------------------------------------------------------------------------------------------------------------------------
         else if(rbtnPublicoGeneral.isSelected()){
+            try{
                     //Datos cliente
                     nomCliente=txtNombre.getText();
                     apellido=txtApellido.getText();
@@ -568,8 +587,13 @@ public class GUI_Compra extends javax.swing.JFrame {
                         GUI_Factura factura = new GUI_Factura();
                         factura.setVisible(false);
                     }
+            }
+            catch(Exception e){
+                JOptionPane.showMessageDialog(null, "Digite correctamente sus datos!");
+            }
             
         }
+        
 
  
         
