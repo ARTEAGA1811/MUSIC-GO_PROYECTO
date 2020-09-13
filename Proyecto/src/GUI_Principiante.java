@@ -1,3 +1,8 @@
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -161,6 +166,15 @@ public class GUI_Principiante extends javax.swing.JFrame {
         Instrumento.descuentoEXTRA = 0.10;
         Instrumento.descripcionInstr = miTecladoM.toString();
         
+        Electronicos miManual = new Electronicos();
+        try {
+            miManual.manualInstrumento("http://www.actiweb.es/musicaclasica/archivo4.pdf");
+        } catch (Exception ex) {
+            Logger.getLogger(GUI_Principiante.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        JOptionPane.showMessageDialog(null,"              LISTO!  "+"\nManual_Piano descargado");
+        
+        
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
         dispose();
@@ -173,6 +187,14 @@ public class GUI_Principiante extends javax.swing.JFrame {
         Instrumento.precioInst = miViolinM.calcularPrecio(Instrumento.nomInstrumento);
         musicGo.setInstrumentos(miViolinM);
         Instrumento.descripcionInstr = miViolinM.toString();
+        
+        Frotacion miManual = new Frotacion();
+        try {
+            miManual.manualInstrumento("http://files.history-of-music.webnode.es/200000010-4fefa50e93/Curso%20de%20Violin.pdf");
+        } catch (Exception ex) {
+            Logger.getLogger(GUI_Principiante.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        JOptionPane.showMessageDialog(null,"             LISTO!  "+"\nManual_Violín descargado");
         
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
@@ -188,6 +210,14 @@ public class GUI_Principiante extends javax.swing.JFrame {
         Instrumento.descuentoEXTRA = 0.15;
         Instrumento.descripcionInstr = miGuitarraM.toString();
         
+        Punteo miManual = new Punteo();
+        try {
+            miManual.manualInstrumento("http://cuerdabierta.s3.amazonaws.com/Curso%20de%20Guitarra%20Para%20Principiantes/reporte.pdf");
+        } catch (Exception ex) {
+            Logger.getLogger(GUI_Principiante.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        JOptionPane.showMessageDialog(null,"                 LISTO!  "+"\nManual_Guitarra_Acústica descargado");
+        
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);
         dispose();
@@ -201,6 +231,15 @@ public class GUI_Principiante extends javax.swing.JFrame {
         musicGo.setInstrumentos(miFlautaM);
         Instrumento.descuentoEXTRA = 0.15;
         Instrumento.descripcionInstr = miFlautaM.toString();
+        
+        //Manual para la Flauta
+        Directo miManual = new Directo();
+        try {
+            miManual.manualInstrumento("http://www.actiweb.es/colegiojeanpiagetgdl/archivo3.pdf");
+        } catch (Exception ex) {
+            Logger.getLogger(GUI_Principiante.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        JOptionPane.showMessageDialog(null,"           LISTO!  "+"\nManual_Flauta descargado");
         
         GUI_Compra compra  = new GUI_Compra();
         compra.setVisible(true);

@@ -1,5 +1,10 @@
 
 import java.applet.AudioClip;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.net.URL;
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -160,11 +165,25 @@ public class Directo extends Aerofonos{
         }
     }
     
-    public void manualInstrumento(String nomInstrumento){
-        if(nomInstrumento.equals("Flauta")){
+    public void manualInstrumento(String url) throws Exception {
+
+        if (nomInstrumento.equals("Flauta")) {
             
+            URL urlPdf = new URL(url);
+            InputStream pdfDescargado = urlPdf.openStream();
+            //nombre del manual a descargar
+            FileOutputStream manualUsuario = new FileOutputStream(new File("Manual_Flauta.pdf"));
+            int length = -1;
+            byte[] buffer = new byte[1024];
+            while ((length = pdfDescargado.read(buffer)) > -1) {
+                manualUsuario.write(buffer, 0, length);
+            }
+            manualUsuario.close();
+            pdfDescargado.close();
+            //manual descargado
         }
     }
+        
 
     @Override
     public double calcularPrecio(String nombreInstr) {
