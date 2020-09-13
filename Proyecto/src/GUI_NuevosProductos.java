@@ -51,6 +51,7 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnMenuPrincipal.setBackground(new java.awt.Color(255, 255, 255));
         btnMenuPrincipal.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnMenuPrincipal.setText("Atrás");
         btnMenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
@@ -89,6 +90,7 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
         lblGuitarraElecRL.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         getContentPane().add(lblGuitarraElecRL, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 40, -1, 290));
 
+        btnComprarBongoNuevo.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarBongoNuevo.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarBongoNuevo.setText("Comprar");
         btnComprarBongoNuevo.addActionListener(new java.awt.event.ActionListener() {
@@ -98,6 +100,7 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
         });
         getContentPane().add(btnComprarBongoNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, -1, -1));
 
+        btnComprarBateriaNuevo.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarBateriaNuevo.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarBateriaNuevo.setText("Comprar");
         btnComprarBateriaNuevo.addActionListener(new java.awt.event.ActionListener() {
@@ -107,6 +110,7 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
         });
         getContentPane().add(btnComprarBateriaNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 340, -1, -1));
 
+        btnComprarViolinNuevo.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarViolinNuevo.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarViolinNuevo.setText("Comprar");
         btnComprarViolinNuevo.addActionListener(new java.awt.event.ActionListener() {
@@ -116,6 +120,7 @@ public class GUI_NuevosProductos extends javax.swing.JFrame {
         });
         getContentPane().add(btnComprarViolinNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 340, -1, -1));
 
+        btnComprarGuitarraElecNuevo.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraElecNuevo.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGuitarraElecNuevo.setText("Comprar");
         btnComprarGuitarraElecNuevo.addActionListener(new java.awt.event.ActionListener() {
