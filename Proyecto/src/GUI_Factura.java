@@ -1,5 +1,6 @@
 
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -38,6 +39,7 @@ public class GUI_Factura extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         txaResumenFactura = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
+        lblfondo1 = new javax.swing.JLabel();
         lblfondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -56,7 +58,7 @@ public class GUI_Factura extends javax.swing.JFrame {
         txaResumenFactura.setRows(5);
         jScrollPane1.setViewportView(txaResumenFactura);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 460, 450));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 460, 500));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -66,7 +68,10 @@ public class GUI_Factura extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 560, 100, 30));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 630, 100, 30));
+
+        lblfondo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesFondos/FondoPrincipiante.png"))); // NOI18N
+        getContentPane().add(lblfondo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 500, 600));
 
         lblfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesFondos/FondoPrincipiante.png"))); // NOI18N
         getContentPane().add(lblfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 600));
@@ -76,6 +81,7 @@ public class GUI_Factura extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane,"GRACIAS POR SU COMPRA");
         GUI_MenuPrincipal menuPrincipal = new GUI_MenuPrincipal();
         menuPrincipal.setVisible(true);
         dispose();
@@ -122,6 +128,7 @@ public class GUI_Factura extends javax.swing.JFrame {
     private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblSuFactura;
     private javax.swing.JLabel lblfondo;
+    private javax.swing.JLabel lblfondo1;
     private javax.swing.JTextArea txaResumenFactura;
     // End of variables declaration//GEN-END:variables
 }

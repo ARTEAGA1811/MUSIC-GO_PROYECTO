@@ -73,7 +73,7 @@ public class GUI_Teclado extends javax.swing.JFrame {
         getContentPane().add(btnPianos, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 150, 40));
 
         btnTeclados.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnTeclados.setText("Teclados Electricos");
+        btnTeclados.setText("Teclados Eléctricos");
         btnTeclados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnTecladosActionPerformed(evt);
