@@ -46,11 +46,11 @@ public class GUI_Factura extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/LogoPrincipalMarca1.png"))); // NOI18N
-        getContentPane().add(lblLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, -1, -1));
+        getContentPane().add(lblLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, -1, -1));
 
         lblSuFactura.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblSuFactura.setText("¡Su Factura Aquí !");
-        getContentPane().add(lblSuFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
+        getContentPane().add(lblSuFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, -1, -1));
 
         txaResumenFactura.setEditable(false);
         txaResumenFactura.setColumns(20);
@@ -58,7 +58,7 @@ public class GUI_Factura extends javax.swing.JFrame {
         txaResumenFactura.setRows(5);
         jScrollPane1.setViewportView(txaResumenFactura);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 460, 500));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 460, 540));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
