@@ -22,14 +22,33 @@ public class PersonaJuridica extends Cliente{
     }
 
     public boolean esMetodoPagoValido(String nomTarjeta,String numTarjeta,String fechaCaducidad,String cvv){
-        boolean esMetodoPagoValido = true;
-        if( numTarjeta.length()== 16 && fechaCaducidad.matches("[0-9][0-9][/][0-9][0-9]") && cvv.length() == 3){
-            return esMetodoPagoValido= true;
+        boolean esMetodoPagoValidoBol = true;
+        
+        //Verificacion de que solo sean numeros lo que se ingresa.
+        try{ 
+            //Se analiza cada elemento del  String para saber si todos son numeros.
+            char[] arrayTarjeta = numTarjeta.toCharArray();
+            for(char bucle: arrayTarjeta){
+                int num = Integer.parseInt(Character.toString(bucle));
+            }
+        }catch(NumberFormatException e){
+            esMetodoPagoValidoBol = false;
+            JOptionPane.showMessageDialog(null, "Tarjeta no válida.");    
+            
         }
-        else{
-            JOptionPane.showMessageDialog(null, "Método de pago inválido!!\n No se ha podido emitir su factura!!");
-            return esMetodoPagoValido= false;
+        
+        //En esta parte, solo se analiza si todo lo ingresado son numeros
+        if(esMetodoPagoValidoBol){
+        
+            if( numTarjeta.length()== 16 && fechaCaducidad.matches("[0-9][0-9][/][0-9][0-9]") && cvv.length() == 3){
+                esMetodoPagoValidoBol = true;
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "Método de pago inválido!!\n No se ha podido emitir su factura!!");
+                esMetodoPagoValidoBol = false;
+            }
         }
+        return esMetodoPagoValidoBol;
     }
     
     @Override
