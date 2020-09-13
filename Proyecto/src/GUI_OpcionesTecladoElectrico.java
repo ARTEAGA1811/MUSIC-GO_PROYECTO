@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -18,6 +21,7 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         Instrumento.nomInstrumento = "Teclado Eléctrico";
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -82,6 +86,7 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
         rbtnAzul.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroupColor.add(rbtnAzul);
         rbtnAzul.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnAzul.setSelected(true);
         rbtnAzul.setText("Azul");
 
         rbtnNegro1.setBackground(new java.awt.Color(255, 255, 255));
@@ -106,7 +111,7 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
             .addGroup(jPanelColorLayout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(rbtnAzul)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(rbtnNegro1)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnCafe)
@@ -123,6 +128,7 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
 
         buttonGroupMarca.add(rbtnRoland);
         rbtnRoland.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnRoland.setSelected(true);
         rbtnRoland.setText("ROLAND");
 
         buttonGroupMarca.add(rbtnCasio);
@@ -175,6 +181,7 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
 
         buttonGroupTamaño.add(rbtnTam32);
         rbtnTam32.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnTam32.setSelected(true);
         rbtnTam32.setText("32 ");
         rbtnTam32.setToolTipText("");
         rbtnTam32.setBorderPainted(true);
@@ -217,6 +224,7 @@ public class GUI_OpcionesTecladoElectrico extends javax.swing.JFrame {
 
         buttonGroupPeso.add(rbtnPeso0998);
         rbtnPeso0998.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnPeso0998.setSelected(true);
         rbtnPeso0998.setText("0.998");
 
         buttonGroupPeso.add(rbtnPeso8);

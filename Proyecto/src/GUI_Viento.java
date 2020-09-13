@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -16,6 +19,7 @@ public class GUI_Viento extends javax.swing.JFrame {
     public GUI_Viento() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -42,7 +46,6 @@ public class GUI_Viento extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnMenuPrincipal.setBackground(new java.awt.Color(255, 255, 255));
         btnMenuPrincipal.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnMenuPrincipal.setText("Atrás");
         btnMenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
@@ -55,7 +58,6 @@ public class GUI_Viento extends javax.swing.JFrame {
         lblTrompetas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Trompetas/tropeta1.png"))); // NOI18N
         getContentPane().add(lblTrompetas, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
 
-        btnTrompetas.setBackground(new java.awt.Color(255, 255, 255));
         btnTrompetas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnTrompetas.setText("Trompetas");
         btnTrompetas.addActionListener(new java.awt.event.ActionListener() {
@@ -68,7 +70,6 @@ public class GUI_Viento extends javax.swing.JFrame {
         lblSaxofon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Saxofon/saxofon1.png"))); // NOI18N
         getContentPane().add(lblSaxofon, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 70, -1, -1));
 
-        btnSaxofon.setBackground(new java.awt.Color(255, 255, 255));
         btnSaxofon.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnSaxofon.setText("Saxofones");
         btnSaxofon.addActionListener(new java.awt.event.ActionListener() {
@@ -81,9 +82,8 @@ public class GUI_Viento extends javax.swing.JFrame {
         lblFlauta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Flautas/flauta.png"))); // NOI18N
         getContentPane().add(lblFlauta, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 90, 30, -1));
 
-        btnFlauta.setBackground(new java.awt.Color(255, 255, 255));
         btnFlauta.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnFlauta.setText("Flauntas");
+        btnFlauta.setText("Flautas");
         btnFlauta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFlautaActionPerformed(evt);

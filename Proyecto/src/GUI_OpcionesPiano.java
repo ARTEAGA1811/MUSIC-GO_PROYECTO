@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -19,6 +22,7 @@ public class GUI_OpcionesPiano extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         Instrumento.nomInstrumento = "Piano";
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -92,6 +96,7 @@ public class GUI_OpcionesPiano extends javax.swing.JFrame {
         rbtnNegro.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroupColor.add(rbtnNegro);
         rbtnNegro.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnNegro.setSelected(true);
         rbtnNegro.setText("Negro");
 
         javax.swing.GroupLayout jPanelColorLayout = new javax.swing.GroupLayout(jPanelColor);
@@ -121,6 +126,7 @@ public class GUI_OpcionesPiano extends javax.swing.JFrame {
 
         buttonGroupMarca.add(rbtnbechstein);
         rbtnbechstein.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnbechstein.setSelected(true);
         rbtnbechstein.setText("BECHSTEIN ");
 
         buttonGroupMarca.add(rbtnSchimmel);
@@ -157,7 +163,6 @@ public class GUI_OpcionesPiano extends javax.swing.JFrame {
 
         getContentPane().add(jPanelMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 210, 120));
 
-        btnAtrasCuerdas.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasCuerdas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnAtrasCuerdas.setText("Atrás");
         btnAtrasCuerdas.addActionListener(new java.awt.event.ActionListener() {
@@ -171,6 +176,7 @@ public class GUI_OpcionesPiano extends javax.swing.JFrame {
 
         buttonGroupMaterial.add(rbtnMatAbeto);
         rbtnMatAbeto.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnMatAbeto.setSelected(true);
         rbtnMatAbeto.setText("Abeto");
 
         buttonGroupMaterial.add(rbtnMatRoble);
@@ -208,6 +214,7 @@ public class GUI_OpcionesPiano extends javax.swing.JFrame {
 
         buttonGroupTamaño.add(rbtnTam139);
         rbtnTam139.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnTam139.setSelected(true);
         rbtnTam139.setText("1.39");
 
         buttonGroupTamaño.add(rbtnTam11);
@@ -233,7 +240,7 @@ public class GUI_OpcionesPiano extends javax.swing.JFrame {
         jPanelTamañoLayout.setVerticalGroup(
             jPanelTamañoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelTamañoLayout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(rbtnTam139)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnTam11)
@@ -255,6 +262,7 @@ public class GUI_OpcionesPiano extends javax.swing.JFrame {
 
         buttonGroupPeso.add(rbtnPeso270);
         rbtnPeso270.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnPeso270.setSelected(true);
         rbtnPeso270.setText("270");
 
         buttonGroupPeso.add(rbtnPeso250);
@@ -263,7 +271,6 @@ public class GUI_OpcionesPiano extends javax.swing.JFrame {
 
         buttonGroupPeso.add(rbtnPeso210);
         rbtnPeso210.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        rbtnPeso210.setSelected(true);
         rbtnPeso210.setText("210");
 
         javax.swing.GroupLayout jPanelPesoLayout = new javax.swing.GroupLayout(jPanelPeso);

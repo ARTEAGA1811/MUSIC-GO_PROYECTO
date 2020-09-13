@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -18,6 +21,7 @@ public class GUI_OpcionesSaxofon extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         Instrumento.nomInstrumento = "Saxofon";
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -79,6 +83,7 @@ public class GUI_OpcionesSaxofon extends javax.swing.JFrame {
 
         buttonGroupMarca.add(rbtnOdissey);
         rbtnOdissey.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        rbtnOdissey.setSelected(true);
         rbtnOdissey.setText("ODISSEY ");
         rbtnOdissey.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,7 +109,7 @@ public class GUI_OpcionesSaxofon extends javax.swing.JFrame {
         jPanelMarcaLayout.setVerticalGroup(
             jPanelMarcaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelMarcaLayout.createSequentialGroup()
-                .addContainerGap(18, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(rbtnOdissey)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnYamaha)
@@ -130,6 +135,7 @@ public class GUI_OpcionesSaxofon extends javax.swing.JFrame {
 
         buttonGroupTamaño.add(rbtnTam08);
         rbtnTam08.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        rbtnTam08.setSelected(true);
         rbtnTam08.setText("0.8");
 
         buttonGroupTamaño.add(rbtnTam05);
@@ -167,6 +173,7 @@ public class GUI_OpcionesSaxofon extends javax.swing.JFrame {
 
         buttonGroupMaterial.add(rbtnMatPlata);
         rbtnMatPlata.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        rbtnMatPlata.setSelected(true);
         rbtnMatPlata.setText("Plata");
 
         buttonGroupMaterial.add(rbtnMatPlatino);
@@ -198,7 +205,7 @@ public class GUI_OpcionesSaxofon extends javax.swing.JFrame {
                 .addComponent(rbtnMatPlatino)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(rbtnMatBronce)
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelMaterial, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 310, 190, 100));
@@ -211,6 +218,7 @@ public class GUI_OpcionesSaxofon extends javax.swing.JFrame {
 
         buttonGroupPeso.add(rbtnPeso129);
         rbtnPeso129.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        rbtnPeso129.setSelected(true);
         rbtnPeso129.setText("1.29");
 
         buttonGroupPeso.add(rbtnPeso115);

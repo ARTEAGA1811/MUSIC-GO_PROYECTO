@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -17,6 +20,7 @@ public class GUI_OpcionesViolines extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         Instrumento.nomInstrumento = "Violin";
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -90,6 +94,7 @@ public class GUI_OpcionesViolines extends javax.swing.JFrame {
         rbtnCafe.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroupColor.add(rbtnCafe);
         rbtnCafe.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnCafe.setSelected(true);
         rbtnCafe.setText("Café");
 
         javax.swing.GroupLayout jPanelColorLayout = new javax.swing.GroupLayout(jPanelColor);
@@ -119,6 +124,7 @@ public class GUI_OpcionesViolines extends javax.swing.JFrame {
 
         buttonGroupMarca.add(rbtnSonjLin);
         rbtnSonjLin.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnSonjLin.setSelected(true);
         rbtnSonjLin.setText("SONJ LIN");
 
         buttonGroupMarca.add(rbtnYoseng);
@@ -176,6 +182,7 @@ public class GUI_OpcionesViolines extends javax.swing.JFrame {
 
         buttonGroupTamaño.add(rbtnTam06);
         rbtnTam06.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnTam06.setSelected(true);
         rbtnTam06.setText("0.6");
 
         buttonGroupTamaño.add(rbtnTam057);
@@ -207,7 +214,7 @@ public class GUI_OpcionesViolines extends javax.swing.JFrame {
                 .addComponent(rbtnTam057)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnTam052)
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelTamaño, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 190, 150));
@@ -216,6 +223,7 @@ public class GUI_OpcionesViolines extends javax.swing.JFrame {
 
         buttonGroupMaterial.add(rbtnMatCaoba);
         rbtnMatCaoba.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnMatCaoba.setSelected(true);
         rbtnMatCaoba.setText("Caoba");
 
         buttonGroupMaterial.add(rbtnMatSapele);
@@ -263,6 +271,7 @@ public class GUI_OpcionesViolines extends javax.swing.JFrame {
 
         buttonGroupPeso.add(rbtnPeso047);
         rbtnPeso047.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnPeso047.setSelected(true);
         rbtnPeso047.setText("0.47");
 
         buttonGroupPeso.add(rbtnPeso043);
@@ -294,7 +303,7 @@ public class GUI_OpcionesViolines extends javax.swing.JFrame {
                 .addComponent(rbtnPeso043)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnPeso040)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelPeso, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 100, 170, 150));

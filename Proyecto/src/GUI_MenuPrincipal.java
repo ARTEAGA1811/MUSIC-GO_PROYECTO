@@ -1,6 +1,7 @@
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 
@@ -23,6 +24,7 @@ public class GUI_MenuPrincipal extends javax.swing.JFrame {
     public GUI_MenuPrincipal() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**

@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -17,6 +20,7 @@ public TiendaInstrumento musicGo=new TiendaInstrumento();
         initComponents();
         setLocationRelativeTo(null);
         Instrumento.nomInstrumento = "Conga";
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -100,6 +104,7 @@ public TiendaInstrumento musicGo=new TiendaInstrumento();
         rbtnNegro.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroupColor.add(rbtnNegro);
         rbtnNegro.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnNegro.setSelected(true);
         rbtnNegro.setText("Negro");
 
         javax.swing.GroupLayout jPanelColorLayout = new javax.swing.GroupLayout(jPanelColor);
@@ -140,6 +145,7 @@ public TiendaInstrumento musicGo=new TiendaInstrumento();
 
         buttonGroupMarca.add(rbtnStrong);
         rbtnStrong.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnStrong.setSelected(true);
         rbtnStrong.setText("STRONG");
 
         buttonGroupMarca.add(rbtnLatinPercussion);
@@ -148,7 +154,6 @@ public TiendaInstrumento musicGo=new TiendaInstrumento();
 
         buttonGroupMarca.add(rbtnCameMusic);
         rbtnCameMusic.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        rbtnCameMusic.setSelected(true);
         rbtnCameMusic.setText("CAMEMUSIC ");
 
         javax.swing.GroupLayout jPanelMarcaLayout = new javax.swing.GroupLayout(jPanelMarca);
@@ -172,7 +177,7 @@ public TiendaInstrumento musicGo=new TiendaInstrumento();
                 .addComponent(rbtnLatinPercussion)
                 .addGap(18, 18, 18)
                 .addComponent(rbtnCameMusic)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 210, 120));
@@ -193,6 +198,7 @@ public TiendaInstrumento musicGo=new TiendaInstrumento();
 
         buttonGroupTamaño.add(rbtnTam0762);
         rbtnTam0762.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnTam0762.setSelected(true);
         rbtnTam0762.setText("0.762");
 
         buttonGroupTamaño.add(rbtnTam07112);
@@ -234,6 +240,7 @@ public TiendaInstrumento musicGo=new TiendaInstrumento();
 
         buttonGroupMaterial.add(rbtnMatCaoba);
         rbtnMatCaoba.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnMatCaoba.setSelected(true);
         rbtnMatCaoba.setText("Caoba");
 
         buttonGroupMaterial.add(rbtnMatSapele);
@@ -283,6 +290,7 @@ public TiendaInstrumento musicGo=new TiendaInstrumento();
 
         buttonGroupPeso.add(rbtnPeso145);
         rbtnPeso145.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        rbtnPeso145.setSelected(true);
         rbtnPeso145.setText("14.5");
 
         buttonGroupPeso.add(rbtnPeso1616);
