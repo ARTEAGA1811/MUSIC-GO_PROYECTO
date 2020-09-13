@@ -45,7 +45,6 @@ public class GUI_Teclado extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnMenuPrincipal.setBackground(new java.awt.Color(255, 255, 255));
         btnMenuPrincipal.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnMenuPrincipal.setText("Atrás");
         btnMenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
@@ -64,7 +63,6 @@ public class GUI_Teclado extends javax.swing.JFrame {
         lblOrganos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Organos/organo.png"))); // NOI18N
         getContentPane().add(lblOrganos, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 20, -1, -1));
 
-        btnPianos.setBackground(new java.awt.Color(255, 255, 255));
         btnPianos.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnPianos.setText("Pianos");
         btnPianos.addActionListener(new java.awt.event.ActionListener() {
@@ -74,7 +72,6 @@ public class GUI_Teclado extends javax.swing.JFrame {
         });
         getContentPane().add(btnPianos, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 150, 40));
 
-        btnTeclados.setBackground(new java.awt.Color(255, 255, 255));
         btnTeclados.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnTeclados.setText("Teclados Electricos");
         btnTeclados.addActionListener(new java.awt.event.ActionListener() {
@@ -84,9 +81,8 @@ public class GUI_Teclado extends javax.swing.JFrame {
         });
         getContentPane().add(btnTeclados, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 320, 200, 40));
 
-        btnOrganos.setBackground(new java.awt.Color(255, 255, 255));
         btnOrganos.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnOrganos.setText("Organos");
+        btnOrganos.setText("Órganos");
         btnOrganos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnOrganosActionPerformed(evt);
