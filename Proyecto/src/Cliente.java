@@ -9,7 +9,7 @@
  *
  * @author David Arteaga, Timoteo Camuendo, Anahí Vásquez, Jenny Llano
  */
-public abstract class Cliente implements Identidad  {
+public abstract class Cliente implements Identidad, MetodoPago {
     protected String nombreCliente;
     protected String tipoCliente;
     
