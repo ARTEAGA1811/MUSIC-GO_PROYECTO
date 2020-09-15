@@ -13,8 +13,8 @@ import java.util.ArrayList;
  *
  */
 public class TiendaInstrumento {
-    private ArrayList <Instrumento> instrumentos = new ArrayList <Instrumento>();
-    private ArrayList <Cliente> clientes = new ArrayList <Cliente>();
+    private ArrayList <Instrumento> instrumentos = new ArrayList <>();
+    private ArrayList <Cliente> clientes = new ArrayList <>();
     
     public ArrayList<Instrumento> getInstrumentos() {
         return instrumentos;
