@@ -11,6 +11,6 @@
  */
 public interface Precio {
     
-    public double calcularPrecio();
-    public double calcularDescuento();
+    public double calcularPrecio(String nombreInstr);
+    public double calcularDescuento(String nombreInstr);
 }

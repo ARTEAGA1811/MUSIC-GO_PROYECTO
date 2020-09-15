@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,12 +13,15 @@
  */
 public class GUI_Organo extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form Organo
      */
     public GUI_Organo() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -39,8 +45,9 @@ public class GUI_Organo extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnAtrasTeclado.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasTeclado.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasTeclado.setText("Atras");
+        btnAtrasTeclado.setText("Atrás");
         btnAtrasTeclado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasTecladoActionPerformed(evt);
@@ -54,12 +61,24 @@ public class GUI_Organo extends javax.swing.JFrame {
         lblOrgano2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Organos/organo2.png"))); // NOI18N
         getContentPane().add(lblOrgano2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 10, -1, 350));
 
+        btnComprarOrgano1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarOrgano1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarOrgano1.setText("Comprar");
+        btnComprarOrgano1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarOrgano1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarOrgano1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 110, 30));
 
+        btnComprarOrgano2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarOrgano2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarOrgano2.setText("Comprar");
+        btnComprarOrgano2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarOrgano2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarOrgano2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 370, 110, 30));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -82,6 +101,22 @@ public class GUI_Organo extends javax.swing.JFrame {
         piano.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasTecladoActionPerformed
+
+    private void btnComprarOrgano1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarOrgano1ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesOrgano Opcionescompra  = new GUI_OpcionesOrgano();
+        Opcionescompra.setVisible(true);
+        dispose();
+        ins = "organo1";
+    }//GEN-LAST:event_btnComprarOrgano1ActionPerformed
+
+    private void btnComprarOrgano2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarOrgano2ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesOrgano Opcionescompra  = new GUI_OpcionesOrgano();
+        Opcionescompra.setVisible(true);
+        dispose();
+        ins = "organo2";
+    }//GEN-LAST:event_btnComprarOrgano2ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -1,3 +1,11 @@
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,14 +16,15 @@
  *
  * @author Tim
  */
-public class GUI_Proyecto extends javax.swing.JFrame {
+public class GUI_MenuPrincipal extends javax.swing.JFrame {
 
     /**
      * Creates new form GuiProyecto
      */
-    public GUI_Proyecto() {
+    public GUI_MenuPrincipal() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -55,9 +64,8 @@ public class GUI_Proyecto extends javax.swing.JFrame {
         lblLogoPrincipalCentral.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/guitarra-electrica (3).png"))); // NOI18N
         getContentPane().add(lblLogoPrincipalCentral, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 360, 405));
 
-        cmbCategorias.setBackground(new java.awt.Color(51, 153, 255));
         cmbCategorias.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        cmbCategorias.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "              CATEGORÍAS", "Cuerdas", "Percusión", "Teclados", "Viento", " " }));
+        cmbCategorias.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "              CATEGORÍAS", "Cuerdas", "Percusión", "Teclados", "Viento" }));
         cmbCategorias.setBorder(null);
         cmbCategorias.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         cmbCategorias.addActionListener(new java.awt.event.ActionListener() {
@@ -99,14 +107,14 @@ public class GUI_Proyecto extends javax.swing.JFrame {
         getContentPane().add(btnMarcas, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 110, 40));
 
         bntPrincipiante.setBackground(new java.awt.Color(255, 255, 255));
-        bntPrincipiante.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        bntPrincipiante.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         bntPrincipiante.setText("Click aquí");
         bntPrincipiante.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bntPrincipianteActionPerformed(evt);
             }
         });
-        getContentPane().add(bntPrincipiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 80, 130, 40));
+        getContentPane().add(bntPrincipiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 80, 140, 40));
 
         lblLogoPrincipalMarca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/LogoPrincipalMarca1.png"))); // NOI18N
         getContentPane().add(lblLogoPrincipalMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 200, 50));
@@ -122,9 +130,19 @@ public class GUI_Proyecto extends javax.swing.JFrame {
         getContentPane().add(btnFacebook, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 420, 40, 40));
 
         btnWhatapp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/whatsapp (3).png"))); // NOI18N
+        btnWhatapp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnWhatappActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnWhatapp, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 370, 40, 40));
 
         bntInstagram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/instagram.png"))); // NOI18N
+        bntInstagram.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntInstagramActionPerformed(evt);
+            }
+        });
         getContentPane().add(bntInstagram, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 320, 40, 40));
 
         lblDescuento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/descuento.png"))); // NOI18N
@@ -146,7 +164,7 @@ public class GUI_Proyecto extends javax.swing.JFrame {
 
         lblPrincipiante.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblPrincipiante.setText("¿Principiante?");
-        getContentPane().add(lblPrincipiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 50, -1, -1));
+        getContentPane().add(lblPrincipiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 50, 120, -1));
 
         lblRedes.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblRedes.setText("Contáctanos");
@@ -159,13 +177,24 @@ public class GUI_Proyecto extends javax.swing.JFrame {
         lblFondo.setForeground(new java.awt.Color(255, 255, 255));
         lblFondo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondofondo1_3.png"))); // NOI18N
-        getContentPane().add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 860, 470));
+        getContentPane().add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 470));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnFacebookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFacebookActionPerformed
         // TODO add your handling code here:
+        if(java.awt.Desktop.isDesktopSupported()){
+            java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
+            
+            if(desktop.isSupported(java.awt.Desktop.Action.BROWSE)){
+                try{
+                    java.net.URI uri = new java.net.URI("https://www.facebook.com/Music-Go-106788524503440");
+                    desktop.browse(uri);
+                }catch(URISyntaxException | IOException ex ){}
+            }
+            
+        }
     }//GEN-LAST:event_btnFacebookActionPerformed
 
     private void btnnuevosProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnnuevosProductosActionPerformed
@@ -224,6 +253,34 @@ public class GUI_Proyecto extends javax.swing.JFrame {
         
     }//GEN-LAST:event_cmbCategoriasActionPerformed
 
+    private void bntInstagramActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntInstagramActionPerformed
+        // TODO add your handling code here:
+        if(java.awt.Desktop.isDesktopSupported()){
+            java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
+            
+            if(desktop.isSupported(java.awt.Desktop.Action.BROWSE)){
+                try{
+                    java.net.URI uri = new java.net.URI("https://www.instagram.com/musicgovalc/");
+                    desktop.browse(uri);
+                }catch(URISyntaxException | IOException ex ){}
+            }
+            
+        }
+    }//GEN-LAST:event_bntInstagramActionPerformed
+
+    private void btnWhatappActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWhatappActionPerformed
+        // TODO add your handling code here:
+        String mensaje;
+        mensaje = "!MÁNDANOS UN MENSAJE AQUÍ!: \n" +
+                   "0990554840\n"+
+                   "0995669849\n"+
+                   "0983132578\n"+
+                   "0995461657";
+                
+        JOptionPane.showMessageDialog(rootPane, mensaje);
+                
+    }//GEN-LAST:event_btnWhatappActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -241,14 +298,18 @@ public class GUI_Proyecto extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GUI_Proyecto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI_MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GUI_Proyecto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI_MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GUI_Proyecto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI_MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GUI_Proyecto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI_MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -257,7 +318,7 @@ public class GUI_Proyecto extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new GUI_Proyecto().setVisible(true);
+                new GUI_MenuPrincipal().setVisible(true);
             }
         });
     }

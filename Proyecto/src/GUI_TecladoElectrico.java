@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,12 +13,15 @@
  */
 public class GUI_TecladoElectrico extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form TecladoElectrico
      */
     public GUI_TecladoElectrico() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -43,8 +49,9 @@ public class GUI_TecladoElectrico extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnAtrasTeclado.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasTeclado.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasTeclado.setText("Atras");
+        btnAtrasTeclado.setText("Atrás");
         btnAtrasTeclado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasTecladoActionPerformed(evt);
@@ -64,20 +71,44 @@ public class GUI_TecladoElectrico extends javax.swing.JFrame {
         lblTecladoE4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Teclados/teclado4.png"))); // NOI18N
         getContentPane().add(lblTecladoE4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 250, -1, -1));
 
+        btnTecladoE1.setBackground(new java.awt.Color(255, 255, 255));
         btnTecladoE1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnTecladoE1.setText("Comprar");
+        btnTecladoE1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTecladoE1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnTecladoE1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, 110, 30));
 
+        btnTecladoE2.setBackground(new java.awt.Color(255, 255, 255));
         btnTecladoE2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnTecladoE2.setText("Comprar");
+        btnTecladoE2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTecladoE2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnTecladoE2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 180, 110, 30));
 
+        btnTecladoE3.setBackground(new java.awt.Color(255, 255, 255));
         btnTecladoE3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnTecladoE3.setText("Comprar");
+        btnTecladoE3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTecladoE3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnTecladoE3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 340, 110, 30));
 
+        btnTecladoE4.setBackground(new java.awt.Color(255, 255, 255));
         btnTecladoE4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnTecladoE4.setText("Comprar");
+        btnTecladoE4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTecladoE4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnTecladoE4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 340, 110, 30));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -100,6 +131,38 @@ public class GUI_TecladoElectrico extends javax.swing.JFrame {
         piano.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasTecladoActionPerformed
+
+    private void btnTecladoE1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTecladoE1ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesTecladoElectrico OpcionesCompra  = new GUI_OpcionesTecladoElectrico();
+        OpcionesCompra.setVisible(true);
+        dispose();
+        ins = "pianoElectrico1";
+    }//GEN-LAST:event_btnTecladoE1ActionPerformed
+
+    private void btnTecladoE2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTecladoE2ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesTecladoElectrico OpcionesCompra  = new GUI_OpcionesTecladoElectrico();
+        OpcionesCompra.setVisible(true);
+        dispose();
+        ins = "pianoElectrico2";
+    }//GEN-LAST:event_btnTecladoE2ActionPerformed
+
+    private void btnTecladoE3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTecladoE3ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesTecladoElectrico OpcionesCompra  = new GUI_OpcionesTecladoElectrico();
+        OpcionesCompra.setVisible(true);
+        dispose();
+        ins = "pianoElectrico3";
+    }//GEN-LAST:event_btnTecladoE3ActionPerformed
+
+    private void btnTecladoE4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTecladoE4ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesTecladoElectrico OpcionesCompra  = new GUI_OpcionesTecladoElectrico();
+        OpcionesCompra.setVisible(true);
+        dispose();
+        ins = "pianoElectrico4";
+    }//GEN-LAST:event_btnTecladoE4ActionPerformed
 
     /**
      * @param args the command line arguments

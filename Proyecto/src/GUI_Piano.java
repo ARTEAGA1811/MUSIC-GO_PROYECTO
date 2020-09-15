@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,12 +13,15 @@
  */
 public class GUI_Piano extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form Piano
      */
     public GUI_Piano() {
         initComponents();
-        setLocationRelativeTo(null);
+        setLocationRelativeTo(null);       
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -50,8 +56,9 @@ public class GUI_Piano extends javax.swing.JFrame {
         lblPiano3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Pianos/piano3.png"))); // NOI18N
         getContentPane().add(lblPiano3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, -1, -1));
 
+        btnAtrasTeclado.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasTeclado.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasTeclado.setText("Atras");
+        btnAtrasTeclado.setText("Atrás");
         btnAtrasTeclado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasTecladoActionPerformed(evt);
@@ -59,16 +66,34 @@ public class GUI_Piano extends javax.swing.JFrame {
         });
         getContentPane().add(btnAtrasTeclado, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 409, 90, 40));
 
+        btnComprarPiano1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarPiano1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarPiano1.setText("Comprar");
+        btnComprarPiano1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarPiano1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarPiano1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 110, 30));
 
+        btnComprarPiano2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarPiano2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarPiano2.setText("Comprar");
+        btnComprarPiano2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarPiano2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarPiano2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 340, 110, 30));
 
+        btnComprarPiano3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarPiano3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarPiano3.setText("Comprar");
+        btnComprarPiano3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarPiano3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarPiano3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 340, 110, 30));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -91,6 +116,30 @@ public class GUI_Piano extends javax.swing.JFrame {
         piano.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasTecladoActionPerformed
+
+    private void btnComprarPiano1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarPiano1ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesPiano opcionesPiano  = new GUI_OpcionesPiano();
+        opcionesPiano.setVisible(true);
+        dispose();
+        ins = "piano1";
+    }//GEN-LAST:event_btnComprarPiano1ActionPerformed
+
+    private void btnComprarPiano2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarPiano2ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesPiano opcionesPiano  = new GUI_OpcionesPiano();
+        opcionesPiano.setVisible(true);
+        dispose();
+        ins = "piano2";
+    }//GEN-LAST:event_btnComprarPiano2ActionPerformed
+
+    private void btnComprarPiano3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarPiano3ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesPiano opcionesPiano  = new GUI_OpcionesPiano();
+        opcionesPiano.setVisible(true);
+        dispose();
+        ins = "piano3";
+    }//GEN-LAST:event_btnComprarPiano3ActionPerformed
 
     /**
      * @param args the command line arguments

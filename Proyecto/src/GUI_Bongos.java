@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,12 +13,14 @@
  */
 public class GUI_Bongos extends javax.swing.JFrame {
 
+    static String ins;
     /**
      * Creates new form Bongos
      */
     public GUI_Bongos() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -43,8 +48,9 @@ public class GUI_Bongos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnAtrasPercusion.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasPercusion.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasPercusion.setText("Atras");
+        btnAtrasPercusion.setText("Atrás");
         btnAtrasPercusion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasPercusionActionPerformed(evt);
@@ -64,20 +70,44 @@ public class GUI_Bongos extends javax.swing.JFrame {
         lblBongo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Bongos/bongos4.png"))); // NOI18N
         getContentPane().add(lblBongo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, -1, 120));
 
+        btnComprarBongo1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarBongo1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarBongo1.setText("Comprar");
+        btnComprarBongo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarBongo1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarBongo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 110, 30));
 
+        btnComprarBongo2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarBongo2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarBongo2.setText("Comprar");
+        btnComprarBongo2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarBongo2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarBongo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, 110, 30));
 
+        btnComprarBongo3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarBongo3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarBongo3.setText("Comprar");
+        btnComprarBongo3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarBongo3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarBongo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 260, 110, 30));
 
+        btnComprarBongo4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarBongo4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarBongo4.setText("Comprar");
+        btnComprarBongo4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarBongo4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarBongo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 260, 110, 30));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -100,6 +130,38 @@ public class GUI_Bongos extends javax.swing.JFrame {
         percusion.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasPercusionActionPerformed
+
+    private void btnComprarBongo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarBongo1ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesBongos opcionesCompra  = new GUI_OpcionesBongos();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "bongo1";
+    }//GEN-LAST:event_btnComprarBongo1ActionPerformed
+
+    private void btnComprarBongo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarBongo2ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesBongos opcionesCompra  = new GUI_OpcionesBongos();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "bongo2";
+    }//GEN-LAST:event_btnComprarBongo2ActionPerformed
+
+    private void btnComprarBongo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarBongo3ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesBongos opcionesCompra  = new GUI_OpcionesBongos();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "bongo3";
+    }//GEN-LAST:event_btnComprarBongo3ActionPerformed
+
+    private void btnComprarBongo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarBongo4ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesBongos opcionesCompra  = new GUI_OpcionesBongos();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "bongo4";
+    }//GEN-LAST:event_btnComprarBongo4ActionPerformed
 
     /**
      * @param args the command line arguments

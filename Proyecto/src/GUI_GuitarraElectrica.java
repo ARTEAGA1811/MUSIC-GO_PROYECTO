@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,12 +13,15 @@
  */
 public class GUI_GuitarraElectrica extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form GuitarraElectrica
      */
     public GUI_GuitarraElectrica() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -55,8 +61,9 @@ public class GUI_GuitarraElectrica extends javax.swing.JFrame {
         lblGuitarraE4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/GuitarraElectrica/guitarra-electrica4.png"))); // NOI18N
         getContentPane().add(lblGuitarraE4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 0, -1, -1));
 
+        btnAtrasCuerdas.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasCuerdas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasCuerdas.setText("Atras");
+        btnAtrasCuerdas.setText("Atrás");
         btnAtrasCuerdas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasCuerdasActionPerformed(evt);
@@ -64,20 +71,44 @@ public class GUI_GuitarraElectrica extends javax.swing.JFrame {
         });
         getContentPane().add(btnAtrasCuerdas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, 90, 40));
 
+        btnComprarGE1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGE1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGE1.setText("Comprar");
+        btnComprarGE1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarGE1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarGE1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 110, 30));
 
+        btnComprarGE2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGE2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGE2.setText("Comprar");
+        btnComprarGE2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarGE2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarGE2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 110, 30));
 
+        btnComprarGE3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGE3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGE3.setText("Comprar");
+        btnComprarGE3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarGE3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarGE3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 340, 110, 30));
 
+        btnComprarGE4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGE4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGE4.setText("Comprar");
+        btnComprarGE4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarGE4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarGE4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 340, 110, 30));
 
         lblInfo.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
@@ -100,6 +131,38 @@ public class GUI_GuitarraElectrica extends javax.swing.JFrame {
         menuCuerdas.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasCuerdasActionPerformed
+
+    private void btnComprarGE1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGE1ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesGuitarraElectrica opcionesCompra  = new GUI_OpcionesGuitarraElectrica();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "guitarraElectrica1";
+    }//GEN-LAST:event_btnComprarGE1ActionPerformed
+
+    private void btnComprarGE2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGE2ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesGuitarraElectrica opcionesCompra  = new GUI_OpcionesGuitarraElectrica();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "guitarraElectrica2";
+    }//GEN-LAST:event_btnComprarGE2ActionPerformed
+
+    private void btnComprarGE3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGE3ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesGuitarraElectrica opcionesCompra  = new GUI_OpcionesGuitarraElectrica();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "guitarraElectrica3";
+    }//GEN-LAST:event_btnComprarGE3ActionPerformed
+
+    private void btnComprarGE4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGE4ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesGuitarraElectrica opcionesCompra  = new GUI_OpcionesGuitarraElectrica();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "guitarraElectrica4";
+    }//GEN-LAST:event_btnComprarGE4ActionPerformed
 
     /**
      * @param args the command line arguments

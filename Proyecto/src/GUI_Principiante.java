@@ -1,3 +1,8 @@
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,7 +14,7 @@
  * @author Tim
  */
 public class GUI_Principiante extends javax.swing.JFrame {
-
+    public TiendaInstrumento musicGo=new TiendaInstrumento();
     /**
      * Creates new form Principiante
      */
@@ -40,7 +45,7 @@ public class GUI_Principiante extends javax.swing.JFrame {
         lblFlautaConManual = new javax.swing.JLabel();
         lblViolinConManual = new javax.swing.JLabel();
         btnComprarTecladoM = new javax.swing.JButton();
-        btnComprarVoilinM = new javax.swing.JButton();
+        btnComprarViolinM = new javax.swing.JButton();
         btnComprarGuitarraM = new javax.swing.JButton();
         btnComprarFlautaM = new javax.swing.JButton();
         lblInfo2 = new javax.swing.JLabel();
@@ -98,21 +103,41 @@ public class GUI_Principiante extends javax.swing.JFrame {
         btnComprarTecladoM.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTecladoM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTecladoM.setText("Comprar");
+        btnComprarTecladoM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarTecladoMActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarTecladoM, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, -1, -1));
 
-        btnComprarVoilinM.setBackground(new java.awt.Color(255, 255, 255));
-        btnComprarVoilinM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnComprarVoilinM.setText("Comprar");
-        getContentPane().add(btnComprarVoilinM, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, -1, -1));
+        btnComprarViolinM.setBackground(new java.awt.Color(255, 255, 255));
+        btnComprarViolinM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnComprarViolinM.setText("Comprar");
+        btnComprarViolinM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarViolinMActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnComprarViolinM, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, -1, -1));
 
         btnComprarGuitarraM.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGuitarraM.setText("Comprar");
+        btnComprarGuitarraM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarGuitarraMActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarGuitarraM, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 350, -1, -1));
 
         btnComprarFlautaM.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarFlautaM.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarFlautaM.setText("Comprar");
+        btnComprarFlautaM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarFlautaMActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarFlautaM, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 350, -1, -1));
 
         lblInfo2.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
@@ -120,17 +145,106 @@ public class GUI_Principiante extends javax.swing.JFrame {
         getContentPane().add(lblInfo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 400, 400, 40));
 
         lblFondoPrincipiante.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesFondos/Fondo1.png"))); // NOI18N
-        getContentPane().add(lblFondoPrincipiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 470));
+        getContentPane().add(lblFondoPrincipiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 470));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuPrincipalActionPerformed
         // TODO add your handling code here:
-        GUI_Proyecto  menuPrincipal = new GUI_Proyecto();
+        GUI_MenuPrincipal  menuPrincipal = new GUI_MenuPrincipal();
         menuPrincipal.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnMenuPrincipalActionPerformed
+
+    private void btnComprarTecladoMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTecladoMActionPerformed
+        // TODO add your handling code here:
+        Instrumento.nomInstrumento = "Teclado";
+        Instrumento miTecladoM = new Electronicos("Negro",32, 8, "CASIO");
+        Instrumento.precioInst = miTecladoM.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miTecladoM);
+        Instrumento.descuentoEXTRA = 0.10;
+        Instrumento.descripcionInstr = miTecladoM.toString();
+        
+        Electronicos miManual = new Electronicos();
+        try {
+            miManual.manualInstrumento("http://www.actiweb.es/musicaclasica/archivo4.pdf");
+        } catch (Exception ex) {
+            Logger.getLogger(GUI_Principiante.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        JOptionPane.showMessageDialog(null,"              LISTO!  "+"\nManual_Piano descargado");
+        
+        
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarTecladoMActionPerformed
+
+    private void btnComprarViolinMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolinMActionPerformed
+        // TODO add your handling code here:
+        Instrumento.nomInstrumento = "Violin";
+        Instrumento miViolinM = new Frotacion("Caoba", "Natural", 0.6, 0.43, "GOLDEN");
+        Instrumento.precioInst = miViolinM.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miViolinM);
+        Instrumento.descripcionInstr = miViolinM.toString();
+        
+        Frotacion miManual = new Frotacion();
+        try {
+            miManual.manualInstrumento("http://files.history-of-music.webnode.es/200000010-4fefa50e93/Curso%20de%20Violin.pdf");
+        } catch (Exception ex) {
+            Logger.getLogger(GUI_Principiante.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        JOptionPane.showMessageDialog(null,"             LISTO!  "+"\nManual_Violín descargado");
+        
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarViolinMActionPerformed
+
+    private void btnComprarGuitarraMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraMActionPerformed
+        // TODO add your handling code here:
+        Instrumento.nomInstrumento = "Guitarra Acústica";
+        Instrumento miGuitarraM = new Punteo("Caoba", "Rojo", 1.4, 1.75, "VINTAGE");
+        Instrumento.precioInst = miGuitarraM.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miGuitarraM);
+        Instrumento.descuentoEXTRA = 0.15;
+        Instrumento.descripcionInstr = miGuitarraM.toString();
+        
+        Punteo miManual = new Punteo();
+        try {
+            miManual.manualInstrumento("http://cuerdabierta.s3.amazonaws.com/Curso%20de%20Guitarra%20Para%20Principiantes/reporte.pdf");
+        } catch (Exception ex) {
+            Logger.getLogger(GUI_Principiante.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        JOptionPane.showMessageDialog(null,"                 LISTO!  "+"\nManual_Guitarra_Acústica descargado");
+        
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarGuitarraMActionPerformed
+
+    private void btnComprarFlautaMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarFlautaMActionPerformed
+        // TODO add your handling code here:
+        Instrumento.nomInstrumento = "Flauta";
+        Instrumento miFlautaM = new Directo("Ébano", "Cafe", 0.6, 0.80, "YAMAHA");
+        Instrumento.precioInst = miFlautaM.calcularPrecio(Instrumento.nomInstrumento);
+        musicGo.setInstrumentos(miFlautaM);
+        Instrumento.descuentoEXTRA = 0.15;
+        Instrumento.descripcionInstr = miFlautaM.toString();
+        
+        //Manual para la Flauta
+        Directo miManual = new Directo();
+        try {
+            miManual.manualInstrumento("http://www.actiweb.es/colegiojeanpiagetgdl/archivo3.pdf");
+        } catch (Exception ex) {
+            Logger.getLogger(GUI_Principiante.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        JOptionPane.showMessageDialog(null,"           LISTO!  "+"\nManual_Flauta descargado");
+        
+        GUI_Compra compra  = new GUI_Compra();
+        compra.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnComprarFlautaMActionPerformed
 
     /**
      * @param args the command line arguments
@@ -172,7 +286,7 @@ public class GUI_Principiante extends javax.swing.JFrame {
     private javax.swing.JButton btnComprarFlautaM;
     private javax.swing.JButton btnComprarGuitarraM;
     private javax.swing.JButton btnComprarTecladoM;
-    private javax.swing.JButton btnComprarVoilinM;
+    private javax.swing.JButton btnComprarViolinM;
     private javax.swing.JButton btnMenuPrincipal;
     private javax.swing.JLabel lblFlautaConManual;
     private javax.swing.JLabel lblFondoPrincipiante;

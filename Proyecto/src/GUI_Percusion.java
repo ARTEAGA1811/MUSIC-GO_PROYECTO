@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -17,6 +20,7 @@ public class GUI_Percusion extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         setLocationRelativeTo(null);
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -106,7 +110,7 @@ public class GUI_Percusion extends javax.swing.JFrame {
 
     private void btnMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuPrincipalActionPerformed
         // TODO add your handling code here:
-        GUI_Proyecto  menuPrincipal = new GUI_Proyecto();
+        GUI_MenuPrincipal  menuPrincipal = new GUI_MenuPrincipal();
         menuPrincipal.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnMenuPrincipalActionPerformed

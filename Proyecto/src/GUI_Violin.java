@@ -1,3 +1,9 @@
+
+import javax.swing.ImageIcon;
+
+
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,12 +16,15 @@
  */
 public class GUI_Violin extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form Violin
      */
     public GUI_Violin() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
         
     }
 
@@ -56,8 +65,9 @@ public class GUI_Violin extends javax.swing.JFrame {
         lblViolin4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Violin/violin1.png"))); // NOI18N
         getContentPane().add(lblViolin4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 80, -1, -1));
 
+        btnAtrasCuerdas.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasCuerdas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasCuerdas.setText("Atras");
+        btnAtrasCuerdas.setText("Atrás");
         btnAtrasCuerdas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasCuerdasActionPerformed(evt);
@@ -65,20 +75,44 @@ public class GUI_Violin extends javax.swing.JFrame {
         });
         getContentPane().add(btnAtrasCuerdas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, 90, 40));
 
+        btnComprarViolin1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarViolin1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarViolin1.setText("Comprar");
+        btnComprarViolin1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarViolin1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarViolin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, 110, 30));
 
+        btnComprarViolin2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarViolin2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarViolin2.setText("Comprar");
+        btnComprarViolin2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarViolin2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarViolin2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 110, 30));
 
+        btnComprarViolin3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarViolin3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarViolin3.setText("Comprar");
+        btnComprarViolin3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarViolin3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarViolin3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 330, 110, 30));
 
+        btnComprarViolin4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarViolin4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarViolin4.setText("Comprar");
+        btnComprarViolin4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarViolin4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarViolin4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 330, 110, 30));
 
         lblInfo.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
@@ -97,10 +131,42 @@ public class GUI_Violin extends javax.swing.JFrame {
 
     private void btnAtrasCuerdasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasCuerdasActionPerformed
         // TODO add your handling code here:
-        GUI_Cuerdas menucuerdas = new GUI_Cuerdas();
-        menucuerdas.setVisible(true);
+        GUI_Cuerdas menuCuerdas  = new GUI_Cuerdas();
+        menuCuerdas.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasCuerdasActionPerformed
+
+    private void btnComprarViolin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolin1ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesViolines opcionesCompra  = new GUI_OpcionesViolines();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "violin1";
+    }//GEN-LAST:event_btnComprarViolin1ActionPerformed
+
+    private void btnComprarViolin2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolin2ActionPerformed
+        // TODO add your handling code here:
+       GUI_OpcionesViolines opcionesCompra  = new GUI_OpcionesViolines();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "violin2";
+    }//GEN-LAST:event_btnComprarViolin2ActionPerformed
+
+    private void btnComprarViolin3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolin3ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesViolines opcionesCompra  = new GUI_OpcionesViolines();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "violin3";
+    }//GEN-LAST:event_btnComprarViolin3ActionPerformed
+
+    private void btnComprarViolin4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarViolin4ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesViolines opcionesCompra  = new GUI_OpcionesViolines();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "violin4";
+    }//GEN-LAST:event_btnComprarViolin4ActionPerformed
 
     /**
      * @param args the command line arguments

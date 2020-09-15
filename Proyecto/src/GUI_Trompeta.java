@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,12 +13,15 @@
  */
 public class GUI_Trompeta extends javax.swing.JFrame {
 
+    
+    static String ins;
     /**
      * Creates new form Trompeta
      */
     public GUI_Trompeta() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -43,8 +49,9 @@ public class GUI_Trompeta extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnAtrasViento.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasViento.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasViento.setText("Atras");
+        btnAtrasViento.setText("Atrás");
         btnAtrasViento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasVientoActionPerformed(evt);
@@ -64,20 +71,44 @@ public class GUI_Trompeta extends javax.swing.JFrame {
         lblTrompeta4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Trompetas/trompeta4.png"))); // NOI18N
         getContentPane().add(lblTrompeta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 120, -1, -1));
 
+        btnComprarTrompeta1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTrompeta1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTrompeta1.setText("Comprar");
+        btnComprarTrompeta1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarTrompeta1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarTrompeta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 110, 30));
 
+        btnComprarTrompeta2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTrompeta2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTrompeta2.setText("Comprar");
+        btnComprarTrompeta2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarTrompeta2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarTrompeta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 110, 30));
 
+        btnComprarTrompeta3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTrompeta3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTrompeta3.setText("Comprar");
+        btnComprarTrompeta3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarTrompeta3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarTrompeta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 330, 110, 30));
 
+        btnComprarTrompeta4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarTrompeta4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarTrompeta4.setText("Comprar");
+        btnComprarTrompeta4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarTrompeta4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarTrompeta4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 330, 110, 30));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -100,6 +131,38 @@ public class GUI_Trompeta extends javax.swing.JFrame {
         intrumentoViento.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasVientoActionPerformed
+
+    private void btnComprarTrompeta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta1ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesTrompeta OpcionesCompra  = new GUI_OpcionesTrompeta();
+        OpcionesCompra.setVisible(true);
+        dispose();
+        ins = "trompeta1";
+    }//GEN-LAST:event_btnComprarTrompeta1ActionPerformed
+
+    private void btnComprarTrompeta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta2ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesTrompeta OpcionesCompra  = new GUI_OpcionesTrompeta();
+        OpcionesCompra.setVisible(true);
+        dispose();
+        ins = "trompeta2";
+    }//GEN-LAST:event_btnComprarTrompeta2ActionPerformed
+
+    private void btnComprarTrompeta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta3ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesTrompeta OpcionesCompra  = new GUI_OpcionesTrompeta();
+        OpcionesCompra.setVisible(true);
+        dispose();
+        ins = "trompeta3";
+    }//GEN-LAST:event_btnComprarTrompeta3ActionPerformed
+
+    private void btnComprarTrompeta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarTrompeta4ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesTrompeta OpcionesCompra  = new GUI_OpcionesTrompeta();
+        OpcionesCompra.setVisible(true);
+        dispose();
+        ins = "trompeta4";
+    }//GEN-LAST:event_btnComprarTrompeta4ActionPerformed
 
     /**
      * @param args the command line arguments

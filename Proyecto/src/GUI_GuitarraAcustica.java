@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,12 +13,14 @@
  */
 public class GUI_GuitarraAcustica extends javax.swing.JFrame {
 
+    static String ins;
     /**
      * Creates new form GuitarraAcustica
      */
     public GUI_GuitarraAcustica() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -55,8 +60,9 @@ public class GUI_GuitarraAcustica extends javax.swing.JFrame {
         lblGuitarraA4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/GuitarraAcustica/Guitarra-Acustica4.png"))); // NOI18N
         getContentPane().add(lblGuitarraA4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 20, -1, -1));
 
+        btnAtrasCuerdas.setBackground(new java.awt.Color(255, 255, 255));
         btnAtrasCuerdas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasCuerdas.setText("Atras");
+        btnAtrasCuerdas.setText("Atrás");
         btnAtrasCuerdas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasCuerdasActionPerformed(evt);
@@ -64,20 +70,44 @@ public class GUI_GuitarraAcustica extends javax.swing.JFrame {
         });
         getContentPane().add(btnAtrasCuerdas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 90, 40));
 
+        btnComprarGuitarraA1.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraA1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGuitarraA1.setText("Comprar");
+        btnComprarGuitarraA1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarGuitarraA1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarGuitarraA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 110, 30));
 
+        btnComprarGuitarraA2.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraA2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGuitarraA2.setText("Comprar");
+        btnComprarGuitarraA2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarGuitarraA2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarGuitarraA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 110, 30));
 
+        btnComprarGuitarraA3.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraA3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGuitarraA3.setText("Comprar");
+        btnComprarGuitarraA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarGuitarraA3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarGuitarraA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 310, 110, 30));
 
+        btnComprarGuitarraA4.setBackground(new java.awt.Color(255, 255, 255));
         btnComprarGuitarraA4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarGuitarraA4.setText("Comprar");
+        btnComprarGuitarraA4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarGuitarraA4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarGuitarraA4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 310, 110, 30));
 
         lblInfo.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
@@ -100,6 +130,38 @@ public class GUI_GuitarraAcustica extends javax.swing.JFrame {
         menuCuerdas.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasCuerdasActionPerformed
+
+    private void btnComprarGuitarraA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraA1ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesGuitarraAcustica opcionesCompra  = new GUI_OpcionesGuitarraAcustica();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "guitarra1";
+    }//GEN-LAST:event_btnComprarGuitarraA1ActionPerformed
+
+    private void btnComprarGuitarraA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraA2ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesGuitarraAcustica opcionesCompra  = new GUI_OpcionesGuitarraAcustica();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "guitarra2";
+    }//GEN-LAST:event_btnComprarGuitarraA2ActionPerformed
+
+    private void btnComprarGuitarraA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraA3ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesGuitarraAcustica opcionesCompra  = new GUI_OpcionesGuitarraAcustica();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "guitarra3";
+    }//GEN-LAST:event_btnComprarGuitarraA3ActionPerformed
+
+    private void btnComprarGuitarraA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarGuitarraA4ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesGuitarraAcustica opcionesCompra  = new GUI_OpcionesGuitarraAcustica();
+        opcionesCompra.setVisible(true);
+        dispose();
+        ins = "guitarra4";
+    }//GEN-LAST:event_btnComprarGuitarraA4ActionPerformed
 
     /**
      * @param args the command line arguments

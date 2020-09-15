@@ -9,19 +9,22 @@
  *
  * @author David Arteaga, Timoteo Camuendo, Anahí Vásquez, Jenny Llano
  */
-public abstract class Cliente implements Identidad  {
+public abstract class Cliente implements Identidad, MetodoPago {
     protected String nombreCliente;
     protected String tipoCliente;
     
-    
     //METODOS
-    public abstract void compraInstrumento();
+    public abstract String compraInstrumento(String direccion, 
+                                                String nomInstrumento, 
+                                                int cantidad, 
+                                                double precioInstrumento,
+                                                double descuentoEXTRA);
 
     @Override
     public String toString() {
         return "Cliente{" + "nombreCliente=" + nombreCliente + '}';
     }
-    
+
     
     
 }

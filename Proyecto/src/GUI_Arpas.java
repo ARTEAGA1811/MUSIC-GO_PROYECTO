@@ -1,3 +1,6 @@
+
+import javax.swing.ImageIcon;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,13 +12,16 @@
  * @author Tim
  */
 public class GUI_Arpas extends javax.swing.JFrame {
-
+    
+    
+    static String ins;
     /**
      * Creates new form Arpas
      */
     public GUI_Arpas() {
         initComponents();
         setLocationRelativeTo(null);
+        this.setIconImage(new ImageIcon(getClass().getResource("Imagenes/LogoIcono.png")).getImage());
     }
 
     /**
@@ -42,7 +48,7 @@ public class GUI_Arpas extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnAtrasCuerdas.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAtrasCuerdas.setText("Atras");
+        btnAtrasCuerdas.setText("Atrás");
         btnAtrasCuerdas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasCuerdasActionPerformed(evt);
@@ -61,14 +67,29 @@ public class GUI_Arpas extends javax.swing.JFrame {
 
         btnComprarArpa1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarArpa1.setText("Comprar");
+        btnComprarArpa1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarArpa1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarArpa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, 110, 30));
 
         btnComprarArpa2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarArpa2.setText("Comprar");
+        btnComprarArpa2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarArpa2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarArpa2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 340, 110, 30));
 
         btnComprarArpa3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnComprarArpa3.setText("Comprar");
+        btnComprarArpa3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnComprarArpa3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnComprarArpa3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 340, 110, 30));
 
         lblTitulo.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -85,12 +106,43 @@ public class GUI_Arpas extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    
     private void btnAtrasCuerdasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasCuerdasActionPerformed
         // TODO add your handling code here:
         GUI_Cuerdas menuCuerdas = new GUI_Cuerdas();
         menuCuerdas.setVisible(true);
         dispose();
+        
+        
     }//GEN-LAST:event_btnAtrasCuerdasActionPerformed
+
+    private void btnComprarArpa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarArpa1ActionPerformed
+        // TODO add your handling code here:
+       GUI_OpcionesArpa opcionesCompra  = new GUI_OpcionesArpa();
+        opcionesCompra.setVisible(true);
+        dispose();
+        
+        ins = "arpa1";
+    }//GEN-LAST:event_btnComprarArpa1ActionPerformed
+
+    private void btnComprarArpa2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarArpa2ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesArpa opcionesCompra  = new GUI_OpcionesArpa();
+        opcionesCompra.setVisible(true);
+        dispose();
+        
+        ins = "arpa2";
+    }//GEN-LAST:event_btnComprarArpa2ActionPerformed
+
+    private void btnComprarArpa3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarArpa3ActionPerformed
+        // TODO add your handling code here:
+        GUI_OpcionesArpa opcionesCompra  = new GUI_OpcionesArpa();
+        opcionesCompra.setVisible(true);
+        dispose();
+        
+        ins = "arpa3";
+    }//GEN-LAST:event_btnComprarArpa3ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -10,5 +10,7 @@
  * @author David Arteaga, Timoteo Camuendo, Anahí Vásquez, Jenny Llano
  */
 public abstract class Membranofonos extends Instrumento{
-    protected String caracteristicaMembranofono; 
+   protected String caracteristicaMembranofono;
+
+   
 }

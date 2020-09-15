@@ -10,15 +10,19 @@
  * @author David Arteaga, Timoteo Camuendo, Anahí Vásquez, Jenny Llano
  */
 public abstract class Instrumento implements Precio{
-    protected String nombre, tipoInst, materialInst, color, marca;
-    protected double precioInst, tamaño, peso;
+    protected String tipoInst, materialInst, color, marca;
+    protected double tamaño, peso;
     
+    public static String nomInstrumento;
+    public static double precioInst;
+    public static double descuentoEXTRA;
+    public static String descripcionInstr;
     
-    public abstract void producirSonido();
+    public abstract void producirSonido(String ins);
 
     @Override
     public String toString() {
-        return "Instrumento{" + "nombre=" + nombre + ", tipoInst=" + tipoInst + ", materialInst=" 
+        return "Instrumento{" + "nombre=" + nomInstrumento + ", tipoInst=" + tipoInst + ", materialInst=" 
                 + materialInst + ", color=" + color + ", marca=" + marca + ", precioInst=" 
                 + precioInst + ", tamano=" + tamaño + ", peso=" + peso + '}';
     }

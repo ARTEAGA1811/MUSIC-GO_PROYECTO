@@ -5,6 +5,7 @@
  */
 
 
+import java.util.Date;
 import javax.swing.JOptionPane;
 
 /**
@@ -21,29 +22,124 @@ public class MusicoProfesional extends Cliente{
         this.tipoCliente = "Músico Profesional";
     }
     
-    public void paseVip(){
+    public boolean esMetodoPagoValido(String nomTarjeta,String numTarjeta,String fechaCaducidad,String cvv){
+        boolean esMetodoPagoValidoBol = true;
+        
+        //Verificacion de que solo sean numeros lo que se ingresa.
+        try{ 
+            //Se analiza cada elemento del  String para saber si todos son numeros.
+            char[] arrayTarjeta = numTarjeta.toCharArray();
+            for(char bucle: arrayTarjeta){
+                int num = Integer.parseInt(Character.toString(bucle));
+            }
+        }catch(NumberFormatException e){
+            esMetodoPagoValidoBol = false;
+            JOptionPane.showMessageDialog(null, "Tarjeta no válida.");    
+            
+        }
+        
+        //En esta parte, solo se analiza si todo lo ingresado son numeros
+        if(esMetodoPagoValidoBol){
+        
+            if( numTarjeta.length()== 16 && fechaCaducidad.matches("[0-9][0-9][/][0-9][0-9]") && cvv.length() == 3){
+                esMetodoPagoValidoBol = true;
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "Método de pago inválido!!\n No se ha podido emitir su factura!!");
+                esMetodoPagoValidoBol = false;
+            }
+        }
+        return esMetodoPagoValidoBol;
+    }
+    
+    public boolean esPaseVip(String codigoVip){
         /*
         CLAVE 3 DÍGITOS Y DOS LETRAS (135PS, 1NH46, A913M)
-        SUMA DE DÍGITOS SE 8 O 12 (F35J4, NH812, 
+        SUMA DE DÍGITOS DE 12
         */
+        boolean esPaseVip = true;
+        int contadorNum=0;
+        int contadorLetras=0;
+        int sumaNum=0;
         
-        String msjPrincipal= "HA SIDO ACREEDOR DE UN PASE VIP\n";
-        String instComprado = "this.nombreInstrumento";
-        String precioInst = "this.precioInst";
-        
-        
-        
-        msjPrincipal += "Nombre: "+nombreCliente+"\n"+
-                        "Apellido: "+apellido+"'n"+
-                        "CI: "+cedula+"\n";
-        
-        System.out.print(msjPrincipal);
+        try{
+            if(codigoVip.length() == 5){
+                char[] arrayCodigovip = codigoVip.toCharArray();
+                System.out.println(arrayCodigovip);
+                
+                for(int i=0; i<codigoVip.length();i++){
+                    if(Character.isLetter(arrayCodigovip[i])){
+                        contadorLetras++;
+                    }
+                    else if (Character.isDigit(arrayCodigovip[i])){
+                        contadorNum++;
+                        sumaNum += Character.getNumericValue(arrayCodigovip[i]);
+                    }
+                }
+                
+                if(contadorLetras == 2 && contadorNum == 3 && sumaNum == 12){
+                    esPaseVip = true;
+                    JOptionPane.showMessageDialog(null, "Su pase Vip ha sido activado");
+                }
+                else{
+                    esPaseVip = false;
+                    JOptionPane.showMessageDialog(null, "Su código no es válido");
+                }
+                
+            }
+            else{
+                esPaseVip = false;
+                JOptionPane.showMessageDialog(null, "El código debe tener 5 caracteres");
+            }
+        }
+        catch(Exception e){
+            esPaseVip = false;
+            JOptionPane.showMessageDialog(null, "El código no es válido!!");
+        }
+        return esPaseVip;
     }
 
     @Override
-    public void compraInstrumento() {
-         String Factura = "\t******FACTURA******";        
+    public String compraInstrumento(String direccion,
+                                    String nomInstrumento, 
+                                    int cantidad, 
+                                    double precioInst,
+                                    double descuentoEXTRA) {
         
+        int numFactura = (int) (Math.random() * 5000) + 1;
+        double descuento = (cantidad*precioInst)*0.10 + (cantidad*precioInst)*descuentoEXTRA;
+        double iva = (cantidad*precioInst)*0.12;
+        double subtotal = cantidad*precioInst;
+        double total = subtotal + iva - descuento;
+        
+        //EMITIR FACTURA
+        
+            java.util.Date fecha = new Date();
+            String factura = "    ______________________FACTURA_________________________\n"+
+                             "    ____________________MUSIC-GO S.A._____________________\n\n"+
+                    
+                            "    N° Factura: "+numFactura +"\n"+
+                            "    Nombre Cliente: "+this.nombreCliente +"\n"+
+                            "    Apellido Cliente: "+this.apellido +"\n"+
+                            "    Cédula / RUC: "+this.cedula +"\n"+
+                            "    Dirección: "+direccion +"\n"+
+                            "    Fecha emisión: "+fecha.toString()+"\n\n"+
+                            "    DESCRIPCIÓN DE SU INSTRUMENTO\n"+Instrumento.descripcionInstr+
+                    
+                            "    _______________________________________________________\n"+
+                            "                                               \n"+
+                            "    CANT.        DESCRIPCIÓN     PRECIO UNITARIO \n"+
+                            "    _______________________________________________________\n"+
+                            "       "+cantidad+"\t  "+nomInstrumento+"\t       "+precioInst+"\n"+
+                            "    ________________________________________________________\n\n"+
+                            "               SUBTOTAL:\t   "+subtotal+" \n"+
+                            "               DESCUENTO:\t   "+descuento+" \n"+
+                            "               IVA:\t\t   "+iva+" \n"+
+                            "               TOTAL:\t   "+total+" \n";
+
+        return factura;  
+  
+       
     }
 
     

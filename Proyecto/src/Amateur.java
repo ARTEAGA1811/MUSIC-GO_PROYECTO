@@ -5,6 +5,7 @@
  */
 
 
+import java.util.Date;
 import javax.swing.JOptionPane;
 
 /**
@@ -14,14 +15,84 @@ import javax.swing.JOptionPane;
 public class Amateur extends Cliente{
     private String apellido, cedula;
     
-    
-    public String manualInstrumento(){
-        return "";
+    public Amateur(String nombre, String apellido, String cedula){
+        this.nombreCliente = nombre;
+        this.apellido = apellido;
+        this.cedula = cedula;
+        this.tipoCliente = "Amateur";
     }
-
+    
+    public boolean esMetodoPagoValido(String nomTarjeta,String numTarjeta,String fechaCaducidad,String cvv){
+        boolean esMetodoPagoValidoBol = true;
+        
+        //Verificacion de que solo sean numeros lo que se ingresa.
+        try{ 
+            //Se analiza cada elemento del  String para saber si todos son numeros.
+            char[] arrayTarjeta = numTarjeta.toCharArray();
+            for(char bucle: arrayTarjeta){
+                int num = Integer.parseInt(Character.toString(bucle));
+            }
+        }catch(NumberFormatException e){
+            esMetodoPagoValidoBol = false;
+            JOptionPane.showMessageDialog(null, "Tarjeta no válida.");    
+            
+        }
+        
+        //En esta parte, solo se analiza si todo lo ingresado son numeros
+        if(esMetodoPagoValidoBol){
+        
+            if( numTarjeta.length()== 16 && fechaCaducidad.matches("[0-9][0-9][/][0-9][0-9]") && cvv.length() == 3){
+                esMetodoPagoValidoBol = true;
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "Método de pago inválido!!\n No se ha podido emitir su factura!!");
+                esMetodoPagoValidoBol = false;
+            }
+        }
+        return esMetodoPagoValidoBol;
+    }
+    
     @Override
-    public void compraInstrumento() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String compraInstrumento(String direccion,
+                                    String nomInstrumento, 
+                                    int cantidad, 
+                                    double precioInst,
+                                    double descuentoEXTRA) {
+        
+        int numFactura = (int) (Math.random() * 5000) + 1;
+        double descuento = (cantidad*precioInst)*descuentoEXTRA;
+        double iva = (cantidad*precioInst)*0.12;
+        double subtotal = cantidad*precioInst;
+        double total = subtotal + iva - descuento;
+        
+        //EMITIR FACTURA
+              
+            java.util.Date fecha = new Date();
+            String factura = "    ______________________FACTURA_________________________\n"+
+                             "    ____________________MUSIC-GO S.A._____________________\n\n"+
+                    
+                            "    N° Factura: "+numFactura +"\n"+
+                            "    Nombre Cliente: "+this.nombreCliente +"\n"+
+                            "    Apellido Cliente: "+this.apellido +"\n"+
+                            "    Cédula / RUC: "+this.cedula +"\n"+
+                            "    Dirección: "+direccion +"\n"+
+                            "    Fecha emisión: "+fecha.toString()+"\n\n"+
+                            "    DESCRIPCIÓN DE SU INSTRUMENTO\n"+Instrumento.descripcionInstr+
+                    
+                            "   ______________________________________________________\n"+
+                            "                                              \n"+
+                            "   CANT.        DESCRIPCIÓN     PRECIO UNITARIO \n"+
+                            "   ______________________________________________________\n"+
+                            "     "+cantidad+"\t"+nomInstrumento+"\t    "+precioInst+"\n"+
+                            "   ______________________________________________________\n\n"+
+                            "             SUBTOTAL:\t   "+subtotal+" \n"+
+                            "             DESCUENTO:\t   "+descuento+" \n"+
+                            "             IVA:\t\t   "+iva+" \n"+
+                            "             TOTAL:\t   "+total+" \n";
+
+        return factura;  
+             
+       
     }
 
     

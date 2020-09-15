@@ -4,12 +4,10 @@
  * and open the template in the editor.
  */
 
-
 /**
  *
- * @author David Arteaga, Timoteo Camuendo, Anahí Vásquez, Jenny Llano
+ * @author nicol
  */
-public abstract class Ideofonos extends Instrumento {
-    protected String caracteristicaIdiofonos; 
-    
+public interface MetodoPago {
+    public boolean esMetodoPagoValido(String nomTarjeta,String numTarjeta,String fechaCaducidad,String cvv);
 }

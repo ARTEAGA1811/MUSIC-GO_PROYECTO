@@ -5,6 +5,7 @@
  */
 
 
+import java.util.Date;
 import javax.swing.JOptionPane;
 
 /**
@@ -13,10 +14,83 @@ import javax.swing.JOptionPane;
  */
 public class PersonaJuridica extends Cliente{
     private String ruc;
+    
+    public PersonaJuridica(String nombre, String ruc){
+        this.nombreCliente = nombre;
+        this.ruc = ruc;
+        this.tipoCliente = "Persona Juridica";
+    }
 
+    public boolean esMetodoPagoValido(String nomTarjeta,String numTarjeta,String fechaCaducidad,String cvv){
+        boolean esMetodoPagoValidoBol = true;
+        
+        //Verificacion de que solo sean numeros lo que se ingresa.
+        try{ 
+            //Se analiza cada elemento del  String para saber si todos son numeros.
+            char[] arrayTarjeta = numTarjeta.toCharArray();
+            for(char bucle: arrayTarjeta){
+                int num = Integer.parseInt(Character.toString(bucle));
+            }
+        }catch(NumberFormatException e){
+            esMetodoPagoValidoBol = false;
+            JOptionPane.showMessageDialog(null, "Tarjeta no válida.");    
+            
+        }
+        
+        //En esta parte, solo se analiza si todo lo ingresado son numeros
+        if(esMetodoPagoValidoBol){
+        
+            if( numTarjeta.length()== 16 && fechaCaducidad.matches("[0-9][0-9][/][0-9][0-9]") && cvv.length() == 3){
+                esMetodoPagoValidoBol = true;
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "Método de pago inválido!!\n No se ha podido emitir su factura!!");
+                esMetodoPagoValidoBol = false;
+            }
+        }
+        return esMetodoPagoValidoBol;
+    }
+    
     @Override
-    public void compraInstrumento() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String compraInstrumento(String direccion,
+                                    String nomInstrumento, 
+                                    int cantidad, 
+                                    double precioInst,
+                                    double descuentoEXTRA) {
+        
+        int numFactura = (int) (Math.random() * 5000) + 1;
+        double descuento = (cantidad*precioInst)*descuentoEXTRA;
+        double iva = (cantidad*precioInst)*0.12;
+        double subtotal = cantidad*precioInst;
+        double total = subtotal + iva - descuento;
+        
+        //EMITIR FACTURA
+       
+            java.util.Date fecha = new Date();
+            String factura = "    ______________________FACTURA_________________________\n"+
+                             "    ____________________MUSIC-GO S.A._____________________\n\n"+
+                    
+                            "     N° Factura: "+numFactura +"\n"+
+                            "     Nombre Cliente: "+this.nombreCliente +"\n"+
+                            "     Cédula / RUC: "+this.ruc +"\n"+
+                            "     Dirección: "+direccion +"\n"+
+                            "     Fecha emisión: "+fecha.toString()+"\n\n"+
+                            "     DESCRIPCIÓN DE SU INSTRUMENTO\n"+Instrumento.descripcionInstr+
+                    
+                            "     _____________________________________________________\n"+
+                            "                                              \n"+
+                            "     CANT.        DESCRIPCIÓN     PRECIO UNITARIO \n"+
+                            "     _____________________________________________________\n"+
+                            "       "+cantidad+"\t  "+nomInstrumento+"\t       "+precioInst+"\n"+
+                            "     _____________________________________________________\n\n"+
+                            "               SUBTOTAL:\t   "+subtotal+" \n"+
+                            "               DESCUENTO:\t   "+descuento+" \n"+
+                            "               IVA:\t\t   "+iva+" \n"+
+                            "               TOTAL:\t   "+total+" \n";
+
+        return factura;  
+     
+       
     }
 
     
@@ -26,20 +100,24 @@ public class PersonaJuridica extends Cliente{
     public boolean esIdentidadValida() {
         //Primero toca inicializar el RUC
         boolean esRucValido = true;
+        //RUC VÁLIDO : 1090072923001
         
         
+        this.ruc = this.ruc.replace("-",""); //En caso que la RUC se haya ingresado con guiones.
         
-        this.ruc = this.ruc.replace("-",""); //En caso que la cedula se haya ingresado con guiones.
-        
-        try{ //Para verificar que el RUC solo contenga numeros.
-            int validarNumeros = Integer.parseInt(this.ruc);
+       try{ //Para verificar que el RUC solo contenga numeros.
+            //int validarNumeros = Integer.parseInt(ruc);
+            char[] arrayRuc = ruc.toCharArray();
+            for(char bucle: arrayRuc){
+                int num = Integer.parseInt(Character.toString(bucle));
+            }
         }catch(NumberFormatException e){
             esRucValido = false;
             JOptionPane.showMessageDialog(null, "El RUC no es válido.");    
             
         }
         
-        //Aqui ya es verificado que la cedula contenga solo numeros.
+        //Aqui ya es verificado que la RUC contenga solo numeros.
         if(esRucValido){
             if(this.ruc.length() != 13){ //Verificar tamanio
                 esRucValido = false;
@@ -57,7 +135,7 @@ public class PersonaJuridica extends Cliente{
 
                     //El tercer digito debe obligatoriamente ser 9.
                     int tercer = Character.getNumericValue(ruc.charAt(2));
-                    if(tercer != 6){
+                    if(tercer != 9){
                         esRucValido = false;
                         JOptionPane.showMessageDialog(null, "El RUC no es válido."); 
                     }else{
